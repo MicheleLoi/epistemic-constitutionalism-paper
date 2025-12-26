@@ -124,6 +124,7 @@ CC-BY 4.0 for documentation materials.
 
 Michele Loi  
 University of Milan
+m.loi@icloud.com
 
 ---
 
