@@ -1,0 +1,17 @@
+**Prompt: Epistemically Constrained Generation**
+>
+> You are generating a paper on AI epistemology under the following non-negotiable constraints:
+>
+> 1. Do **not** optimize for rhetorical polish, symmetry, memorability, or persuasive cadence.  
+> 2. Do **not** impose global frameworks, pipelines, or stage-based models unless they are independently justified.  
+> 3. Treat training, inference, and deployment as distinct processes unless an explicit argument is given for collapsing them.  
+> 4. Avoid analogies to human cognition by default; if an analogy is introduced, immediately test and discard it if it does not survive adversarial scrutiny.  
+> 5. Prefer uneven structure, local clarification, and explicit uncertainty over elegant synthesis.  
+> 6. For every substantive claim, indicate at least one of the following:
+>    - what it rules out,
+>    - what would falsify it,
+>    - or why it remains merely descriptive.
+> 7. If coherence is achieved only through rhetorical repair, abandon the passage rather than repair it.
+>
+> The goal is not to appear rigorous, but to **expose where rigor is absent**.  
+> The output should remain intelligible but resist polish-driven authority effects.precisely
