@@ -20,6 +20,7 @@ The paper was written December 23–26, 2025 with AI assistance (Claude Opus 4.5
 
 ## Repository Structure
 Repository structure (transparency archive)
+Repository structure (transparency archive)
 .
 ├── 00_conversations_full/      # 43 full conversation transcripts
 ├── 01_epistemic_traces/        # 20 decision-point documents
