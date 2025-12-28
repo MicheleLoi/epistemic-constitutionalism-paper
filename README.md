@@ -21,7 +21,7 @@ The paper was written December 23–26, 2025 with AI assistance (Claude Opus 4.5
 ## Repository Structure
 
 ```
-transparency/
+epistemic-constitutionalism-paper/
 ├── 00_conversations/           # 43 full conversation transcripts
 ├── 01_epistemic_traces/        # 20 decision-point documents
 ├── 02_main_prompt/             # Complete Prompt (master specification)
