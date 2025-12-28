@@ -1,8 +1,8 @@
-# Epistemic Constitutional AI: Source Attribution, Coherence, and When a Bias Isn't
+# Epistemic Constitutional AI: when Source Attribution Bias isn't
 
 ## Transparency Materials
 
-This repository contains full documentation of the AI-assisted writing process for the paper "Epistemic Constitutional AI: Source Attribution, Coherence, and When a Bias Isn't."
+This repository contains full documentation of the AI-assisted writing process for the paper "Epistemic Constitutional AI: when Source Attribution Bias Isn't."
 
 ## Quick Links
 
