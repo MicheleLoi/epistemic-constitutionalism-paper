@@ -24,7 +24,7 @@ Repository structure (transparency archive)
 
 ```
 .
-├── 00_conversations_full/           # 43 full conversation transcripts
+├── 00_conversations_full/      # 43 full conversation transcripts
 ├── 01_epistemic_traces/        # 20 decision-point documents
 ├── 02_main_prompt/             # Complete Prompt (master specification)
 ├── 03_modification_logs/       # 13 change logs
