@@ -21,8 +21,10 @@ The paper was written December 23–26, 2025 with AI assistance (Claude Opus 4.5
 ## Repository Structure
 Repository structure (transparency archive)
 Repository structure (transparency archive)
+
+```
 .
-├── 00_conversations_full/      # 43 full conversation transcripts
+├── 00_conversations_full/           # 43 full conversation transcripts
 ├── 01_epistemic_traces/        # 20 decision-point documents
 ├── 02_main_prompt/             # Complete Prompt (master specification)
 ├── 03_modification_logs/       # 13 change logs
@@ -32,6 +34,9 @@ Repository structure (transparency archive)
 ├── 07_reference_logs/          # 7 citation tracking documents
 ├── 08_prompt_development_logs/ # 3 prompt evolution documents
 └── 09_notes/                   # Working files, lab books v1-v5, failed drafts
+```
+
+---
 
 
 ## Key Entry Points
