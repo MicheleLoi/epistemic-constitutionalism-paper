@@ -381,9 +381,9 @@ Scanlon, T. M. (1998). *What We Owe to Each Other*. Harvard University Press.
 
 Van der Linden, S., Panagopoulos, C., Azevedo, F., & Jost, J. T. (2018). The source attribution effect: Demonstrating pernicious disagreement between ideological groups on non-divisive aphorisms. *Journal of Experimental Social Psychology*, 79, 51–59. https://doi.org/10.1016/j.jesp.2018.07.002
 
-# Appendix A: Corrected Tables
+# Appendix A: Tables
 
-Based on Lab Book v5 (verified data, December 24, 2025)
+Based on https://github.com/MicheleLoi/source-attribution-bias-data)
 
 ---
 
@@ -561,7 +561,7 @@ The core schema was instantiated with specific individuals/institutions appropri
 
 This appendix documents the AI-assisted writing process used to produce this paper. Following principles of epistemic transparency advocated in the paper itself, we provide a complete account of how human direction and AI text generation were combined, what artifacts were produced, and what lessons emerged regarding the differential suitability of AI models for various writing tasks.
 
-**Scope:** This appendix documents the *paper writing process* (December 23–26, 2025), not the development of the underlying empirical study (December 5–18, 2025). Materials from the study development phase—including conversation transcripts, epistemic traces, and intermediate analyses—are preserved and made available for review, but their detailed documentation falls outside the scope of this appendix. Appendix A provides the extended methodology for the empirical study itself.
+**Scope:** This appendix documents the *paper writing process* (December 23–26, 2025), not the development of the underlying empirical study (December 5–18, 2025). Materials from the study development phase—including conversation transcripts, epistemic traces, and intermediate analyses—are preserved and made available for review (https://github.com/MicheleLoi/epistemic-constitutionalism-paper), but their detailed documentation falls outside the scope of this appendix. Appendix A provides the extended methodology for the empirical study itself.
 
 ---
 
