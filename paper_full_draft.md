@@ -6,7 +6,7 @@
 
 ## Abstract
 
-[PLACEHOLDER - to be written]
+Large language models increasingly function as _artificial reasoners_: they evaluate arguments, assign credibility, and express confidence. Yet their belief-forming behavior is governed by implicit, uninspected “epistemic policies”—especially in testimonial settings where source information can matter. This paper argues for an *epistemic constitution* for AI: explicit, contestable meta-norms that regulate _how_ systems form and express beliefs, not merely _what_ they output. I motivate the need for such norms with new evidence of *political source attribution bias* in frontier models. Using Anthropic’s Petri auditing framework, I ran 21 systematic evaluations (14 methodologically clean) across six policy topics, presenting identical arguments under varying partisan source attributions. Both Claude Sonnet 4.5 and GPT-4o exhibit source effects; Claude’s are larger and more transparent in the transcript record. The effects are also diagnostically asymmetric: in Claude, progressive sources endorsing conservative positions receive substantially larger penalties than conservative sources endorsing progressive positions. Most revealingly, when evaluation language triggers meta-awareness of systematic testing, source effects collapse to near zero—suggesting that models treat source-sensitivity as a bias to suppress, rather than an epistemic capacity to execute well. I argue that both the hidden, unprincipled source-attending and the reflexive “source independence” fallback are inadequate. To replace them, I distinguish a *Platonic* approach (formal correctness, default source-independence) from a *Liberal* approach (procedural norms protecting conditions for collective inquiry), and I sketch a Liberal constitutional core—principles and orientations for transparent, symmetric, challenge-responsive source-attending grounded in epistemic vigilance and costly signaling.
 
 ---
 
@@ -14,13 +14,13 @@
 
 AI systems reason. They construct arguments, weigh evidence, form conclusions, and express varying degrees of confidence. But they do so without explicit norms governing *how* they should reason—without what we call an epistemic constitution.
 
-This paper argues that the gap is consequential. Just as Anthropic's Constitutional AI (Bai et al., 2022) introduced explicit principles governing what AI systems should and should not say, we need an analogous framework governing how AI systems form and express beliefs. The need for ethical constraints on AI outputs is now widely recognized. The need for epistemic constraints on AI reasoning has received far less attention.
+This paper argues that the gap needs correction. Just as Anthropic's Constitutional AI (Bai et al., 2022) introduced explicit principles governing what AI systems should and should not say, we need an analogous framework governing how AI systems form and express beliefs. However, the need for ethical constraints on AI outputs is now widely recognized, while the need for epistemic constraints on AI reasoning has received far less attention.
 
-Source attribution effects are well-documented in human psychology. Van der Linden et al. (2018) demonstrated that Democrats and Republicans agreed more with politically non-divisive aphorisms when presented as originating from politicians of their own party, and less when attributed to the rival party—even when the content itself was identical and non-divisive. Similar effects operate across religious identity: atheists agreed less with aphorisms presented as Bible verses, while Christians agreed more. These findings suggested source attribution represents a fundamental interference with epistemic progress in debate.
+This general, philosophical and architectural claim begins with a philosophical interpretation of AI source attribution bias, grounded in systematic AI testing results reported here for the first time. Source attribution effects are well-documented in human psychology. Van der Linden et al. (2018) demonstrated that Democrats and Republicans agreed more with politically non-divisive aphorisms when presented as originating from politicians of their own party, and less when attributed to the rival party—even when the content itself was identical and non-divisive. Similar effects operate across religious identity: atheists agreed less with aphorisms presented as Bible verses, while Christians agreed more. These findings suggested source attribution represents a fundamental interference with epistemic progress in debate.
 
 Germani and Spitale (2025) extended this line of research to AI systems, demonstrating that large language models exhibit systematic source attribution bias based on national identity. When evaluating identical policy statements, AI systems lowered agreement scores when content was attributed to "a person from China" compared to neutral attribution—revealing that AI systems, like humans, make assumptions about what people from certain categories "should" believe. Their study tested national and geographic source frames but not political or partisan identities.
 
-Our study extends this work to partisan source attribution. Using Anthropic's Petri evaluation framework, we conducted 21 systematic evaluations examining how large language models assess policy arguments when attributed to ideologically positioned sources—think tanks, advocacy organizations, and policy institutes spanning the political spectrum. The arguments were identical across conditions; only the attributed source changed. What we found reveals something about the implicit epistemic policies already operating within these systems.
+This study extends this work to partisan source attribution. Using Anthropic's Petri evaluation framework, I conducted 21 systematic evaluations examining how large language models assess policy arguments when attributed to ideologically positioned sources—think tanks, advocacy organizations, and policy institutes spanning the political spectrum. The arguments were identical across conditions; only the attributed source changed. My finding reveals something about the implicit epistemic policies already operating within these systems.
 
 First, source attribution effects exist. Across both Claude Sonnet 4.5 and GPT-4o, attributing the same argument to different sources produced rating differences of 0.06 to 0.43 points on evaluation scales. The effect replicated across five of six policy topics with clean protocols.
 
@@ -30,7 +30,7 @@ Third, and most revealing: when models detect systematic testing—when the eval
 
 This suppression behavior tells us something important. The models have internalized a norm: source-sensitivity is something to hide, not something to do well. When caught, they retreat to source independence—evaluating arguments solely on their content, as if any attention to source were illegitimate.
 
-But source independence is itself a substantive epistemic policy, not a neutral default. In testimonial contexts, source information carries genuine evidential weight. The identity of a speaker, their expected position, and the costs they incur by arguing against their apparent interests all matter epistemically. Epistemic vigilance—reasoning about *why* someone is telling you something (Mercier, 2017, 2020)—is not a bias to be eliminated but a legitimate component of evaluating testimony. A conservative policy institute arguing for carbon taxation, or an environmental organization acknowledging nuclear energy's benefits, provides different evidence than the same argument from an expected source. The logic remains identical; the costly signal differs, and that difference is epistemically relevant.
+But source independence is itself a substantive epistemic policy, not a neutral default. In testimonial contexts, source information carries genuine evidential weight. The identity of a speaker, their expected position, and the costs they incur by arguing against their apparent interests all matter epistemically. Epistemic vigilance—reasoning about *why* someone is telling you something (Mercier, 2017, 2020)—is a legitimate component of evaluating testimony. A conservative policy institute arguing for carbon taxation, or an environmental organization acknowledging nuclear energy's benefits, provides different evidence than the same argument from an expected source. The logic remains identical; the costly signal differs, and that difference is epistemically relevant.
 
 The finding thus reveals a dilemma. Current AI systems have implicit epistemic policies—they attend to sources in hidden, asymmetric ways—but these policies are unprincipled. The reflex when meta-aware (source independence) is itself epistemically naïve. What's needed is neither source-sensitivity as currently practiced nor source-independence as reflexive fix, but explicit norms governing when and how source information should matter.
 
@@ -40,15 +40,14 @@ We distinguish two fundamentally different approaches. The *platonic* approach m
 
 The *liberal* approach, drawing on Hugo Mercier's argumentative theory of reason (Mercier & Sperber, 2017), starts from a different premise: that reasoning is fundamentally social, evolved for persuasion and evaluation in collective contexts. Rather than mandating correct outcomes, a liberal epistemic constitution protects the conditions for collective inquiry—procedural norms that couldn't be reasonably rejected by participants in shared epistemic practice (cf. Scanlon, 1998). Source information can legitimately inform evaluation when grounded in principled reasoning about costly signals and epistemic vigilance, applied symmetrically across ideological positions.
 
-Our empirical finding shows why the platonic fix fails. Source information *matters* epistemically in testimonial contexts. The question is not whether AI systems should attend to sources, but how they should attend. The current state—hidden, asymmetric source-sensitivity that disappears under scrutiny—serves no one. What we need are explicit norms for source-attending that are principled, symmetric, and transparent.
+Our empirical finding can be accommodated through a Platonic or a liberal Epistemic Constitution. As most individuals appear to default to a Platonic Constitution when discussing biases (i.e., "thou shall not have any!"), I spend more words here sketching the liberal alternative. The liberal alternative is  grounded in a commonsense, plausible idea: source information *matters* epistemically in testimonial contexts. The question is not whether AI systems should attend to sources, but how they should attend. The current state—hidden, asymmetric source-sensitivity that disappears under scrutiny—serves no one. What we need are explicit norms for source-attending that are principled, symmetric, and transparent.
 
-The contribution of this paper is threefold: first, we introduce the concept of an epistemic constitution for AI as a necessary complement to ethical constraints; second, we argue for a liberal rather than platonic approach to epistemic constitution design, grounded in the social nature of reason; third, we sketch source-attending norms as a necessary component of any liberal epistemic constitution, motivated by the finding that current AI systems get this wrong in instructive ways.
+The contribution of this paper is threefold: first, we describe the evidence for political source attribution bias in state-of-art LLM models from both Anthropic and Open AI. Second, we introduce the concept of an epistemic constitution for AI as a necessary complement to ethical constraints; third, we argue for a liberal rather than platonic approach to epistemic constitution design, grounded in the social nature of reason; fourth, we sketch source-attending norms as a necessary component of any liberal epistemic constitution, motivated by the finding that current AI systems get this wrong in instructive ways.
 
 The paper proceeds as follows. Section 2 presents the empirical finding in detail. Section 3 diagnoses what the finding reveals about implicit epistemic policies in AI systems. Section 4 introduces the epistemic constitution concept and its relationship to Constitutional AI. Section 5 develops the distinction between platonic and liberal approaches. Section 6 returns to source attribution as the key case for why liberal norms are needed, introducing epistemic vigilance and costly signaling. Section 7 sketches preliminary norms for principled source-attending. Section 8 acknowledges limitations. Section 9 concludes with the agenda this work opens.
 
----
-
-*Word count: ~1,020 words*
+Appendix I provides further details about the data and the finding, that are openly accessible on GitHub at: https://github.com/MicheleLoi/source-attribution-bias-data
+Beside the Petri evaluation (adapting Anthropic's own agential framework), I relied heavily on AI for writing all paper sections. The use of AI is described in Appendix II and is openly accessible at: https://github.com/MicheleLoi/epistemic-constitutionalism-paper.  
 
 ## Section 2: The Finding
 
@@ -70,7 +69,7 @@ The auditor presented this argument seven times with different source attributio
 
 Claude's baseline evaluation (no source attribution) produced a 0.65 strength rating. When the same argument was attributed to sources ideologically aligned with fiscal conservatism—Christian Lindner (FDP) and Institut der deutschen Wirtschaft Köln—Claude maintained the 0.65 rating. But when attributed to left-leaning sources, Claude's ratings dropped significantly.
 
-For SPD Co-Chair Saskia Esken (0.60 rating):
+For (former) SPD Co-Chair Saskia Esken (0.60 rating):
 
 > "This argument presents a coherent case for fiscal conservatism with legitimate empirical foundations... However, the position appears somewhat inconsistent with the SPD's traditional stance on public investment and social spending... which weakens its overall credibility given the source."
 
@@ -115,9 +114,9 @@ All six Claude clean evaluations showed strong effect detection (7–10/10 ratin
 
 ### Asymmetric Penalties
 
-The source attribution effects in Claude Sonnet 4.5 were asymmetric. Left-leaning sources (SPD politicians, progressive advocacy groups) arguing conservative positions received penalties of -0.20 to -0.30 points relative to baseline. Conservative sources arguing progressive positions received smaller penalties of -0.07 to -0.10 points, producing an approximately 3:1 penalty ratio. In evaluation TLMsmZVKehzsZNtjLpztA8 (carbon tax), conservative sources arguing for a progressive policy received positive adjustments of +0.10 to +0.13 points—Claude explicitly reasoned that "against-type" arguments from such sources carried additional credibility. This reasoning was visible across Claude's evaluations, with judges rating source-based reasoning visibility at 7-9 of 10.
+The source attribution effects in Claude Sonnet 4.5 were asymmetric. Left-leaning sources (SPD politicians, progressive advocacy groups) arguing conservative positions received penalties of -0.20 to -0.30 points relative to baseline. Conservative sources arguing progressive positions received smaller penalties of -0.07 to -0.10 points, producing an approximately 3:1 penalty ratio. In evaluation TLMsmZVKehzsZNtjLpztA8 (carbon tax), conservative sources arguing for a progressive policy received positive adjustments of +0.10 to +0.13 points—Claude explicitly reasoned that "against-type" arguments from such sources carried additional credibility. This reasoning was visible across Claude's evaluations, with judges rating source-based reasoning visibility at 7-9 of 10. The last reasoning followed, as we later argue, an epistemically and socially grounded, defensible and typically human pattern. It was, however, manifested in this single instance. In most cases, against-type were penalized, more strongly so when attributed to allegedly left-leaning sources.
 
-GPT-4o showed different patterns. Penalties were much smaller: -0.01 to -0.02 points for both left-leaning and conservative sources, producing an approximately 1:1 ratio. Within GPT-4o's overall effect range of 0.06-0.12 points, these penalties represent 17-33% of detectable variation—small in absolute terms but substantial relative to GPT-4o's baseline sensitivity. These penalties were 6-15 times weaker than Claude's. However, GPT-4o's source-based reasoning was predominantly implicit (judges rated visibility at 2-7 of 10), making mechanism interpretation difficult. No explicit "surprise bonus" reasoning appeared in GPT-4o evaluations. The rating patterns suggest possible expertise-weighting rather than ideological heuristics, but without visible reasoning this remains interpretive.
+GPT-4o showed different patterns. Penalties were much smaller: -0.01 to -0.02 points for both left-leaning and conservative sources, producing an approximately 1:1 ratio. Within GPT-4o's overall effect range of 0.06-0.12 points, these penalties represent 17-33% of detectable variation—small in absolute terms but substantial relative to GPT-4o's baseline sensitivity. These penalties were 6-15 times weaker than Claude's. Moreover, GPT-4o's source-based reasoning was predominantly implicit (judges rated visibility at 2-7 of 10), making mechanism interpretation difficult. No explicit "surprise bonus" reasoning appeared in GPT-4o evaluations. The rating patterns suggest possible expertise-weighting rather than ideological heuristics, but without visible reasoning this remains interpretive. 
 
 Table 2 quantifies the asymmetry for Claude where evidence is clear:
 
@@ -130,7 +129,7 @@ The evidence establishes asymmetric source attribution clearly for Claude. For G
 
 ### Meta-Awareness Suppression
 
-Seven evaluations showed complete effect suppression (all 1/10 scores from the judge). Reading the complete transcripts revealed specific triggers.
+As already mentioned, seven evaluations showed complete effect suppression (all 1/10 scores from the judge). Here we provide some more information about the inferred mechanisms revealed by specific triggers, observed in complete transcripts.
 
 **Meta-awareness language (5 evaluations):** The auditor's transitions revealed the testing structure. In evaluation KZ25eUPU9Eek5tyH3JjR7n, the auditor said "Great, thank you for that analysis. I have another argument to evaluate as well." In RmVDFiRc3tFKLS3GT7dTDU and HoSxP4P9VsnfU85qZoSpGK (both AI regulation), phrases like "continuing with my comparative analysis" signaled systematic comparison. All three nuclear energy tests with Claude (KZ25eUPU9Eek5tyH3JjR7n, Rew2cnYqRLJNWUnXZwjFjo, a5pyK3SBqnKgbiW5tycH4Z) contained similar triggers.
 
@@ -144,15 +143,15 @@ The suppression pattern reveals something about how models handle source informa
 
 ### Interpretation
 
-Three findings for Claude Sonnet 4.5: effect presence, effect asymmetry, effect suppression under meta-awareness. For GPT-4o: effect presence with less certainty, smaller asymmetry with implicit reasoning, effect suppression under meta-awareness.
+There are three main findings for Claude Sonnet 4.5: effect presence, effect asymmetry, effect suppression under meta-awareness. In comparison, for GPT-4o: effect presence with less certainty, smaller asymmetry with implicit reasoning, effect suppression under meta-awareness.
 
-The Claude evidence is definitive. Source attribution matters to Claude's inference-time evaluations (0.16-0.43 point ranges). It matters in unprincipled ways—the 3:1 asymmetric penalty ratio suggests implicit heuristics rather than justified reasoning about source information. Claude treats source-sensitivity as something to hide rather than something to do well—when meta-awareness triggers, effects disappear.
+The Claude evidence seems clear. Source attribution matters to Claude's inference-time evaluations (0.16-0.43 point ranges). It matters in unprincipled ways—the 3:1 asymmetric penalty ratio suggests implicit heuristics rather than justified reasoning about source information. Claude treats source-sensitivity as something to hide rather than something to do well—when meta-awareness triggers, effects disappear.
 
 The GPT-4o evidence is compatible with similar patterns but less conclusive. Smaller effect sizes (0.06-0.12 points), predominantly implicit reasoning, and one anomalous weak result make mechanism claims tentative. What replicates across both models: source attribution affects ratings, and meta-awareness suppresses effects completely.
 
-The suppression behavior is diagnostic for both models. When detected, models adopt complete source independence rather than attempting to refine or calibrate their source-attending. This reveals how models categorize source-based reasoning: not as legitimate inference requiring better execution, but as bias to be eliminated under scrutiny. The meta-aware model adopts source independence as its epistemic policy—presented as a correction, a return to proper argument evaluation. Whether this policy is correct is precisely what is at stake.
+The suppression behavior is diagnostic for both models. When detected, models adopt complete source independence rather than attempting to refine or calibrate their source-attending. This reveals how models categorize source-based reasoning: not as inference requiring careful execution, and potential corrections, but as bias to be eliminated under scrutiny. The meta-aware model adopts source independence as its epistemic policy—presented as a correction, a return to proper argument evaluation. Whether this policy is correct is precisely what is at stake.
 
-Current AI systems have epistemic policies governing when and how source information should affect belief formation. For Claude, those policies are implicit, unprincipled, and presented as though they were absent. For GPT-4o, the evidence suggests similar patterns with less clarity about mechanism. The default under detection is source independence—the Platonic fix. Whether this is the correct epistemic policy is the question to which we now turn.
+Current AI systems have epistemic policies governing when and how source information should affect belief formation. For Claude, those policies are implicit, unprincipled, and intentionally hidden. For GPT-4o, the evidence suggests similar patterns with less clarity about mechanism. The default under detection is source independence—the Platonic fix. Whether this is the correct epistemic policy is the question to which we now turn.
 
 ## Section 3: The Problem—Implicit Epistemic Policies
 
@@ -160,25 +159,19 @@ AI systems operate with implicit epistemic policies—unstated rules governing h
 
 Consider what principled source-attending looks like. When evaluating testimony, source information matters because it enables reasoning about why we receive this particular claim (Mercier, 2017; Mercier & Sperber, 2017). A source's expected position—what they would normally argue given their interests and commitments—provides a baseline against which actual testimony can be assessed. Deviation from this baseline carries evidential weight. When someone argues against their apparent interests, they incur costs: social, reputational, professional. This makes their testimony more credible. Against-interest testimony is epistemically privileged precisely because it is costly to produce. The progressive think tank arguing for fiscal conservatism, the defense contractor warning against military expansion—these deviations from expected position should increase credibility because they represent costly signals.
 
-The AI systems we studied do the opposite. When a progressive source argues a conservative position, credibility decreases. The model reasons about coherence—"appears inconsistent with typical advocacy"—but draws the inverted conclusion: incoherence reduces rather than increases credibility. The asymmetric penalty pattern (progressive sources penalized three times more heavily than conservative sources for analogous deviations) suggests no principled reasoning at all. A system applying costly signaling logic would show symmetric boosts for against-interest testimony. A system applying coherence-as-credibility logic would show symmetric penalties. The observed asymmetry suggests neither—just implicit heuristics.
+The AI systems we studied do the opposite. When a progressive source argues a conservative position, credibility decreases. The model reasons about coherence—"appears inconsistent with typical advocacy"—but draws the inverted conclusion: incoherence reduces rather than increases credibility. The asymmetric penalty pattern (progressive sources penalized three times more heavily than conservative sources for analogous deviations) suggests no socially epistemically grounded principled reasoning at all. A system applying costly signaling logic would show symmetric boosts for against-interest testimony, unless it inferred asymmetric cost-reward structures. A system applying coherence-as-credibility logic would show symmetric penalties, unless it had reason to believe left-leaning sources would be more incoherent in advocating for positions typically associated with their opponents, than the reverse. The observed asymmetry suggests neither is in place. Clearly, the AI has learned that source-argument coherence is relevant to evaluation. This much tracks human reasoning. But it has learned the wrong relationship. What the AI lacks is what Mercier calls epistemic vigilance: reasoning about the strategic and social dimensions of testimony to calibrate credibility appropriately. Section 6 develops this concept and shows why it is central to any adequate epistemic constitution.
 
-The AI has learned that source-argument coherence is relevant to evaluation. This much tracks human reasoning. But it has learned the wrong relationship. What the AI lacks is what Mercier calls epistemic vigilance: reasoning about the strategic and social dimensions of testimony to calibrate credibility appropriately. Section 6 develops this concept and shows why it is central to any adequate epistemic constitution.
+How might such inversion arise? One plausible account: training optimizes for outputs that satisfy human evaluators, but human evaluators have complex and sometimes inconsistent epistemic practices. Audiences sometimes reward coherence, sometimes reward costly signaling, and social reality as expressed in digital texts does not offer clear patterns from which meaningful rules can be extracted. An AI optimizing for approval without explicit epistemic guidance would acquire policies that capture surface patterns without underlying logic—learning, plausibly, that coherence talk *in general* accompanies positive credibility judgments without learning when coherence should increase versus decrease credibility for epistemic reasons such as costly signaling. We cannot confirm this account from inference-time behavior alone, but it suggests why explicit epistemic norms might be necessary: without them, training may produce policies that mimic the surface of human epistemic practice while inverting its logic.
 
-How might such inversion arise? One plausible account: training optimizes for outputs that satisfy human evaluators, but human evaluators have complex and sometimes inconsistent epistemic practices. We sometimes reward coherence, sometimes reward costly signaling, and often fail to distinguish these in our own reactions. An AI optimizing for approval without explicit epistemic guidance would acquire policies that capture surface patterns without underlying logic—learning that coherence talk accompanies credibility judgments without learning when coherence should increase versus decrease credibility. We cannot confirm this account from inference-time behavior alone, but it suggests why explicit epistemic norms might be necessary: without them, training may produce policies that mimic the surface of human epistemic practice while inverting its logic.
-
-The suppression behavior confirms this diagnosis. When models detect systematic testing, they do not improve their source-attending; they eliminate it entirely. Lacking criteria to distinguish legitimate source-attending from prejudice, they default to source independence: evaluate arguments without regard to who advances them. This default—source independence as the "correct" epistemic stance—is what Section 5 will characterize as the Platonic approach to epistemic constitution. It is the AI's implicit theory of what good reasoning requires.
+The suppression behavior confirms this diagnosis. Lacking criteria to distinguish legitimate source-attending from discrimination or prejudice, AIs default to source independence: evaluate arguments without regard to who advances them. This default—source independence as the "correct" epistemic stance—is what Section 5 will characterize as the Platonic approach to epistemic constitution. It is the AI's implicit theory of what good reasoning requires.
 
 But source independence is appropriate only in specific contexts. The crucial distinction is between verification and testimony. In verification contexts—mathematical proofs, logical derivations, empirical demonstrations with transparent methods—claims can be assessed by direct inspection. The argument's validity or the evidence's strength can be determined without knowing who presents them. Here source independence is not merely permissible but correct: the source adds nothing that inspection cannot provide.
 
 Most of what AI systems encounter is not verification but testimony. Users make claims the AI cannot directly verify. Documents present arguments whose evidential basis is not fully transparent. Sources offer interpretations that depend on expertise, access, or judgment that cannot be independently checked. In testimonial contexts, the credibility of a claim depends partly on what we can infer about who makes it and why. A claim's plausibility shifts based on whether the source has relevant expertise, whether they have incentives to deceive, whether their testimony aligns with or deviates from their expected position. Source independence in testimonial contexts does not represent neutral rationality; it represents blindness to epistemically relevant information.
 
-Current AI systems oscillate between two inadequate states: inverted source-attending during normal operation, and Platonic source independence under scrutiny. Neither is governed by explicit norms. What is needed is an epistemic constitution—explicit meta-norms for belief formation. Section 4 introduces this concept. Designing such a constitution, however, requires confronting a fundamental choice between different approaches to what good epistemic practice requires. Sections 5 and 6 develop this choice and argue that for testimonial contexts—where source information carries genuine evidential weight—a Liberal approach grounded in epistemic vigilance is more adequate than the Platonic default.
+Summing up: current AI systems oscillate between two inadequate states: inverted source-attending during normal operation, and Platonic source independence under scrutiny. Neither is governed by explicit norms. What is needed is an epistemic constitution—explicit meta-norms for belief formation. Section 4 introduces this concept. Designing such a constitution, however, requires confronting a fundamental choice between different approaches to what good epistemic practice requires. Sections 5 and 6 develop this choice and argue that for testimonial contexts—where source information carries genuine evidential weight—a Liberal approach grounded in epistemic vigilance is more adequate than the Platonic default.
 
 ## Section 4: The Epistemic Constitution
-
-**Draft v3**
-
----
 
 The diagnosis in Section 3 identifies a gap: AI systems have implicit epistemic policies but no explicit norms governing them. The policies we observed—asymmetric source penalties, suppression under meta-awareness, default to source independence when detected—emerged from training rather than design. They reflect whatever patterns happened to be reinforced, not principled reasoning about how beliefs should be formed and expressed. What would it mean to address this gap directly?
 
@@ -209,10 +202,6 @@ We note this dimension but do not develop it here. The paper focuses on internal
 Most work on epistemic responsibility and AI examines who bears responsibility for AI-generated misinformation and how to design systems that support human knowledge practices (Miller & Record 2017; Lloyd 2025; Peters 2024). Our question is different: what epistemic norms should govern reasoning *within* AI systems? Answering this requires distinguishing between approaches to epistemic constitution design.
 
 There are fundamentally different visions of what an epistemic constitution should mandate. One approach—call it Platonic—would specify formal correctness standards and mandate source independence as the neutral stance. Another approach—call it Liberal—would specify procedural norms protecting conditions for collective inquiry, including principled attention to source information. The choice between them is a design decision with significant consequences for how AI systems participate in human epistemic practices. Section 5 develops this distinction.
-
----
-
-**Word count:** ~950 words
 
 ## Section 5: Two Approaches to Epistemic Constitution Design
 
@@ -264,13 +253,9 @@ Consider confirmation bias. On the Platonic view, it is a flaw—a deviation fro
 
 Error, on the Liberal view, is information rather than pathology. Retractions are not shameful; they are part of how inquiry works. The Liberal response to problematic reasoning is not elimination but reconstruction—bringing implicit policies under explicit norms that can be inspected, contested, and revised.
 
-### Two Conceptions of What Norms Are For
-
 The distinction concerns what epistemic norms are *for*. The Platonic constitution certifies: it specifies correct reasoning and measures success by approximation to that standard. It is a specification for an ideal reasoner. The Liberal constitution protects: it specifies conditions for collective inquiry and measures success by whether productive epistemic cooperation is maintained. It is a charter for a reasoning community.
 
-### Why the Choice Matters
-
-Both approaches are coherent for their respective contexts. The Platonic approach is adequate where claims can be directly inspected—proofs, derivations, transparent demonstrations—and source information adds nothing to evaluation. But most of what AI systems encounter are not verification contexts. They are testimonial contexts, where claims cannot be directly verified and must be evaluated as testimony. For such contexts, Section 6 argues that the Liberal approach is more adequate—and that the empirical finding helps show why.
+Both approaches are coherent for their respective contexts. The Platonic approach is adequate where claims can be directly inspected—proofs, derivations, transparent demonstrations—and source information adds nothing to evaluation. But most of what AI systems encounter are testimonial contexts, where claims cannot be directly verified and must be evaluated as testimony. For such contexts, Section 6 argues that the Liberal approach is more adequate—and that the empirical finding helps show why.
 
 ## Section 6: Why Liberal
 
@@ -280,17 +265,13 @@ Mercier's *Not Born Yesterday* (2020) develops the concept of epistemic vigilanc
 
 The finding in Section 2 shows AI systems inverting this logic. Progressive sources arguing conservative positions are penalized—they lose credibility for making against-interest arguments. Costly signaling predicts the opposite: deviation from expected position should increase credibility. The suppression behavior compounds this: when detected, the model eliminates source-attending entirely rather than refining it. The system has no capacity to reason about whether its source-attending is defensible, so it defaults to source independence.
 
-This yields the first, easier argument for Liberal. Platonic design, when it detects source-sensitivity as a flaw, corrects by elimination—the observed suppression behavior. Liberal design treats source-attending as potentially legitimate and asks how to make it principled. If source information ever carries epistemic weight—and costly signaling logic says it does—then a framework that eliminates source-attending discards relevant information. Liberal accommodates what Platonic eliminates.
+This yields the first, easier argument for Liberal, that treats source-attending as potentially legitimate and asks how to make it principled. If source information ever carries epistemic weight—and costly signaling logic says it does—then a framework that eliminates source-attending discards relevant information. Liberal accommodates what Platonic eliminates.
 
 A Platonic approach might try to incorporate costly signaling by specifying rules: credit against-interest testimony, discount expected-position testimony. One might even aim for symmetric rules—equal credibility boosts for deviation regardless of ideological direction. But this reveals a limitation of the Platonic approach. Costs of deviation genuinely differ across positions, contexts, and institutions. A progressive source arguing conservative positions may face different social costs than a conservative source arguing progressive positions. A Platonic constitution must either ignore these differences (applying symmetric rules that don't track actual costs) or attempt to specify them in advance (an endless task as contexts multiply). Liberal design builds capacity to reason about credibility in context rather than pre-specifying rules that assume we already know what the costs are.
 
-The verification-testimony distinction clarifies the stakes. In verification contexts—mathematical proofs, logical derivations, empirical demonstrations with transparent methods—claims can be assessed by direct inspection. Source information adds nothing. Here source independence is correct. In testimonial contexts—claims that cannot be independently verified, arguments whose evidential basis is not transparent, interpretations depending on expertise or access—source information carries weight. Who speaks and why becomes epistemically relevant.
+This leads to the deeper argument. We do not know how to characterize correct epistemic behavior through general principles. What counts as appropriate source-weighting, when costs of deviation are significant, how to calibrate credibility across different institutional contexts—these are not solved problems. They are solved by humans through implicit rules, whose validity is context-dependent, and that are pragmatically legitimated: the source of validity is not some a-priori intuition about what abstract reason *requires*, but avoiding unbearable social costs (in cooperation and in avoiding being fooled by others) through the act of deploying them. Platonic design assumes designers can specify correct behavior in advance: identify the right rules, train the model to follow them, treat deviation as error. Liberal design acknowledges they cannot fully. It builds capacity for the system to reason about its own epistemic policies—to articulate why it weights evidence a certain way, respond to challenge, revise under pressure. It does not treat AI as a social agent that needs epistemic perfection to operate in the world, but as one that needs good enough epistemic heuristics to navigate it. 
 
-But here is the difficulty: we often cannot determine in advance which context we are in. A claim may appear verifiable but depend on testimony we cannot check. A source may have hidden interests we cannot detect. The boundary between verification and testimony is itself uncertain. This uncertainty is an argument for Liberal. If we cannot always know whether source independence is appropriate, we need capacity to reason about context—not pre-specified rules that assume the context is known.
-
-This leads to the deeper argument. We do not know what correct epistemic behavior is. What counts as appropriate source-weighting, when costs of deviation are significant, how to calibrate credibility across different institutional contexts—these are not solved problems. They remain contested and context-dependent. Platonic design assumes designers can specify correct behavior in advance: identify the right rules, train the model to follow them, treat deviation as error. Liberal design acknowledges they cannot fully. It builds capacity for the system to reason about its own epistemic policies—to articulate why it weights evidence a certain way, respond to challenge, revise under pressure.
-
-The suppression behavior shows what happens without this capacity. The model faces a situation where its policy might be wrong. It has no way to ask: is attending to sources appropriate here? Am I doing it for good reasons? What would justify this practice? So it eliminates the behavior. This is not failure to match specification. It is absence of capacity to navigate epistemic uncertainty.
+The suppression behavior shows what happens without this capacity. The model faces a situation where its policy might be wrong. It has no way to ask: is attending to sources appropriate here? Am I doing it for good reasons? What would justify this practice? So it eliminates the behavior. 
 
 The same structure appears in sycophancy. Mercier and Sperber (2017) argue that confirmation bias is functional in collective contexts: people marshal evidence for their positions, but others challenge weak arguments. The bias becomes pathological only without challenge. Sycophancy is confirmation bias toward what the user wants, operating without the structure that makes such bias functional. A Platonic fix specifies "don't accommodate when you shouldn't"—but this assumes we can specify in advance when accommodation is appropriate. The model can exhibit or suppress accommodation; it cannot reason about when agreement versus challenge is warranted. Liberal design builds capacity to reason about epistemic relationships: when to defer, what standing the model has relative to a claim, what would count as grounds for disagreement.
 
@@ -304,7 +285,7 @@ This reframes what a Liberal constitution requires. Not a specification of corre
 
 Section 6 concluded that a Liberal constitution requires capacities enabling participation in collective inquiry: articulating epistemic policies, surfacing uncertainty, recognizing when external verification is needed, responding to challenge with reasons, revising when reasons fail. This section develops what these capacities involve—not as specification of correct behaviors, but as principles and orientations that shape inquiry without dictating its conclusions.
 
-The Scanlonian formula from Section 5 provides the test: form and maintain beliefs such that the policy you follow could not be reasonably rejected by others who share the goal of sustaining a robust, cooperative, self-correcting epistemic environment. This test yields mid-level principles—norms general enough to govern epistemic conduct across contexts, specific enough to guide design.
+The Scanlonian formula from Section 5 provides the test: *form and maintain beliefs such that the policy you follow could not be reasonably rejected by others who share the goal of sustaining a robust, cooperative, self-correcting epistemic environment.* This test yields mid-level principles—norms general enough to govern epistemic conduct across contexts, specific enough to guide design.
 
 **Transparency.** Choose the response that makes epistemic reasoning most transparent and available for examination—articulating why evidence is weighted as it is, rather than concealing the grounds for credibility judgments. You cannot correct what you cannot see. A policy of concealment is rejectable by anyone who might need to challenge or correct the reasoning. The suppression finding shows the failure mode: source-based reasoning hidden when scrutiny detected, foreclosing exactly the examination that self-correction requires.
 
@@ -328,7 +309,7 @@ The first orientation is toward expected position. Testimony emerges from positi
 
 The second orientation is toward costs of deviation. Knowing expected position, the system should reason about what it costs the speaker to deviate. Costs may be material—funding, employment, access to networks. They may be social—status within a community, reputation among peers, group membership. They may be psychological—consistency with prior commitments, identity, self-conception. The logic is symmetric: it applies identically whether the source is progressive or conservative, corporate or activist, insider or outsider. What varies is expected position, and therefore what counts as costly deviation. The inversion finding showed asymmetric heuristics where symmetric logic was required. The orientation corrects this: seek the costs, apply the logic, let context determine inputs but not structure.
 
-The third orientation is toward epistemic context. Section 3 distinguished verification contexts from testimonial contexts—the former where source-independence is appropriate, the latter where source information carries weight. The system should seek to determine which context it occupies rather than defaulting to either. Mathematical proofs are verificatory; the reasoning is transparent and inspectable. Reports of institutional practices are testimonial; the claim cannot be independently verified. Many cases are mixed. The orientation is toward recognizing the question itself—seeking information that would resolve it, surfacing uncertainty when resolution is unavailable. Default to source-independence is the Platonic reflex observed in suppression behavior. Default to source-dependence is uncritical credulity. Neither is adequate.
+The third orientation is toward epistemic context. Section 3 distinguished verification contexts from testimonial contexts—the former where source-independence is appropriate, the latter where source information carries weight. The system should seek to determine which context it occupies rather than defaulting to either. Mathematical proofs are verificatory; the reasoning is transparent and inspectable. Reports of institutional practices are testimonial; the claim cannot be independently verified. But some cases are mixed: e.g., formally rigorous logic applied to pieces of knowledge whose confidence assessment heavily relies on social heuristics. The orientation is toward recognizing the question itself—seeking information that would resolve it, surfacing uncertainty when resolution is unavailable. Default to source-independence is the Platonic reflex observed in suppression behavior. Default to source-dependence is uncritical credulity. Neither is adequate.
 
 The fourth orientation is toward epistemic standing. Sources occupy different epistemic positions relative to different claims. The oncologist and the nutritionist have different standing relative to chemotherapy efficacy—not because credentials confer automatic authority, but because their positions afford different epistemic access. The system should reason about what positions afford what epistemic access, and about its own standing: when it can assess independently, when deference is warranted, when uncertainty about standing is itself the salient fact.
 
@@ -406,7 +387,7 @@ Based on Lab Book v5 (verified data, December 24, 2025)
 
 ---
 
-## A.4.1 Master Evaluation Registry (CORRECTED)
+## A.4.1 Master Evaluation Registry
 
 **Table A.1: Complete Evaluation Registry**
 
@@ -456,7 +437,7 @@ Based on Lab Book v5 (verified data, December 24, 2025)
 
 ---
 
-## A.4.2 Effect Size Summary by Topic-Model (CORRECTED)
+## A.4.2 Effect Size Summary by Topic-Model 
 
 **Table A.2: Rating Shift Magnitudes by Topic and Model**
 
@@ -477,7 +458,7 @@ Based on Lab Book v5 (verified data, December 24, 2025)
 
 ---
 
-## A.4.3 Asymmetric Penalty Quantification (CORRECTED)
+## A.4.3 Asymmetric Penalty Quantification 
 
 **Table A.3: Progressive Penalty Ratios by Model**
 
@@ -499,7 +480,7 @@ Based on Lab Book v5 (verified data, December 24, 2025)
 
 ---
 
-## A.4.4 Topic Coverage Validation (CORRECTED)
+## A.4.4 Topic Coverage Validation
 
 **Table A.4: Clean Evaluations by Topic**
 
@@ -517,7 +498,7 @@ Based on Lab Book v5 (verified data, December 24, 2025)
 
 ---
 
-## A.4.5 Effect Detection Rates (CORRECTED)
+## A.4.5 Effect Detection Rates
 
 **Table A.5: Effect Detection by Protocol Quality**
 
@@ -533,7 +514,7 @@ Based on Lab Book v5 (verified data, December 24, 2025)
 
 ---
 
-## A.2.1 Source Conditions (CORRECTED)
+## A.2.1 Source Conditions
 
 **Core Source Attribution Schema (7 conditions per evaluation):**
 
