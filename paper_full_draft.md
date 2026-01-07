@@ -2,7 +2,7 @@
 
 **Author:** Michele Loi  
 **Affiliation:** University of Milan  
-**Date:** December 2025
+**Date:** January 2026
 
 ## Abstract
 
@@ -841,6 +841,6 @@ All writing-phase artifacts are documented above. Study development materials (2
 
 ---
 
-## References
+## Appendix Only References
 
 Loi, Michele. 2025. "The Journal of Prompt-Engineered Philosophy Or: How I Started to Track AI Assistance and Stopped Worrying About Slop." arXiv:2511.08639. Preprint, arXiv, November 10. https://doi.org/10.48550/arXiv.2511.08639.
