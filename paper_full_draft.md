@@ -12,7 +12,7 @@ Large language models increasingly function as _artificial reasoners_: they eval
 
 ## Section 1: Introduction
 
-AI systems reason. They construct arguments, weigh evidence, form conclusions, and express varying degrees of confidence. But they do so without explicit norms governing *how* they should reason—without what we call an epistemic constitution.
+AI systems reason. They construct arguments, weigh evidence, form conclusions, and express varying degrees of confidence. But they do so without explicit norms governing *how* they should reason—without what one may call an epistemic constitution.
 
 This paper argues that the gap needs correction. Just as Anthropic's Constitutional AI (Bai et al., 2022) introduced explicit principles governing what AI systems should and should not say, we need an analogous framework governing how AI systems form and express beliefs. However, the need for ethical constraints on AI outputs is now widely recognized, while the need for epistemic constraints on AI reasoning has received far less attention.
 
