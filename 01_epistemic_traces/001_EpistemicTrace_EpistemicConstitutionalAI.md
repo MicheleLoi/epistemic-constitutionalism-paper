@@ -1,5 +1,5 @@
 ---
-title: "Epistemic Trace — Constitutional Epistemics & the Ought–Is Collapse (Type 2)"
+title: Epistemic Trace — Constitutional Epistemics & the Ought–Is Collapse (Type 2)
 date: 2025-12-05
 tags:
   - epistemic-trace
@@ -9,6 +9,9 @@ tags:
   - llm-behavior
   - research-strategy
   - ought-is-collapse
+"Model:": Chat GPT 5.1 (Auto)
+Source Chat Name: Epistemic responsibility in AI
+Conversation Transcript Name: Conversation_Transcript_ChatGPT_2025-12-05_epistemic-constitutional-idea_chatgpt
 ---
 
 # 0. Purpose & Provenance
