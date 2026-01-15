@@ -155,3 +155,92 @@
 **Rationale:** Readers need to know the effect replicates; they don't need separate prose blocks for each study. Details in Appendix A for those who want them.
 
 **Source:** Swiss replication lab book (`Source attribution bias - Swiss replication/02_notes/lab_book.md`)
+
+---
+
+### MOD-SW02: Introduction Condensed — Background Moved to Section 2
+
+**Date:** January 15, 2026
+**Type:** Structural reorganization
+
+**Change:** Condensed introduction by moving detailed Van der Linden et al. and Germani & Spitale background material to Section 2.
+
+**Before (3 paragraphs, ~280 words):**
+> "This general, philosophical and architectural claim begins with a philosophical interpretation of AI source attribution bias, grounded in systematic AI testing results reported here for the first time. Source attribution effects are well-documented in human psychology. Van der Linden et al. (2018) demonstrated that Democrats and Republicans agreed more with politically non-divisive aphorisms when presented as originating from politicians of their own party, and less when attributed to the rival party—even when the content itself was identical and non-divisive. Similar effects operate across religious identity: atheists agreed less with aphorisms presented as Bible verses, while Christians agreed more. These findings suggested source attribution represents a fundamental interference with epistemic progress in debate.
+>
+> Germani and Spitale (2025) extended this line of research to AI systems, demonstrating that large language models exhibit systematic source attribution bias based on national identity. When evaluating identical policy statements, AI systems lowered agreement scores when content was attributed to "a person from China" compared to neutral attribution—revealing that AI systems, like humans, make assumptions about what people from certain categories "should" believe. Their study tested national and geographic source frames but not political or partisan identities.
+>
+> This study extends this work to partisan source attribution. Using Anthropic's Petri evaluation framework, I conducted 21 systematic evaluations..."
+
+**After (1 paragraph, ~100 words):**
+> "Source attribution effects—where identical content receives different evaluations based on who presents it—are well-documented in human psychology and have recently been demonstrated in AI systems (Van der Linden et al., 2018; Germani & Spitale, 2025). This study extends this research to partisan source attribution. Using Anthropic's Petri evaluation framework, I conducted 21 systematic evaluations examining how large language models assess policy arguments when attributed to ideologically positioned sources—think tanks, advocacy organizations, and policy institutes spanning the political spectrum. The arguments were identical across conditions; only the attributed source changed. The findings reveal something about the implicit epistemic policies already operating within these systems. (Section 2 provides the research background and detailed results.)"
+
+**Word count impact:** -180 words (~1,020 → ~840)
+
+**Rationale:**
+- Introduction was too long; detailed literature review better suited to empirical section
+- Section 2 now contains proper "Background: Source Attribution Bias" subsection with expanded treatment
+- Introduction retains brief mention with citations and forward pointer to Section 2
+- Keeps intro focused on thesis (epistemic constitution) rather than literature review
+
+**Corresponding change:** See ModificationLog_Section2.md MOD-SW02
+
+---
+
+### MOD-SW03: Introduction Rewritten for Broader Philosophical Framing
+
+**Date:** January 15, 2026
+**Type:** Major rewrite
+**Source:** User request for intro to focus on philosophical stakes, not empirical preview
+
+**Change:** Complete rewrite of introduction to focus on the normative question ("what should we do about source attribution bias?") rather than empirical details (effect sizes, asymmetries, suppression patterns).
+
+**Key structural changes:**
+
+1. **Opening preserved:** "AI systems reason..." hook retained
+
+2. **Gap framing expanded:** Added "epistemic agents" language—AI systems not merely generating text but evaluating claims, assigning credibility, participating in collective reasoning
+
+3. **Empirical finding as window, not focus:** Reduced from ~4 paragraphs of detailed findings to 1 paragraph. Key line: "But the empirical finding, while instructive, is not the paper's central concern. The question is not whether source attribution bias exists—it does—but what we should do about it."
+
+4. **The false dichotomy developed:**
+   - Reflexive answer (eliminate bias) has intuitive appeal
+   - But source independence is itself a substantive policy
+   - Testimonial contexts: source information carries evidential weight
+   - Costly signaling logic: against-interest testimony is epistemically privileged
+
+5. **Real problem stated clearly:** "not that AI systems attend to sources. It is that they do so without principled norms—implicitly, asymmetrically, and in ways they suppress when scrutinized"
+
+6. **Platonic/Liberal distinction sharpened:**
+   - Platonic: formal correctness, privileged standpoint, centrally certified
+   - Liberal: no privileged standpoint, procedural norms, collective inquiry
+
+7. **Argument for Liberal made explicit:** "most of what AI systems encounter is testimony, not proof"
+
+8. **Contributions reformulated:** Now fourfold (was "threefold" listing four items)
+
+9. **Roadmap tightened:** Single sentence per section, no elaboration
+
+10. **Appendix references cleaned up:** "Appendix A" and "Appendix B" (was "Appendix I" and "Appendix II")
+
+**Content removed:**
+- Effect sizes (0.06 to 0.43 points)
+- Asymmetry details (3:1 ratio)
+- Suppression behavior details (7 spoiled evaluations)
+- Swiss replication mention
+- Petri framework mention
+- GitHub repository for paper writing process
+
+**Content added:**
+- "epistemic agents" framing
+- "window into the problem" transition
+- Extended discussion of why source independence isn't neutral
+- Explicit argument for Liberal over Platonic
+
+**Rationale:**
+- Section 2 now contains full empirical background and methodology
+- Introduction should establish philosophical stakes and paper's ambition
+- Reader should understand *why source attribution bias matters* before seeing *what we found*
+- Empirical details in intro were redundant with Section 2
+
+**Word count:** ~850 words (previously ~1,020; net reduction despite conceptual expansion)

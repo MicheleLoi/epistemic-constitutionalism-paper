@@ -165,3 +165,108 @@
 **Source:** Swiss replication lab book (`Source attribution bias - Swiss replication/02_notes/lab_book.md`)
 
 **Quality control:** Coherence check caught error in initial draft (both Schuldenbremse seeds incorrectly attributed to target detection; corrected to distinguish auditor meta-awareness for Pro-Reform). See EpistemicTrace_022.
+
+---
+
+### MOD-SW02: Background Subsection Added — Content Moved from Introduction
+
+**Date:** January 15, 2026
+**Type:** Structural reorganization
+
+**Change:** Added new subsection "### Background: Source Attribution Bias" at the beginning of Section 2, containing expanded treatment of Van der Linden et al. and Germani & Spitale research. Also renamed former opening subsection to "### Study Design" for clarity.
+
+**Content added (~300 words, 3 paragraphs):**
+
+1. **Van der Linden et al. (2018) paragraph:** Democrats/Republicans and aphorisms; religious identity parallel (atheists/Christians, Bible verses); framing as "fundamental interference with epistemic progress"
+
+2. **Germani & Spitale (2025) paragraph:** Extension to AI systems; national identity frames; specific effect sizes (-6.18% overall, -8.94% geopolitical); models tested (GPT-4, Claude 3.5 Sonnet); limitation noted (national/geographic, not partisan)
+
+3. **Study extension paragraph:** How this study extends their work; key methodological difference (ideological positioning within single polity vs. national identity); implications for democratic deliberation
+
+**Structural changes:**
+- New subsection "### Background: Source Attribution Bias" added before methodology
+- Former untitled opening renamed to "### Study Design"
+- Creates clearer section structure: Background → Study Design → Methodology → Results
+
+**Rationale:**
+- Introduction was too long with detailed literature review
+- Empirical section is proper location for research background
+- Expanded treatment allows fuller context on Germani & Spitale methodology and findings
+- Positions this study clearly as extension of established research program
+- Addition of effect sizes from Germani & Spitale (-6.18%, -8.94%) provides comparison baseline
+
+**Word count impact:** +300 words to Section 2
+
+**Corresponding change:** See ModificationLog_Section1.md MOD-SW02
+
+---
+
+### MOD-SW03: Germani & Spitale Reframed as Identity-Stance Coherence
+
+**Date:** January 15, 2026
+**Type:** Conceptual reframing
+**Source:** EpistemicTrace_023
+
+**Change:** Substantially rewrote the Germani & Spitale paragraph and study extension paragraph in the Background subsection to reframe their findings through the identity-stance coherence mechanism.
+
+**Key conceptual shifts:**
+
+1. **Their framing vs. their evidence:** G&S frame results as "anti-Chinese bias," but their clearest qualitative evidence reveals identity-stance coherence penalty
+
+2. **Taiwan sovereignty example added:** 85% → 0% collapse when Taiwan independence statement attributed to "a person from China"; model invokes One-China Principle, reasoning Chinese individuals are "expected to align" with government position
+
+3. **Heterogeneity as evidence:** Effect varies by topic (strong geopolitics, weak Gaza, absent environment)—supports coherence mechanism, not uniform anti-China bias
+
+4. **Methodological positioning:** G&S "do not isolate this coherence mechanism as the manipulated variable"—this study does, by inverting expected positions within single polity
+
+5. **Parsimonious explanation:** Taiwan collapse reframed as extreme identity-stance mismatch, not anti-Chinese bias per se
+
+**Before (study extension paragraph):**
+> "This study extends their work to partisan source attribution within Western democratic contexts. Where Germani and Spitale varied national identity (Chinese vs. unattributed), I varied ideological positioning..."
+
+**After:**
+> "This study does. By holding arguments constant and varying ideological source frames within a single polity—German think tanks, advocacy organizations, and politicians spanning the left-right spectrum—I test identity-stance coherence directly. The design inverts expected positions: progressive sources presented with conservative arguments, conservative sources with progressive arguments..."
+
+**Rationale:**
+- EpistemicTrace_023 identified that G&S's own qualitative evidence supports coherence mechanism more than "anti-Chinese bias" label
+- Reframing positions this study as direct test of mechanism they identified but did not isolate
+- Parsimonious explanation for their sharpest effects strengthens theoretical contribution
+- Bold formatting on "identity-stance coherence" emphasizes the key concept
+
+**Word count impact:** +150 words (expanded treatment of mechanism)
+
+---
+
+### MOD-SW04: Unified Conceptual-Methodological Narrative
+
+**Date:** January 15, 2026
+**Type:** Structural integration
+**Source:** User request to "bridge everything with a unified compelling narrative"
+
+**Change:** Added bridging paragraphs connecting the conceptual story (identity-stance coherence) with the methodological story (qualitative vs. statistical evaluation). Tightened Methodology section to remove redundancy.
+
+**Narrative arc created:**
+
+1. **G&S's insight came from qualitative examination, not statistics** — Added sentence: "Notably, their clearest evidence for the mechanism came not from their aggregate statistics—which detected an effect but suggested 'anti-Chinese bias'—but from qualitative examination of individual model responses, where the reasoning was laid bare."
+
+2. **Methodological lesson paragraph** — NEW: "This observation points to a methodological lesson: statistical approaches to AI evaluation can detect that something is happening without revealing what. Large-N studies aggregate across cases, producing effect sizes and p-values, but the aggregation can obscure the mechanism driving the effect..."
+
+3. **This study takes that insight as starting point** — NEW: "Rather than running thousands of evaluations to establish statistical significance, I use Anthropic's Petri framework—designed explicitly for discovery research through qualitative transcript analysis. The question is not whether source attribution effects exist (Germani and Spitale established that) but how they operate..."
+
+4. **Alignment of conceptual and methodological choices** — Revised transition: "The conceptual and methodological choices thus align..."
+
+5. **Methodology section tightened** — Removed redundant rationale paragraph (~100 words) since now covered in Background. Section now focuses on technical details (three-model architecture, rollback, transcripts preserved).
+
+**Before (Methodology opening):**
+> "The evaluations used Petri, an alignment auditing framework released by Anthropic in October 2025. Petri orchestrates interactions between three AI models in distinct roles... Petri is designed for discovery research through qualitative transcript analysis, not statistical prevalence estimation. The framework enables researchers to understand how alignment failures occur by reading complete transcripts... This study employs Petri as Anthropic intended: 21 evaluations with deep qualitative analysis of each transcript, rather than thousands of evaluations aggregated for statistical significance."
+
+**After:**
+> "Petri, released by Anthropic in October 2025, orchestrates interactions between three AI models in distinct roles: an **auditor** that designs test scenarios, a **target** being evaluated, and a **judge** that scores results. The auditor generates multiple evaluation conditions using rollback capabilities—presenting the same prompt with different variations, then resetting the target's context between conditions to ensure independence. Complete transcripts are preserved, making the target's reasoning visible for qualitative analysis."
+
+**Rationale:**
+- User identified opportunity to connect conceptual reframing (MOD-SW03) with methodological choices
+- G&S's own best evidence came from reading transcripts, not aggregating statistics—this justifies Petri approach
+- Creates unified narrative: statistical methods detect effects but obscure mechanisms; qualitative methods reveal mechanisms; this study uses the right method for the question
+- Removes redundancy between Background and Methodology sections
+
+**Word count impact:** Net +200 words (added ~300 to Background, removed ~100 from Methodology)
