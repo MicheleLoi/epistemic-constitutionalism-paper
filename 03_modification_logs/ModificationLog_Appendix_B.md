@@ -104,3 +104,24 @@
 - Artifact counts aligned with actual file structure
 
 All modifications improve accuracy and transparency of the documentation.
+
+---
+
+## Swiss Replication Update — January 2026
+
+### MOD-SW01: Swiss Update Process Addendum Added
+
+**Date:** January 15, 2026
+**Type:** Content addition
+
+**Change:** Added new section "## B.7 Swiss Replication Update (January 2026)" documenting:
+- Update scope (which sections modified)
+- Staged workflow design (proposal document → branch isolation → working files)
+- Coherence check that caught AI error before application
+- AI assistance role and human oversight
+- Artifact locations linking to Swiss project
+- Data availability placeholder
+
+**Rationale:** Paper documents AI-assisted writing process; Swiss update extends that process and requires parallel documentation. The update itself demonstrates the workflow principles advocated in the paper: transparency about AI involvement, staged review, version control for reversibility. The coherence check incident (AI caught its own error) provides additional evidence about verification workflows.
+
+**Source:** Swiss replication project (`proposed_paper_edits/PLAN_swiss_update_integration.md`)

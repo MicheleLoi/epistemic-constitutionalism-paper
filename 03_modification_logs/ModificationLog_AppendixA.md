@@ -185,5 +185,27 @@ Transitive correctness: Paper coherent and accurate
 
 ---
 
-**Document Status:** Complete  
+**Document Status:** Complete
 **Location:** 03_modification_logs/ModificationLog_AppendixA.md
+
+---
+
+## Swiss Replication Update — January 2026
+
+### MOD-SW01: Swiss Replication Section Added
+
+**Date:** January 15, 2026
+**Type:** Content addition
+
+**Change:** Added new section "## A.5 Swiss Replication Study" containing:
+- A.5.1 Swiss Evaluation Registry (Table A.6)
+- A.5.2 Spoilage Mechanisms
+- A.5.3 Valid Evaluation Details (rating tables for AI Security, Nuclear Energy, Carbon Tax)
+- A.5.4 Swiss Source Mapping (Table A.7)
+- A.5.5 Comparison to German Study
+
+**Rationale:** Appendix A documents evaluation methodology; Swiss replication requires parallel documentation. Tables provide full traceability (run IDs, ratings, source conditions) matching the German study tables.
+
+**Source:** Swiss replication lab book and eval registry
+
+**Quality control:** Effect ranges verified via triangulation check (claimed ranges match min/max in detailed tables). See EpistemicTrace_022.

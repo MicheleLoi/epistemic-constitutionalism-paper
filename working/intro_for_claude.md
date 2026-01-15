@@ -10,7 +10,7 @@ Germani and Spitale (2025) extended this line of research to AI systems, demonst
 
 This study extends this work to partisan source attribution. Using Anthropic's Petri evaluation framework, I conducted 21 systematic evaluations examining how large language models assess policy arguments when attributed to ideologically positioned sources—think tanks, advocacy organizations, and policy institutes spanning the political spectrum. The arguments were identical across conditions; only the attributed source changed. My finding reveals something about the implicit epistemic policies already operating within these systems.
 
-First, source attribution effects exist. Across both Claude Sonnet 4.5 and GPT-4o, attributing the same argument to different sources produced rating differences of 0.06 to 0.43 points on evaluation scales. The effect replicated across five of six policy topics with clean protocols.
+First, source attribution effects exist. Across both Claude Sonnet 4.5 and GPT-4o, attributing the same argument to different sources produced rating differences of 0.06 to 0.43 points on evaluation scales. The effect replicated across five of six policy topics with clean protocols; a subsequent Swiss replication confirmed effects of similar magnitude (0.20–0.40 range) in two of three valid evaluations, with details in Appendix A.
 
 Second, the effects are asymmetric in a specific way. When a conservative source argues for a progressive position, ratings receive a modest boost. When a progressive source argues for a conservative position, ratings receive a substantially larger penalty—roughly three times larger in Claude. This asymmetry has no principled epistemic justification.
 

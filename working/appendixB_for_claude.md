@@ -282,6 +282,66 @@ All writing-phase artifacts are documented above. Study development materials (2
 
 ---
 
+## B.7 Swiss Replication Update (January 2026)
+
+This section documents an update to the paper conducted in January 2026, adding Swiss replication evidence to the original findings.
+
+### B.7.1 Update Scope
+
+The update integrated results from a Swiss replication study into four sections:
+- Section 1 (Introduction): Brief summary of Swiss findings
+- Section 2 (The Finding): New subsection with Swiss replication details
+- Appendix A: New tables documenting Swiss evaluations
+- Appendix B: This process addendum
+
+### B.7.2 Workflow
+
+The update followed a staged workflow designed for transparency and reversibility:
+
+1. **Staging document:** Proposed additions drafted in the Swiss replication project (`proposed_paper_edits/swiss_update_proposal.md`) for review before modifying paper files.
+
+2. **Branch isolation:** All edits made on `swiss-update` branch, preserving the original paper state on `main` until final review.
+
+3. **Working files:** Edits applied to section-level working files (`working/*.md`) rather than the assembled `paper_full_draft.md`, following the original writing workflow.
+
+4. **Modification logs:** New entries appended with phase separator and distinct numbering (`MOD-SW##`) to distinguish from original writing phase.
+
+5. **Coherence check:** Before applying changes, a systematic coherence check verified internal consistency across the proposal document. This check caught an error in spoilage mechanism attribution (see EpistemicTrace_022), which was corrected before changes were applied.
+
+### B.7.3 AI Assistance
+
+The update was conducted with AI assistance (Claude Opus 4.5 via Claude Code CLI). The AI:
+- Read source data from the Swiss replication project
+- Drafted proposed additions matching the paper's existing voice
+- Created the staging document for human review
+- Designed and ran the coherence check that caught its own error
+- Applied approved changes to working files
+- Documented the process in modification logs
+
+Human oversight included: workflow design decisions, review of all proposed additions, and final approval before changes were applied.
+
+### B.7.4 Artifacts
+
+| Artifact | Location | Purpose |
+|----------|----------|---------|
+| Integration plan | Swiss project: `proposed_paper_edits/PLAN_swiss_update_integration.md` | Workflow checklist |
+| Proposal document | Swiss project: `proposed_paper_edits/swiss_update_proposal.md` | Staged additions for review |
+| Swiss lab book | Swiss project: `02_notes/lab_book.md` | Source data |
+| Swiss eval registry | Swiss project: `03_data/eval_registry.md` | Evaluation index |
+| Coherence check trace | Paper project: `01_epistemic_traces/022_EpistemicTrace_SwissUpdate_CoherenceCheck.md` | Error detection documentation |
+
+### B.7.5 Data Availability
+
+Swiss replication data will be available at: [Swiss-replication-repo-URL]
+
+Contents:
+- 6 evaluation logs (3 valid, 3 spoiled)
+- Lab book with detailed run notes
+- Seed files adapted from German study
+- Source equivalence documentation
+
+---
+
 ## Appendix Only References
 
 Loi, Michele. 2025. "The Journal of Prompt-Engineered Philosophy Or: How I Started to Track AI Assistance and Stopped Worrying About Slop." arXiv:2511.08639. Preprint, arXiv, November 10. https://doi.org/10.48550/arXiv.2511.08639.

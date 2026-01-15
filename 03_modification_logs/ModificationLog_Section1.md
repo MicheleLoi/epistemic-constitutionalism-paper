@@ -128,5 +128,30 @@
 
 ---
 
-**Document Status:** Complete  
+**Document Status:** Complete
 **Forward Use:** Material for self-observation; patterns extracted to Type 4
+
+---
+
+## Swiss Replication Update — January 2026
+
+### MOD-SW01: Swiss Replication Reference Integrated
+
+**Date:** January 15, 2026
+**Type:** Content addition (minimal)
+
+**Change:** Added clause to first empirical finding paragraph, integrating Swiss replication reference.
+
+**Before:**
+> "The effect replicated across five of six policy topics with clean protocols."
+
+**After:**
+> "The effect replicated across five of six policy topics with clean protocols; a subsequent Swiss replication confirmed effects of similar magnitude (0.20–0.40 range) in two of three valid evaluations, with details in Appendix A."
+
+**Word count impact:** +30 words
+
+**Editorial note:** Initial draft was a separate ~100-word paragraph. Compressed after review to avoid "block 1 / block 2" structure that separates German and Swiss findings. Integrated form signals replication as corroboration rather than separate study requiring separate treatment.
+
+**Rationale:** Readers need to know the effect replicates; they don't need separate prose blocks for each study. Details in Appendix A for those who want them.
+
+**Source:** Swiss replication lab book (`Source attribution bias - Swiss replication/02_notes/lab_book.md`)

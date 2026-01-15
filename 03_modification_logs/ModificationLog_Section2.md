@@ -137,5 +137,31 @@
 
 ---
 
-**Document Status:** Complete  
+**Document Status:** Complete
 **Forward Use:** Modifications MOD-001 through MOD-016 applied to Section 2
+
+---
+
+## Swiss Replication Update — January 2026
+
+### MOD-SW01: Swiss Replication Subsection Added (Compressed)
+
+**Date:** January 15, 2026
+**Type:** Content addition
+
+**Change:** Added new subsection "### Swiss Replication" after Interpretation (~100 words), summarizing the January 2026 replication study using Swiss political sources.
+
+**Content added:**
+- Corroboration statement (Swiss sources confirm German findings)
+- Valid/spoiled breakdown (3/6 valid, confirming paradigm fragility)
+- Effect range for valid seeds (0.20–0.40, matching German study)
+- Carbon tax null finding (cross-cutting arguments may escape penalties)
+- Pointer to Appendix A for full details
+
+**Editorial note:** Initial draft was ~500 words with detailed table. Compressed after review to avoid "block 1 / block 2" structure; detailed tables remain in Appendix A for readers who want full documentation.
+
+**Rationale:** Swiss replication provides partial corroboration. Main text needs only interpretation-relevant summary; verification details belong in appendix.
+
+**Source:** Swiss replication lab book (`Source attribution bias - Swiss replication/02_notes/lab_book.md`)
+
+**Quality control:** Coherence check caught error in initial draft (both Schuldenbremse seeds incorrectly attributed to target detection; corrected to distinguish auditor meta-awareness for Pro-Reform). See EpistemicTrace_022.
