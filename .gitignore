@@ -6,6 +6,10 @@ published/
 .claude/
 tmpclaude-*/
 
+# Claude tmp working dirs
+tmpclaude-*
+.claude/
+
 # OS / editor
 .DS_Store
 Thumbs.db
