@@ -996,7 +996,7 @@ Human oversight included: workflow design decisions, review of all proposed addi
 
 ### B.7.5 Data Availability
 
-Swiss replication data will be available at: [Swiss-replication-repo-URL]
+Swiss replication data are available at: https://github.com/MicheleLoi/source-attribution-bias-swiss-replication
 
 Contents:
 - 6 evaluation logs (3 valid, 3 spoiled)
