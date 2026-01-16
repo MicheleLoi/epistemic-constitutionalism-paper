@@ -6,13 +6,11 @@
 
 ## Abstract
 
-Large language models increasingly function as *artificial reasoners*: they evaluate arguments, assign credibility, and express confidence. And yet their belief-forming behavior is governed by implicit, uninspected "epistemic policies." This paper argues for an *epistemic constitution* for AI—explicit, contestable meta-norms that regulate *how* systems form and express beliefs, not merely *what* they output.
+Large language models increasingly function as *artificial reasoners*: they evaluate arguments, assign credibility, and express confidence. Yet their belief-forming behavior is governed by implicit, uninspected "epistemic policies." This paper argues for an *epistemic constitution* for AI—explicit, contestable meta-norms that regulate *how* systems form and express beliefs. Source attribution bias provides the motivating case: I show that frontier models enforce *identity-stance coherence*, penalizing arguments attributed to sources whose expected ideological position conflicts with the argument's content. When models detect systematic testing, these effects collapse—revealing that systems treat source-sensitivity as bias to suppress rather than as a capacity to execute well.
 
-Source attribution bias provides the motivating case. Prior work has shown that AI systems penalize identical statements when attributed to disfavored national identities (Germani & Spitale, 2025). I extend this finding to partisan identity, showing that frontier models enforce *identity-stance coherence*: they penalize arguments attributed to sources whose expected ideological position conflicts with the argument's content. When models detect systematic testing, these effects collapse—revealing that systems treat source-sensitivity as bias to suppress rather than as a capacity to execute well.
+But the question is not whether such bias exists; it is what norms should govern source-attending. The reflexive answer—eliminate it entirely—treats source independence as a neutral default, which it is not. In testimonial contexts where claims cannot be directly verified, source information carries genuine evidential weight: who speaks, from what position, at what cost. Blanket source independence discards epistemically relevant information.
 
-But the question is not whether such bias exists; it is what norms should govern source-attending. The reflexive answer—eliminate it, evaluate arguments on merit alone—treats source independence as a neutral default, which it is not. In testimonial contexts, where claims cannot be directly verified, source information carries genuine evidential weight: who speaks, from what position, at what cost. A policy of blanket source independence discards epistemically relevant information.
-
-I distinguish two approaches to epistemic constitution design. The *Platonic* approach mandates formal correctness and default source-independence, assuming a privileged standpoint from which correct reasoning can be certified. The *Liberal* approach refuses such privilege, specifying instead procedural norms that protect conditions for collective inquiry and allow principled source-attending grounded in epistemic vigilance and costly signaling. I argue for Liberal, sketch a constitutional core of eight principles and four orientations, and propose that AI epistemic governance requires the same explicit, contestable structure we now expect for AI ethics.
+I distinguish two constitutional approaches: the *Platonic*, which mandates formal correctness and default source-independence from a privileged standpoint, and the *Liberal*, which refuses such privilege, specifying procedural norms that protect conditions for collective inquiry while allowing principled source-attending grounded in epistemic vigilance. I argue for the Liberal approach, sketch a constitutional core of eight principles and four orientations, and propose that AI epistemic governance requires the same explicit, contestable structure we now expect for AI ethics.
 
 ---
 
@@ -706,12 +704,12 @@ Eight document types structured the workflow, organized by function:
 | Type | Name | Count | Function |
 |------|------|-------|----------|
 | 1 | Complete Prompt | 1 | Master document specifying argument architecture, section specifications, tone, and required references. Served as constant input to all sections. |
-| 2 | Epistemic Trace | 20 | Documentation of executive-level decisions, discovery moments, and resolution of discrepancies. Most traces (001–019) document the study development phase; trace 020 documents a writing-phase decision. Select traces (008, 014, 020) informed writing content. |
+| 2 | Epistemic Trace | 23 | Documentation of executive-level decisions, discovery moments, and resolution of discrepancies. Most traces (001–020) document the study development and writing phases; traces 021–023 document post-writing updates and revisions. Select traces (008, 014, 020) informed writing content. Includes documentation of Swiss replication update (see B.7). |
 | 3 | Section Guidance | 2 | Mid-course corrections issued when argument evolution required departures from Complete Prompt specifications. Generated only for Sections 6 and 7. |
 | 4 | Pattern Summary | 9 | Cumulative record of stylistic and structural patterns established in prior sections, preventing inadvertent regression to AI rhetorical defaults. |
 | 5 | Section Summary | 8 | Compressed representation of each completed section's content and commitments, enabling subsequent sections to maintain coherence without full-text context. |
 | 6 | Reference Log | 7 | Running bibliography tracking citations introduced in each section. |
-| 7 | Modification Log | 13 | Documentation of changes made during and after drafting, including paper-level epistemic review modifications. |
+| 7 | Modification Log | 16 | Documentation of changes made during and after drafting, including section-level modifications (13) and paper-level review modifications (3: epistemic review, manual review, style pass). Includes entries for Swiss replication update (see B.7). |
 | 8 | Prompt Development Log | 3 | Documentation of prompt evolution, including main prompt development and mid-course Section Guidance rationale (Sections 6 and 7). |
 
 Additional documentation not assigned type numbers:
