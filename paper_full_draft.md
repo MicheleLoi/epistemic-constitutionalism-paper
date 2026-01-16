@@ -1,4 +1,4 @@
-# Epistemic Constitutionalism for AI: From Source Attribution Bias to Liberal Norms for Artificial Reasoners
+# Epistemic Constitutionalism Or: how to avoid coherence bias.
 
 **Author:** Michele Loi  
 **Affiliation:** University of Milan  
