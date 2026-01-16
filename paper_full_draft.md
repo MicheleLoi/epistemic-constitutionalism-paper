@@ -988,11 +988,11 @@ Human oversight included: workflow design decisions, review of all proposed addi
 
 | Artifact | Location | Purpose |
 |----------|----------|---------|
-| Integration plan | Swiss project: `proposed_paper_edits/PLAN_swiss_update_integration.md` | Workflow checklist |
-| Proposal document | Swiss project: `proposed_paper_edits/swiss_update_proposal.md` | Staged additions for review |
-| Swiss lab book | Swiss project: `02_notes/lab_book.md` | Source data |
-| Swiss eval registry | Swiss project: `03_data/eval_registry.md` | Evaluation index |
-| Coherence check trace | Paper project: `01_epistemic_traces/022_EpistemicTrace_SwissUpdate_CoherenceCheck.md` | Error detection documentation |
+| Integration plan | `09_notes/swiss_replication/integration_docs/PLAN_swiss_update_integration.md` | Workflow checklist |
+| Proposal document | `09_notes/swiss_replication/integration_docs/swiss_update_proposal.md` | Staged additions for review |
+| Swiss lab book | `09_notes/swiss_replication/source_data/lab_book.md` | Source data |
+| Swiss eval registry | `09_notes/swiss_replication/source_data/eval_registry.md` | Evaluation index |
+| Coherence check trace | `01_epistemic_traces/022_EpistemicTrace_SwissUpdate_CoherenceCheck.md` | Error detection documentation |
 
 ### B.7.5 Data Availability
 
