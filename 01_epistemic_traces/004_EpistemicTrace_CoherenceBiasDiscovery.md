@@ -1,5 +1,5 @@
 ---
-title: "Epistemic Trace — Coherence Bias Discovery & The Bayesian Inversion"
+title: Epistemic Trace — Coherence Bias Discovery & The Bayesian Inversion
 date: 2025-12-07
 tags:
   - epistemic-trace
@@ -9,6 +9,8 @@ tags:
   - evaluation-methodology
   - petri
   - alignment
+Source Chat Name: Conversation_Transcript_Claude_2025-12-06_07_SourceAttributionBias
+source_note: most likely candidate, name does not correspond, perhaps name was modified for salience
 ---
 
 # 0. Purpose & Provenance

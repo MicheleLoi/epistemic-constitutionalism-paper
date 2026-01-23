@@ -12,6 +12,7 @@
   - `011_EpistemicTrace_Petri_vs_Sonnet_4_5_alternatives.md`
   - `study4_lab_book.md`
   - Multiple evaluation files (.eval)
+Add problem in metadata: was initially stored under notes, hence the numbering felt, hence 14b (find elegant expression)
 
 ## Conversation Overview
 

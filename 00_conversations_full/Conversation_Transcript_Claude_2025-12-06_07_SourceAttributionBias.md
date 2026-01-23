@@ -1,9 +1,4 @@
-**# Conversation Transcript: Source Attribution Bias Analysis
-**Source** Conversation_Transcript_Claude_2025-12-06_07_SourceAttributionBias
-**Date:** December 6-7, 2025  
-**Model used:** Claude Sonnet 4 (claude.ai)
 
----
 
 ## Studies Registry (Chronological Order of Execution)
 
