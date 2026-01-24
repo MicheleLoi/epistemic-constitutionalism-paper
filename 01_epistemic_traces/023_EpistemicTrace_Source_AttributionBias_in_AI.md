@@ -1,5 +1,5 @@
 ---
-source chat: Conversation_Transcript_Claude_2025-24-12-2025_Lab_book_data_inconsistency_between_summary_and_registry
+source chat: Conversation_Transcript_ChatGPT_2026-01-15_Source_Attribution_Bias_in_AI.md
 source_chat_id:
   - https://chatgpt.com/g/g-p-6960e6a54e8c81918113867aed9128c3-source-attribution-bias/c/69695c99-671c-8330-b1f6-316a12511617
 date: 2026-01-15

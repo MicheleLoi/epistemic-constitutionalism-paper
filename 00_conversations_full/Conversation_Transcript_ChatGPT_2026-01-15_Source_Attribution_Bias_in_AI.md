@@ -1,6 +1,6 @@
 ---
 source chat ID: https://chatgpt.com/g/g-p-6960e6a54e8c81918113867aed9128c3-source-attribution-bias/project
-date: 2026-12-15
+date: 2026-01-15
 Source Chat Name: Source Attribution Bias in AI
 ---
 #####   

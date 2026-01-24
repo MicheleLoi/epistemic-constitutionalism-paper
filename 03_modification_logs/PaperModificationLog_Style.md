@@ -200,7 +200,7 @@
 ## LLM Writing Check Pass (2026-01-23) — Post-arXiv:2601.14295v1
 
 **Date:** 2026-01-23
-**Status:** Post-publication change (arXiv:2601.14295v1 submitted 2026-01-24)
+**Status:** Post-publication change (arXiv:2601.14295v1 submitted 2026-01-16)
 **Source chat:** Claude Code session (cross-project from Guidance for Policymakers)
 **Model:** Claude Opus 4.5
 **Methodology:** See `01_epistemic_traces/024_EpistemicTrace_LLM_Writing_Check_Methodology.md`

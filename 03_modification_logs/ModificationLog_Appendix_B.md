@@ -1,9 +1,10 @@
 # Modification Log: Appendix B
 
-**Document:** Appendix_B.md (Paper Writing Documentation)  
-**Conversation:** Conversation_Transcript_Claude_2025-12-26_AI_assisted_paper_writing_documentation_and_transparency  
-**Model:** Opus  
-**Date:** December 26, 2025
+**Document:** Appendix_B.md (Paper Writing Documentation)
+**Conversation:** Conversation_Transcript_Claude_2025-12-26_AI_assisted_paper_writing_documentation_and_transparency
+**Model:** Opus
+**Generated:** December 26, 2025
+**Last Updated:** January 24, 2026 (Post-arXiv:2601.14295v1)
 
 ---
 
@@ -125,3 +126,92 @@ All modifications improve accuracy and transparency of the documentation.
 **Rationale:** Paper documents AI-assisted writing process; Swiss update extends that process and requires parallel documentation. The update itself demonstrates the workflow principles advocated in the paper: transparency about AI involvement, staged review, version control for reversibility. The coherence check incident (AI caught its own error) provides additional evidence about verification workflows.
 
 **Source:** Swiss replication project (`proposed_paper_edits/PLAN_swiss_update_integration.md`)
+
+---
+
+## Post-arXiv:2601.14295v1 — January 2026
+
+### MOD-PV01: Epistemic Trace and Conversation Counts Updated
+
+**Date:** 2026-01-24
+**Type:** Count correction
+
+**Changes:**
+- Epistemic Traces: 20 → 25 (added traces 021–024 documenting post-v1 and Swiss update phases)
+- Conversation Transcripts: 43 → 45 (verified actual count in repository)
+
+**Locations:** B.1.3 (document type table), B.3.1 (artifact registry), B.5.1 (conversation transcripts), B.5.2 (epistemic traces)
+
+---
+
+### MOD-PV02: Section B.8 Added (Post-v1 Revisions)
+
+**Date:** 2026-01-24
+**Type:** Content addition
+
+**Change:** Added new section "## B.8 Post-v1 Revisions (January 2026)" documenting:
+- LLM Writing Check Pass (2026-01-23): ~800 words cut
+- Patterns addressed: cross-section repetition, excessive forward-previewing
+- Methodology reference to EpistemicTrace_024
+- Changes reference to PaperModificationLog_Style.md
+
+**Rationale:** Post-v1 changes require documentation for transparency. The LLM Writing Check Pass was conducted after arXiv submission and must be distinguished from pre-v1 edits (Swiss replication, G&S reframing, style pass were all completed January 15-16).
+
+**Source:** `05_section_guidance/SectionGuidance_AppendixB_PostV1.md`
+
+---
+
+### MOD-PV03: Germani & Spitale Reframing Added to B.7.1
+
+**Date:** 2026-01-24
+**Type:** Content addition
+
+**Change:** Expanded B.7.1 "Update Scope" to document the G&S reframing that occurred during the pre-v1 update phase (January 15-16). Added explanation that Section 2's treatment of Germani & Spitale was rewritten to reframe their findings through identity-stance coherence mechanism, with reference to EpistemicTrace_023.
+
+**Rationale:** The G&S reframing was part of the same pre-v1 update phase as Swiss replication but was not explicitly documented in B.7. This addition ensures transparency about all substantive changes made during that phase.
+
+---
+
+### MOD-PV04: Reference Insertions Added to B.8.2
+
+**Date:** 2026-01-24
+**Type:** Content addition
+
+**Change:** Added new subsection "### B.8.2 Reference Insertions (2026-01-24)" documenting three references inserted post-v1:
+- Lloyd (2025)
+- Peters (2024)
+- Kasirzadeh & Gabriel (2023)
+
+**Rationale:** These reference insertions were post-v1 changes that need documentation in Appendix B for completeness.
+
+---
+
+### MOD-PV05: Document Type Counts Updated
+
+**Date:** 2026-01-24
+**Type:** Count correction
+
+**Changes:**
+- Section Guidance: 2 → 3 (added SectionGuidance_AppendixB_PostV1)
+- Pattern Summaries: 9 → 10 (added PatternSummary_Style)
+- Modification Logs: 13 → 16 (13 section-level + 3 paper-level)
+- Prompt Development Logs: 3 → 4 (added PromptDevelopmentLog_AppendixB_PostV1)
+
+**Locations:** B.1.3 (document type table), B.3.1 (artifact registry)
+
+---
+
+### MOD-PV06: Epistemic Trace Categorization Corrected
+
+**Date:** 2026-01-24
+**Type:** Content correction
+
+**Issue:** Epistemic traces were incorrectly categorized. B.1.3 said "traces 020–024 document writing-phase and post-v1 decisions" but traces 021–023 are pre-v1 (post-writing but before submission). B.5.2 did not list traces 021–024 or mention 014b. B.6 said "19 epistemic traces" for study development instead of 20.
+
+**Changes:**
+- B.1.3: Corrected trace categorization to: Study development (001–019 + 014b = 20), Writing phase (020 = 1), Post-writing pre-v1 (021–023 = 3), Post-v1 (024 = 1)
+- B.5.2: Added explicit listing of post-writing pre-v1 traces (021–023) and post-v1 trace (024) with dates and purposes
+- B.6: Changed "19 epistemic traces" to "20 epistemic traces including 014b"
+- B.8.2: Updated reference to include MOD-013
+
+**Rationale:** Accurate phase attribution is essential for understanding the paper's development timeline. The distinction between pre-v1 and post-v1 changes matters for transparency.

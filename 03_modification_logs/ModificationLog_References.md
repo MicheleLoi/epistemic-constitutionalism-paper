@@ -1,8 +1,9 @@
 # Modification Log: References
 
-**Document Type:** Type 7 (Modification Log)  
-**Document Label:** ModificationLog_References  
-**Generated:** December 26, 2025  
+**Document Type:** Type 7 (Modification Log)
+**Document Label:** ModificationLog_References
+**Generated:** December 26, 2025
+**Last Updated:** January 24, 2026 (Post-arXiv:2601.14295v1)
 **Source Files:** ReferenceLog_Section1 through ReferenceLog_Section7
 
 ---
@@ -131,12 +132,12 @@
 
 ---
 
-## MOD-011: Lloyd (2025) and Peters (2024) Addition
+## MOD-011: Lloyd (2025) and Peters (2024) Bibliographic Details Documented
 
-**Date:** December 26, 2025  
-**Type:** Citation addition  
-**Action:** Added two previously incomplete citations from Complete Prompt "should cite" list  
-**Citations added:**
+**Date:** December 26, 2025
+**Type:** Citation documentation
+**Action:** Documented bibliographic details for two previously incomplete citations from Complete Prompt "should cite" list. (Note: Actual insertion into paper deferred; see MOD-012.)
+**Citations documented:**
 1. Lloyd, D. (2025). Epistemic responsibility: Toward a community standard for human–AI collaborations. *Frontiers in Artificial Intelligence*. https://doi.org/10.3389/frai.2025.1635691
 2. Peters, U. (2024). Living with uncertainty: Full transparency of AI is not needed for epistemic trust in AI-based science. *Social Epistemology Review and Reply Collective*, 13(6), 8–15. https://wp.me/p1Bfg0-8Si
 
@@ -162,26 +163,38 @@
 - arXiv preprints use standard format without DOI
 - Format follows APA 7th edition guidelines
 
-**Total modifications:** 11  
+**Total modifications:** 11
 **Total citations in final version:** 16
 
 ---
 
-## MOD-012: Lloyd (2025) and Peters (2024) Inserted into paper_full_draft.md (Post-arXiv:2601.14295v1)
+## Post-arXiv:2601.14295v1 — January 2026
+
+### MOD-012: Lloyd (2025) and Peters (2024) Inserted
 
 **Date:** 2026-01-24
-**Status:** Post-publication change (arXiv:2601.14295v1 submitted 2026-01-24)
 **Type:** Citation insertion
-**Action:** Actually inserted Lloyd (2025) and Peters (2024) references into paper_full_draft.md References section
+**Action:** Inserted Lloyd (2025) and Peters (2024) references into paper_full_draft.md References section
 **Details:**
-- MOD-011 documented the bibliographic details but these were never inserted into paper_full_draft.md
+- MOD-011 documented bibliographic details but these were never inserted into paper_full_draft.md
 - Citations were present in body text (Section 4, "The Design Question") but missing from References
 - Now inserted in alphabetical order
-**Source:** Epistemic trace 017 + ChatGPT conversation transcript (Conversation_Transcript_ChatGPT_2025-12-05_epistemic_responsibility_in_AI.md)
-**Source chat:** Claude Code session 2026-01-24 (cross-project from Guidance for Policymakers)
+**Source:** EpistemicTrace_017 + ChatGPT conversation transcript (Conversation_Transcript_ChatGPT_2025-12-05_epistemic_responsibility_in_AI.md)
+
+---
+
+### MOD-013: Kasirzadeh & Gabriel (2023) Added
+
+**Date:** 2026-01-24
+**Type:** Citation addition
+**Action:** Added Kasirzadeh & Gabriel (2023) citation to References section
+**Citation added:**
+Kasirzadeh, A., & Gabriel, I. (2023). In conversation with artificial intelligence: Aligning language models with human values. *Philosophy & Technology*, 36(27). https://doi.org/10.1007/s13347-023-00606-x
+
+**Rationale:** Related work on AI alignment through conversational norms. Citation added to Section 4 (see ModificationLog_Section4 MOD-010); reference entry required for completeness.
 
 ---
 
 **Document Status:** Complete
 **Final output:** references_compiled.md
-**Total modifications:** 12
+**Total modifications:** 13

@@ -708,19 +708,19 @@ Eight document types structured the workflow, organized by function:
 | Type | Name | Count | Function |
 |------|------|-------|----------|
 | 1 | Complete Prompt | 1 | Master document specifying argument architecture, section specifications, tone, and required references. Served as constant input to all sections. |
-| 2 | Epistemic Trace | 23 | Documentation of executive-level decisions, discovery moments, and resolution of discrepancies. Most traces (001–020) document the study development and writing phases; traces 021–023 document post-writing updates and revisions. Select traces (008, 014, 020) informed writing content. Includes documentation of Swiss replication update (see B.7). |
-| 3 | Section Guidance | 2 | Mid-course corrections issued when argument evolution required departures from Complete Prompt specifications. Generated only for Sections 6 and 7. |
-| 4 | Pattern Summary | 9 | Cumulative record of stylistic and structural patterns established in prior sections, preventing inadvertent regression to AI rhetorical defaults. |
+| 2 | Epistemic Trace | 25 | Documentation of executive-level decisions, discovery moments, and resolution of discrepancies. Study development phase: 001–019 + 014b (20 traces). Writing phase: 020 (1 trace). Post-writing pre-v1: 021–023 (3 traces). Post-v1: 024 (1 trace). Select traces (008, 014, 020) informed writing content. |
+| 3 | Section Guidance | 3 | Mid-course corrections issued when argument evolution required departures from Complete Prompt specifications. Generated for Sections 6, 7, and post-v1 Appendix B update. |
+| 4 | Pattern Summary | 10 | Cumulative record of stylistic and structural patterns established in prior sections, plus style pass patterns. |
 | 5 | Section Summary | 8 | Compressed representation of each completed section's content and commitments, enabling subsequent sections to maintain coherence without full-text context. |
 | 6 | Reference Log | 7 | Running bibliography tracking citations introduced in each section. |
-| 7 | Modification Log | 16 | Documentation of changes made during and after drafting, including section-level modifications (13) and paper-level review modifications (3: epistemic review, manual review, style pass). Includes entries for Swiss replication update (see B.7). |
-| 8 | Prompt Development Log | 3 | Documentation of prompt evolution, including main prompt development and mid-course Section Guidance rationale (Sections 6 and 7). |
+| 7 | Modification Log | 16 | Documentation of changes made during and after drafting, including section-level logs (13) and paper-level review logs (3: epistemic review, manual review, style pass). |
+| 8 | Prompt Development Log | 4 | Documentation of prompt evolution, including main prompt development, mid-course Section Guidance rationale (Sections 6 and 7), and post-v1 Appendix B update. |
 
 Additional documentation not assigned type numbers:
 
 | Category | Count | Function |
 |----------|-------|----------|
-| Conversation Transcripts | 43 | Complete records of all AI conversations (Claude and ChatGPT). 15 transcripts document the writing phase; 28 document the study development phase. |
+| Conversation Transcripts | 45 | Complete records of all AI conversations (Claude and ChatGPT). 15 transcripts document the writing phase; 28 document the study development phase; 2 document post-v1 updates. |
 | Working Notes | ~35 files | Seeds, extraction scripts, verification reports, Lab Book versions (v1–v5, with v5 authoritative), and intermediate analyses preserved in 09_notes/. |
 
 **Feed-forward vs. retrospective distinction:** Types 1, 3, 4, and 5 routinely fed forward into subsequent writing instances. Types 6, 7, and 8 documented the process retrospectively for transparency and review. Type 2 (Epistemic Traces) served primarily as retrospective documentation, with exceptions: EpistemicTrace_020 informed Lab Book versioning decisions, and EpistemicTraces 008 and 014 informed Section 2's acknowledgment of protocol iteration (see MOD-014 in ModificationLog_Section2).
@@ -790,18 +790,18 @@ Three meta-patterns proved particularly important:
 |-------------------|----------|-------|--------|
 | Complete Prompt | 02_main_prompt/ | 1 | ✅ Authoritative |
 | Section Summaries | 06_section_summaries/ | 8 | ✅ Complete (S1–S8) |
-| Pattern Summaries | 04_pattern_summaries/ | 9 | ✅ Complete (S1–S9) |
-| Section Guidance | 05_section_guidance/ | 2 | ✅ Complete (S6, S7) |
-| Modification Logs | 03_modification_logs/ | 13 | ✅ Complete (S1–S9 + References + Paper Review + ModificationLog_AppendixA.md + ModificationLog_Appendix_B.md) |
+| Pattern Summaries | 04_pattern_summaries/ | 10 | ✅ Complete (S1–S9 + Style) |
+| Section Guidance | 05_section_guidance/ | 3 | ✅ Complete (S6, S7, AppendixB_PostV1) |
+| Modification Logs | 03_modification_logs/ | 16 | ✅ Complete (13 section-level + 3 paper-level) |
 | Reference Logs | 07_reference_logs/ | 7 | ✅ Complete (S1–S7) |
-| Prompt Development Logs | 08_prompt_development_logs/ | 3 | ✅ Complete (Main, S6, S7) |
+| Prompt Development Logs | 08_prompt_development_logs/ | 4 | ✅ Complete (Main, S6, S7, AppendixB_PostV1) |
 
 **Research and Process Documentation**
 
 | Artifact Category | Location | Count | Status |
 |-------------------|----------|-------|--------|
-| Epistemic Traces | 01_epistemic_traces/ | 20 | ✅ Complete |
-| Conversation Transcripts | 00_conversations_full/ | 43 | ✅ Complete |
+| Epistemic Traces | 01_epistemic_traces/ | 25 | ✅ Complete |
+| Conversation Transcripts | 00_conversations_full/ | 45 | ✅ Complete |
 | Working Notes | 09_notes/ | ~35 files | Seeds, extraction scripts, verification reports, Lab Book versions (v1–v5, with v5 authoritative), and intermediate analyses |
 
 **Output Documents**
@@ -886,7 +886,7 @@ The pattern suggests that Sonnet succeeds when tasks are genuinely mechanical wi
 
 ### B.5.1 Conversation Transcripts
 
-Complete transcripts of all 43 AI conversations are preserved in the project repository (00_conversations_full/). 
+Complete transcripts of all 45 AI conversations are preserved in the project repository (00_conversations_full/). 
 
 **Writing phase transcripts (December 23–26, 2025):**
 
@@ -912,16 +912,23 @@ Complete transcripts of all 43 AI conversations are preserved in the project rep
 
 ### B.5.2 Epistemic Traces
 
-Twenty Epistemic Traces document decision points throughout the research and writing process (01_epistemic_traces/). Each trace corresponds to a source conversation, with one exception noted below.
+Twenty-five Epistemic Traces document decision points throughout the research and writing process (01_epistemic_traces/). Each trace corresponds to a source conversation, with one exception noted below.
 
 **Traces that informed writing content:**
 - EpistemicTrace_008, 014: Protocol development documentation from Study 2 pilots. Referenced in Section 2's acknowledgment of protocol iteration (MOD-014).
 - EpistemicTrace_020: Resolution of model count discrepancy between Lab Book versions. Established Lab Book v5 as authoritative.
 
-**Study development phase traces (available but not documented here):**
-- EpistemicTrace_001–007, 009–013, 015–017, 019: Research phase documentation (study design evolution, methodology decisions, conceptual development)
+**Study development phase (20 traces):**
+- EpistemicTrace_001–019 + 014b: Research phase documentation (study design evolution, methodology decisions, conceptual development)
+- Exception: EpistemicTrace_018 (LLM paper detection) is preserved, but its source conversation is withheld as it contains personal remarks irrelevant to this paper.
 
-**Exception:** EpistemicTrace_018 (LLM paper detection) is preserved, but its source conversation is withheld as it contains personal remarks irrelevant to this paper.
+**Post-writing, pre-v1 (3 traces):**
+- EpistemicTrace_021 (Jan 7, 2026): Epistemic standing examples for manual review
+- EpistemicTrace_022 (Jan 15, 2026): Swiss update coherence check
+- EpistemicTrace_023 (Jan 15, 2026): Germani & Spitale reframing analysis
+
+**Post-v1 (1 trace):**
+- EpistemicTrace_024 (Jan 23, 2026): LLM Writing Check methodology
 
 Additionally available:
 - Section Guidance documents with associated Prompt Development Logs (05_section_guidance/, 08_prompt_development_logs/)
@@ -946,21 +953,25 @@ This appendix has documented the paper writing process (December 23–26, 2025),
 
 The process revealed that weaker models pose hallucination risks even for seemingly mechanical tasks like data compilation, suggesting that transparent AI-assisted writing requires either consistent use of stronger models for empirical content or systematic human verification of AI-generated data.
 
-All writing-phase artifacts are documented above. Study development materials (28 conversation transcripts, 19 epistemic traces) are preserved and available for review, with one exception: the source conversation for EpistemicTrace_018 is withheld as it contains personal remarks irrelevant to this paper. This comprehensive availability of process documentation is consistent with the paper's argument that epistemic transparency—knowing how claims were produced—is essential to warranted trust in AI-mediated information.
+All writing-phase artifacts are documented above. Study development materials (28 conversation transcripts, 20 epistemic traces including 014b) are preserved and available for review, with one exception: the source conversation for EpistemicTrace_018 is withheld as it contains personal remarks irrelevant to this paper. This comprehensive availability of process documentation is consistent with the paper's argument that epistemic transparency—knowing how claims were produced—is essential to warranted trust in AI-mediated information.
 
 ---
 
-## B.7 Swiss Replication Update (January 2026)
+## B.7 Swiss Replication Update (January 15–16, 2026)
 
-This section documents an update to the paper conducted in January 2026, adding Swiss replication evidence to the original findings.
+This section documents an update to the paper conducted on January 15–16, 2026, adding Swiss replication evidence and reframing prior work.
 
 ### B.7.1 Update Scope
 
-The update integrated results from a Swiss replication study into four sections:
+The update integrated results from a Swiss replication study and reframed the discussion of prior work:
+
+**Swiss replication additions:**
 - Section 1 (Introduction): Brief summary of Swiss findings
 - Section 2 (The Finding): New subsection with Swiss replication details
 - Appendix A: New tables documenting Swiss evaluations
 - Appendix B: This process addendum
+
+**Germani & Spitale reframing:** Section 2's treatment of Germani & Spitale (2025) was substantially rewritten to reframe their findings through the identity-stance coherence mechanism. Their study framed results as "anti-Chinese bias," but their clearest qualitative evidence reveals an identity-stance coherence penalty—models penalize arguments that deviate from expected positions for attributed identities. This reframing positions the present study as isolating the coherence mechanism that G&S's evidence suggested but did not directly test. See EpistemicTrace_023 for the analysis underlying this reframing.
 
 ### B.7.2 Workflow
 
@@ -992,21 +1003,56 @@ Human oversight included: workflow design decisions, review of all proposed addi
 
 | Artifact | Location | Purpose |
 |----------|----------|---------|
-| Integration plan | `09_notes/swiss_replication/integration_docs/PLAN_swiss_update_integration.md` | Workflow checklist |
-| Proposal document | `09_notes/swiss_replication/integration_docs/swiss_update_proposal.md` | Staged additions for review |
-| Swiss lab book | `09_notes/swiss_replication/source_data/lab_book.md` | Source data |
-| Swiss eval registry | `09_notes/swiss_replication/source_data/eval_registry.md` | Evaluation index |
-| Coherence check trace | `01_epistemic_traces/022_EpistemicTrace_SwissUpdate_CoherenceCheck.md` | Error detection documentation |
+| Integration plan | Swiss project: `proposed_paper_edits/PLAN_swiss_update_integration.md` | Workflow checklist |
+| Proposal document | Swiss project: `proposed_paper_edits/swiss_update_proposal.md` | Staged additions for review |
+| Swiss lab book | Swiss project: `02_notes/lab_book.md` | Source data |
+| Swiss eval registry | Swiss project: `03_data/eval_registry.md` | Evaluation index |
+| Coherence check trace | Paper project: `01_epistemic_traces/022_EpistemicTrace_SwissUpdate_CoherenceCheck.md` | Error detection documentation |
 
 ### B.7.5 Data Availability
 
-Swiss replication data are available at: https://github.com/MicheleLoi/source-attribution-bias-swiss-replication
+Swiss replication data will be available at: [Swiss-replication-repo-URL]
 
 Contents:
 - 6 evaluation logs (3 valid, 3 spoiled)
 - Lab book with detailed run notes
 - Seed files adapted from German study
 - Source equivalence documentation
+
+---
+
+## B.8 Post-v1 Revisions (January 2026)
+
+This section documents changes made after submission of arXiv:2601.14295v1 (submitted 2026-01-16).
+
+### B.8.1 LLM Writing Check Pass (2026-01-23)
+
+**Scope:** Systematic editing pass to reduce signature LLM writing problems.
+
+**Patterns addressed:**
+- **Cross-section repetition:** Same ideas restated across multiple sections (e.g., suppression behavior explained five times)
+- **Excessive forward-previewing:** Section closings announcing what next sections would say
+- **Section openers restating conclusions:** New sections beginning by restating previous section's conclusion verbatim
+
+**Method:** Concept inventory to flag ideas appearing in >2 sections stating (not referencing) the same thing; phrase-level search for repeated distinctive phrases; trust-the-reader test for each paragraph.
+
+**Result:** ~800 words cut across Sections 3, 4, 5, 6, 7, and 9. Primary cuts targeted suppression behavior restatements and forward-preview sentences.
+
+**Methodology documented in:** `01_epistemic_traces/024_EpistemicTrace_LLM_Writing_Check_Methodology.md`
+
+**Changes detailed in:** `03_modification_logs/PaperModificationLog_Style.md` (section "LLM Writing Check Pass")
+
+### B.8.2 Reference Insertions (2026-01-24)
+
+Three references were inserted into the paper that were cited in body text but missing from the References section:
+
+1. **Lloyd (2025)** — Epistemic responsibility framework for human-AI collaborations
+2. **Peters (2024)** — Epistemic trust in AI-based science without full transparency
+3. **Kasirzadeh & Gabriel (2023)** — AI alignment and constitutional design
+
+The first two were documented in MOD-011 (December 2025) but never actually inserted. Kasirzadeh & Gabriel was a new addition supporting Section 4's discussion of constitutional approaches to AI alignment.
+
+**Changes detailed in:** `03_modification_logs/ModificationLog_References.md` (MOD-012, MOD-013) and `03_modification_logs/ModificationLog_Section4.md` (MOD-010)
 
 ---
 

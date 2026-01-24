@@ -1,3 +1,7 @@
+---
+date: 2026-01-15
+---
+
 # Claude Code brief — Swiss replication evidence update
 
 ## Edit targets (ONLY these)
