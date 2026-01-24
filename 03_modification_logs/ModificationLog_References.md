@@ -167,5 +167,21 @@
 
 ---
 
-**Document Status:** Complete  
+## MOD-012: Lloyd (2025) and Peters (2024) Inserted into paper_full_draft.md (Post-arXiv:2601.14295v1)
+
+**Date:** 2026-01-24
+**Status:** Post-publication change (arXiv:2601.14295v1 submitted 2026-01-24)
+**Type:** Citation insertion
+**Action:** Actually inserted Lloyd (2025) and Peters (2024) references into paper_full_draft.md References section
+**Details:**
+- MOD-011 documented the bibliographic details but these were never inserted into paper_full_draft.md
+- Citations were present in body text (Section 4, "The Design Question") but missing from References
+- Now inserted in alphabetical order
+**Source:** Epistemic trace 017 + ChatGPT conversation transcript (Conversation_Transcript_ChatGPT_2025-12-05_epistemic_responsibility_in_AI.md)
+**Source chat:** Claude Code session 2026-01-24 (cross-project from Guidance for Policymakers)
+
+---
+
+**Document Status:** Complete
 **Final output:** references_compiled.md
+**Total modifications:** 12

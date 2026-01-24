@@ -78,5 +78,18 @@
 
 ---
 
-**Document Status:** Complete  
-**Total Modifications:** 9
+## MOD-010: Kasirzadeh & Gabriel Citation Added (Post-arXiv)
+
+**Location:** "The Design Question" subsection
+**Status:** Post-publication change (arXiv:2601.14295v1 submitted 2026-01-24)
+**Change:** Added citation to Kasirzadeh & Gabriel (2022) after existing related work paragraph, before "Our question is different"
+**Text added:** "Kasirzadeh and Gabriel (2022) develop conversational norms for AI through Gricean maxims and speech act theory—addressing how systems should communicate. The present paper asks the prior question: how should AI systems form the beliefs they then express?"
+**Reference added:** Full citation in References section
+**Rationale:** Related work developing norms for AI communication. Acknowledged but differentiated: conversational norms (output) vs. epistemic norms (input). Epistemic constitution framed as prior—you must form beliefs well before you can express them well.
+**Analysis:** See `09_notes/related_work_kasirzadeh_gabriel_2022.md`
+**Source chat:** Claude Code session 2026-01-24 (cross-project from Guidance for Policymakers)
+
+---
+
+**Document Status:** Complete
+**Total Modifications:** 10

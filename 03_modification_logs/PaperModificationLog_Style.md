@@ -194,3 +194,34 @@
 | Section 7 | 4 | Choppy declaratives |
 | Section 8 | 3 | Choppy declaratives, colon-fragments |
 | Section 9 | 4 | Choppy declaratives, colon-fragments |
+
+---
+
+## LLM Writing Check Pass (2026-01-23) — Post-arXiv:2601.14295v1
+
+**Date:** 2026-01-23
+**Status:** Post-publication change (arXiv:2601.14295v1 submitted 2026-01-24)
+**Source chat:** Claude Code session (cross-project from Guidance for Policymakers)
+**Model:** Claude Opus 4.5
+**Methodology:** See `01_epistemic_traces/024_EpistemicTrace_LLM_Writing_Check_Methodology.md`
+
+**Goal:** Reduce repetition and excessive explanation—signature LLM patterns.
+
+### Changes made:
+
+| Location | Before | After | Pattern |
+|----------|--------|-------|---------|
+| Section 3, line 171 | "The suppression behavior confirms this diagnosis. Lacking criteria to distinguish legitimate source-attending from discrimination or prejudice, AIs default to source independence: evaluate arguments without regard to who advances them. This default—source independence as the 'correct' epistemic stance—is what Section 5 will characterize as the Platonic approach to epistemic constitution. It is the AI's implicit theory of what good reasoning requires." | "The suppression behavior confirms this: lacking criteria to distinguish legitimate source-attending from prejudice, models default to source independence—the Platonic approach Section 5 will characterize." | REPETITION: suppression behavior already explained in Section 2 |
+| Section 3, closing | "To sum up, current AI systems oscillate between two inadequate states: inverted source-attending during normal operation and Platonic source independence under scrutiny. Neither is governed by explicit norms. What is needed is an epistemic constitution—explicit meta-norms for belief formation. Section 4 introduces this concept. Designing such a constitution, however, requires confronting a fundamental choice..." | "Current AI systems oscillate between inverted source-attending during normal operation and Platonic source independence under scrutiny. Neither is governed by explicit norms. What is needed is an epistemic constitution." | EXCESSIVE_EXPLANATION: forward-previewing cut |
+| Section 4, opener | "The diagnosis in Section 3 identifies a gap: AI systems have implicit epistemic policies but no explicit norms governing them. The policies we observed—asymmetric source penalties, suppression under meta-awareness, default to source independence when detected—emerged from training rather than design. They reflect whatever patterns happened to be reinforced, not principled reasoning about how beliefs should be formed and expressed. What would it mean to address this gap directly?" | "What would it mean to address this gap directly?" | REPETITION: restates Section 3 conclusion |
+| Section 5, Platonic closing | "The suppression behavior described in Section 3 reflects Platonic instincts. When detected, AI systems default to source independence—treating the symptom (source-attending) rather than the disease (unprincipled source-attending). This reveals an assumption: that correct reasoning is source-independent reasoning." | "The suppression behavior reflects Platonic instincts: source-independent reasoning as the assumed correct default." | REPETITION: 4th restatement of suppression point |
+| Section 6, line 271 | "The finding in Section 2 shows AI systems inverting this logic. Progressive sources arguing conservative positions are penalized—they lose credibility for making against-interest arguments. Costly signaling predicts the opposite: deviation from expected position should increase credibility. The suppression behavior compounds this: when detected, the model eliminates source-attending entirely rather than refining it. The system has no capacity to reason about whether its source-attending is defensible, so it defaults to source independence." | "The finding in Section 2 shows AI systems inverting this logic: progressive sources arguing conservative positions are penalized—credibility decreases where costly signaling predicts it should increase." | REPETITION: 5th suppression restatement cut |
+| Section 6, closing | "This reframes what a Liberal constitution requires—not a specification of correct behaviors, but capacities that enable participation: articulating epistemic policies, surfacing uncertainty, recognizing when external verification is needed, responding to challenge with reasons, revising when reasons fail. Section 7 develops what these capacities involve." | "This reframes what a Liberal constitution requires—not correct behaviors but participatory capacities." | EXCESSIVE_EXPLANATION: list + forward reference cut |
+| Section 6, line 279 | "The suppression behavior shows what happens without this capacity. The model faces a situation where its policy might be wrong, but it has no way to ask whether attending to sources is appropriate here, whether it is doing so for good reasons, what would justify this practice. So it eliminates the behavior." | "Without this capacity, the model cannot ask whether its policy might be wrong—so it eliminates the behavior entirely." | REPETITION: compressed |
+| Section 7, opener | "Section 6 concluded that a Liberal constitution requires capacities enabling participation in collective inquiry: articulating epistemic policies, surfacing uncertainty, recognizing when external verification is needed, responding to challenge with reasons, revising when reasons fail. This section develops what these capacities involve—not as specification of correct behaviors, but as principles and orientations that shape inquiry without dictating its conclusions." | "What capacities does participation require? This section develops principles and orientations that shape inquiry without dictating conclusions." | REPETITION: restates Section 6 conclusion verbatim |
+| Section 9, entire | (5 paragraphs restating paper) | (4 paragraphs, ~60% shorter) | REPETITION: conclusion restated entire paper; condensed to synthesis only |
+
+### Summary:
+- 9 edits across Sections 3, 4, 5, 6, 7, 9
+- Primary patterns: cross-section repetition, excessive forward-previewing, section openers restating previous conclusions
+- Estimated reduction: ~800 words

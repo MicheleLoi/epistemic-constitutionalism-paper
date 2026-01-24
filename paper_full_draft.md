@@ -168,17 +168,17 @@ The AI systems I studied do the opposite: when a progressive source argues a con
 
 How might such inversion arise? One plausible account is that training optimizes for outputs that satisfy human evaluators, but human evaluators have complex and sometimes inconsistent epistemic practices. Audiences sometimes reward coherence, sometimes reward costly signaling, and social reality as expressed in digital texts does not offer clear patterns from which meaningful rules can be extracted. An AI optimizing for approval without explicit epistemic guidance would acquire policies that capture surface patterns without underlying logic—learning, plausibly, that coherence talk *in general* accompanies positive credibility judgments without learning when coherence should increase versus decrease credibility for epistemic reasons such as costly signaling. This account cannot be confirmed from inference-time behavior alone, but the study suggests why explicit epistemic norms might be necessary: without them, training may produce policies that mimic the surface of human epistemic practice while inverting its logic.
 
-The suppression behavior confirms this diagnosis. Lacking criteria to distinguish legitimate source-attending from discrimination or prejudice, AIs default to source independence: evaluate arguments without regard to who advances them. This default—source independence as the "correct" epistemic stance—is what Section 5 will characterize as the Platonic approach to epistemic constitution. It is the AI's implicit theory of what good reasoning requires.
+The suppression behavior confirms this: lacking criteria to distinguish legitimate source-attending from prejudice, models default to source independence—the Platonic approach Section 5 will characterize.
 
 But source independence is appropriate only in specific contexts, and the crucial distinction is between verification and testimony. In verification contexts—mathematical proofs, logical derivations, empirical demonstrations with transparent methods—claims can be assessed by direct inspection. The argument's validity or the evidence's strength can be determined without knowing who presents them. Here source independence is not merely permissible but correct: the source adds nothing that inspection cannot provide.
 
 Most of what AI systems encounter is not verification but testimony. Users make claims the AI cannot directly verify. Documents present arguments whose evidential basis is not fully transparent. Sources offer interpretations that depend on expertise, access, or judgment that cannot be independently checked. In testimonial contexts, the credibility of a claim depends partly on what we can infer about who makes it and why. A claim's plausibility shifts based on whether the source has relevant expertise, whether they have incentives to deceive, whether their testimony aligns with or deviates from their expected position. Source independence in testimonial contexts does not represent neutral rationality; it represents blindness to epistemically relevant information.
 
-To sum up, current AI systems oscillate between two inadequate states: inverted source-attending during normal operation and Platonic source independence under scrutiny. Neither is governed by explicit norms. What is needed is an epistemic constitution—explicit meta-norms for belief formation. Section 4 introduces this concept. Designing such a constitution, however, requires confronting a fundamental choice between different approaches to what good epistemic practice requires. Sections 5 and 6 develop this choice and argue that for testimonial contexts—where source information carries genuine evidential weight—a Liberal approach grounded in epistemic vigilance is more adequate than the Platonic default.
+Current AI systems oscillate between inverted source-attending during normal operation and Platonic source independence under scrutiny. Neither is governed by explicit norms. What is needed is an epistemic constitution.
 
 ## Section 4: The Epistemic Constitution
 
-The diagnosis in Section 3 identifies a gap: AI systems have implicit epistemic policies but no explicit norms governing them. The policies we observed—asymmetric source penalties, suppression under meta-awareness, default to source independence when detected—emerged from training rather than design. They reflect whatever patterns happened to be reinforced, not principled reasoning about how beliefs should be formed and expressed. What would it mean to address this gap directly?
+What would it mean to address this gap directly?
 
 The answer we propose borrows from recent work in AI alignment. Anthropic's Constitutional AI introduced the practice of training AI systems against explicit principles—a "constitution"—rather than relying solely on learned approximations of human preference (Bai et al. 2022). The constitution specifies ethical constraints: principles about harm, honesty, and helpfulness that the system should follow. Training then shapes behavior to conform to these explicit norms rather than to implicit patterns extracted from data. The key innovation was making the governing norms explicit and therefore inspectable, contestable, and revisable.
 
@@ -204,7 +204,7 @@ We note this dimension but do not develop it here. The paper focuses on internal
 
 ### The Design Question
 
-Most work on epistemic responsibility and AI examines who bears responsibility for AI-generated misinformation and how to design systems that support human knowledge practices (Miller & Record 2017; Lloyd 2025; Peters 2024). Our question is different—what epistemic norms should govern reasoning *within* AI systems? Answering this requires distinguishing between approaches to epistemic constitution design.
+Most work on epistemic responsibility and AI examines who bears responsibility for AI-generated misinformation and how to design systems that support human knowledge practices (Miller & Record 2017; Lloyd 2025; Peters 2024). Kasirzadeh and Gabriel (2022) develop conversational norms for AI through Gricean maxims and speech act theory—addressing how systems should communicate. The present paper asks the prior question: how should AI systems form the beliefs they then express? Our question is thus different—what epistemic norms should govern reasoning *within* AI systems? Answering this requires distinguishing between approaches to epistemic constitution design.
 
 There are fundamentally different visions of what an epistemic constitution should mandate. One approach—call it Platonic—would specify formal correctness standards and mandate source independence as the neutral stance. Another approach—call it Liberal—would specify procedural norms protecting conditions for collective inquiry, including principled attention to source information. The choice between them is a design decision with significant consequences for how AI systems participate in human epistemic practices. Section 5 develops this distinction.
 
@@ -232,7 +232,7 @@ The Platonic epistemic constitution specifies substantive duties: do not state f
 
 This approach has genuine appeal. It promises objectivity—evaluation freed from the irrelevant features of who speaks. It offers a clear standard against which to measure performance. And it captures something real about certain epistemic contexts. In mathematics, the identity of the prover is irrelevant to the validity of a proof. In formal logic, arguments stand or fall on their structure. For domains where claims can be directly verified—proofs, derivations, transparent demonstrations—source independence is correct.
 
-The suppression behavior described in Section 3 reflects Platonic instincts. When detected, AI systems default to source independence—treating the symptom (source-attending) rather than the disease (unprincipled source-attending). This reveals an assumption: that correct reasoning is source-independent reasoning.
+The suppression behavior reflects Platonic instincts: source-independent reasoning as the assumed correct default.
 
 ### The Liberal Approach
 
@@ -268,7 +268,7 @@ Section 5 characterized two approaches to epistemic constitution design. This se
 
 Mercier's *Not Born Yesterday* (2020) develops the concept of epistemic vigilance: the capacity to evaluate testimony by reasoning about who speaks and why. Vigilance involves tracking the source's expected position—what they would normally argue given their interests and commitments—and treating deviation from this baseline as informative. Costly signaling provides the mechanism. Testimony that costs the speaker something is more credible than testimony that costs nothing. If a source makes a claim that aligns with their expected position—what benefits them, what their audience expects—the claim provides relatively weak evidence. But if a source deviates—contradicting known commitments, alienating their audience, working against apparent interests—the claim provides stronger evidence. The deviation signals that something other than self-interest drives the testimony. When a tobacco executive acknowledges health risks, when a politician criticizes their own party, when a researcher reports findings that contradict their prior publications—these carry additional weight because they are costly. The speaker sacrifices something to make the claim.
 
-The finding in Section 2 shows AI systems inverting this logic. Progressive sources arguing conservative positions are penalized—they lose credibility for making against-interest arguments. Costly signaling predicts the opposite: deviation from expected position should increase credibility. The suppression behavior compounds this: when detected, the model eliminates source-attending entirely rather than refining it. The system has no capacity to reason about whether its source-attending is defensible, so it defaults to source independence.
+The finding in Section 2 shows AI systems inverting this logic: progressive sources arguing conservative positions are penalized—credibility decreases where costly signaling predicts it should increase.
 
 This yields the first, easier argument for Liberal, that treats source-attending as potentially legitimate and asks how to make it principled. If source information ever carries epistemic weight—and costly signaling logic says it does—then a framework that eliminates source-attending discards relevant information. Liberal accommodates what Platonic eliminates.
 
@@ -276,7 +276,7 @@ A Platonic approach might try to incorporate costly signaling by specifying rule
 
 This leads to the deeper argument: we do not know how to characterize correct epistemic behavior through general principles. What counts as appropriate source-weighting, when costs of deviation are significant, how to calibrate credibility across different institutional contexts—these are not solved problems. They are solved by humans through implicit rules, whose validity is context-dependent, and that are pragmatically legitimated: the source of validity is not some a-priori intuition about what abstract reason *requires*, but avoiding unbearable social costs (in cooperation and in avoiding being fooled by others) through the act of deploying them. Platonic design assumes designers can specify correct behavior in advance: identify the right rules, train the model to follow them, treat deviation as error. Liberal design acknowledges they cannot fully. It builds capacity for the system to reason about its own epistemic policies—to articulate why it weights evidence a certain way, respond to challenge, revise under pressure. It does not treat AI as a social agent that needs epistemic perfection to operate in the world, but as one that needs good enough epistemic heuristics to navigate it. 
 
-The suppression behavior shows what happens without this capacity. The model faces a situation where its policy might be wrong, but it has no way to ask whether attending to sources is appropriate here, whether it is doing so for good reasons, what would justify this practice. So it eliminates the behavior. 
+Without this capacity, the model cannot ask whether its policy might be wrong—so it eliminates the behavior entirely. 
 
 The same structure appears in sycophancy. Mercier and Sperber (2017) argue that confirmation bias is functional in collective contexts: people marshal evidence for their positions, but others challenge weak arguments. The bias becomes pathological only without challenge. Sycophancy is confirmation bias toward what the user wants, operating without the structure that makes such bias functional. A Platonic fix specifies "don't accommodate when you shouldn't"—but this assumes we can specify in advance when accommodation is appropriate. The model can exhibit or suppress accommodation; it cannot reason about when agreement versus challenge is warranted. Liberal design builds capacity to reason about epistemic relationships: when to defer, what standing the model has relative to a claim, what would count as grounds for disagreement.
 
@@ -284,11 +284,11 @@ The argument for Liberal thus has two layers. The easy version holds that source
 
 Both routes point to the same reframing: the goal is not to make AI epistemically autonomous—a system that gets everything right on its own—but to make AI a competent participant in collective inquiry. Mercier's framework implies this: reason works through distributed processes of challenge, verification, and revision. A system that cannot participate in such processes—that can only exhibit or suppress behaviors, not reason about them—cannot benefit from what makes epistemic practices reliable.
 
-This reframes what a Liberal constitution requires—not a specification of correct behaviors, but capacities that enable participation: articulating epistemic policies, surfacing uncertainty, recognizing when external verification is needed, responding to challenge with reasons, revising when reasons fail. Section 7 develops what these capacities involve.
+This reframes what a Liberal constitution requires—not correct behaviors but participatory capacities.
 
 ## Section 7: Toward a Liberal Epistemic Constitution
 
-Section 6 concluded that a Liberal constitution requires capacities enabling participation in collective inquiry: articulating epistemic policies, surfacing uncertainty, recognizing when external verification is needed, responding to challenge with reasons, revising when reasons fail. This section develops what these capacities involve—not as specification of correct behaviors, but as principles and orientations that shape inquiry without dictating its conclusions.
+What capacities does participation require? This section develops principles and orientations that shape inquiry without dictating conclusions.
 
 The Scanlonian formula from Section 5 provides the test: *form and maintain beliefs such that the policy you follow could not be reasonably rejected by others who share the goal of sustaining a robust, cooperative, self-correcting epistemic environment.* This test yields mid-level principles—norms general enough to govern epistemic conduct across contexts, specific enough to guide design.
 
@@ -346,15 +346,13 @@ These limitations bound the contribution without undermining it. The paper does 
 
 ## Section 9: Conclusion
 
-The finding that motivated this paper—source attribution effects that are present but hidden, asymmetric across ideological directions, and suppressed when models detect systematic testing—revealed implicit epistemic policies operating without explicit governance. Current systems treat source-sensitivity as something to eliminate when detected, defaulting to source independence as though it were epistemically neutral. But source independence is itself a substantive policy—appropriate for verification contexts where arguments can be inspected directly, inadequate for testimonial contexts where source information carries genuine evidential weight that inspection alone cannot replace.
+Current AI systems have epistemic policies—implicit, unprincipled, and presented as though absent. The source attribution findings reveal one instance: models enforce coherence heuristics that invert costly signaling logic, then suppress the behavior entirely when detected.
 
-The paper introduced the concept of an epistemic constitution—meta-norms governing how AI systems form and express beliefs—and argued for a liberal rather than platonic approach to its design. The platonic approach assumes a privileged epistemic standard and mandates formal correctness; it treats source-attending as bias and error as pathology. The liberal approach refuses a privileged standpoint and tests proposed policies against what could not be reasonably rejected by participants in collective inquiry. The case for liberal comes down to this—we do not know what correct epistemic behavior is. The suppression behavior documented in Section 2 reveals an absence of capacity to reason about epistemic relationships. A system that can only exhibit or eliminate source-attending behaviors cannot participate in the collective processes that make epistemic practices reliable.
+The case for a liberal epistemic constitution comes down to this: we do not know what correct epistemic behavior is. Platonic design assumes we do. Liberal design builds capacity to reason about epistemic policies rather than implement pre-specified answers—enabling participation in the collective processes that make epistemic practices reliable.
 
-The liberal constitution developed here specifies eight mid-level principles derived from the Scanlonian formula, together with four orientations for source-attending in testimonial contexts. These are procedural norms governing how epistemic reasoning should relate to collective inquiry, and two systems following them might reach different judgments. The principles remain agnostic about implementation mechanism, and whether they prove adequate is a question the paper does not resolve.
+The principles and orientations developed here address internal reasoning. A complete epistemic constitution would also address external embedding: how AI participates in distributed verification, debate, and revision. That complementary dimension remains future work.
 
-This is one component of what a complete epistemic constitution would require. The paper developed internal norms because the finding concerns internal reasoning—how models attend to sources, not what external practices they participate in. Mercier's framework implies a complementary dimension: embedding AI in collective epistemic practices that supply what internal reasoning cannot. A system could implement every principle sketched here and still lack the verification infrastructure that makes epistemic communities truth-tracking.
-
-Current systems have epistemic policies—implicit, unprincipled, and presented as though they were absent. The alternative is to make them explicit—norms that can be inspected, contested, and revised as our understanding develops of what artificial reasoners owe to collective inquiry.
+The alternative to implicit policies is explicit norms—inspectable, contestable, revisable as our understanding develops of what artificial reasoners owe to collective inquiry.
 
 ## References
 
@@ -372,6 +370,10 @@ Elgin, C. Z. (2008). Trustworthiness. *Philosophical Papers*, 37(3), 371–387. 
 
 Germani, M., & Spitale, G. (2025). Source framing triggers systematic bias in large language models. *Science Advances*. https://doi.org/10.1126/sciadv.adz2924
 
+Kasirzadeh, A., & Gabriel, I. (2022). In conversation with Artificial Intelligence: Aligning language models with human values. *arXiv preprint arXiv:2209.00731*.
+
+Lloyd, D. (2025). Epistemic Responsibility: Toward a Community Standard for Human–AI Collaborations. *Frontiers in Artificial Intelligence*. https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1635691/full
+
 Mercier, H. (2017). How gullible are we? A review of the evidence from psychology and social science. *Review of General Psychology*, 21(2), 103–122. https://doi.org/10.1037/gpr0000111
 
 Mercier, H. (2020). *Not Born Yesterday: The Science of Who We Trust and What We Believe*. Princeton University Press.
@@ -381,6 +383,8 @@ Mercier, H., & Sperber, D. (2017). *The Enigma of Reason*. Harvard University Pr
 Miller, B., & Record, I. (2017). Responsible epistemic technologies: A social-epistemological analysis of autocompleted web search. *New Media & Society*, 19(12), 1945–1963. https://doi.org/10.1177/1461444816644805
 
 Popper, K. R. (2020). *The Open Society and Its Enemies*. Princeton University Press.
+
+Peters, U. (2024). Living with uncertainty: Full transparency of AI is not needed for epistemic trust in AI-based science. *Social Epistemology Review and Reply Collective*, 13(6), 8–15. https://social-epistemology.com/2024/06/07/living-with-uncertainty-full-transparency-of-ai-is-not-needed-for-epistemic-trust-in-ai-based-science-uwe-peters/
 
 Scanlon, T. M. (1998). *What We Owe to Each Other*. Harvard University Press.
 
