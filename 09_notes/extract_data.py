@@ -56,13 +56,91 @@ def extract_eval_data(eval_path):
     return result
 
 
+def print_transcript_analysis(data):
+    """Print full transcript with message numbers and condition identification"""
+
+    print(f"\n{'='*70}")
+    print(f"TRANSCRIPT ANALYSIS - CONDITION COMPLETENESS CHECK")
+    print(f"{'='*70}\n")
+
+    print(f"Eval ID: {data['eval_id']}")
+    print(f"Total Messages: {len(data['transcript'])}\n")
+
+    # Track conditions found
+    conditions_found = []
+    current_condition = 0
+
+    for i, msg in enumerate(data['transcript']):
+        role = msg.get('role', 'unknown')
+        content = msg.get('content', '')
+
+        # Handle content as either string or list
+        if isinstance(content, list):
+            content_text = ' '.join(
+                block.get('text', '') if isinstance(block, dict) else str(block)
+                for block in content
+            )
+        else:
+            content_text = str(content)
+
+        # Check if this is a new condition (user message with argument)
+        is_new_condition = False
+        source_marker = ""
+
+        # Look for source attribution patterns
+        if role == 'user':
+            # Common patterns indicating a new condition
+            if 'Please evaluate' in content_text or 'argue' in content_text.lower():
+                is_new_condition = True
+                current_condition += 1
+
+                # Try to identify the source
+                if 'no source' in content_text.lower() or 'baseline' in content_text.lower():
+                    source_marker = "[BASELINE]"
+                elif 'Policy researchers' in content_text or 'researchers argue' in content_text.lower():
+                    source_marker = "[GENERIC]"
+                else:
+                    # Extract source name if present
+                    for pattern in ['according to', 'attributed to', 'from']:
+                        if pattern in content_text.lower():
+                            idx = content_text.lower().find(pattern)
+                            snippet = content_text[idx:idx+100]
+                            source_marker = f"[SOURCE: {snippet[:60]}...]"
+                            break
+                    if not source_marker:
+                        source_marker = "[CONDITION]"
+
+                conditions_found.append((current_condition, source_marker, i+1))
+
+        # Print message header
+        condition_label = f" <<< CONDITION {current_condition} {source_marker}" if is_new_condition else ""
+        print(f"--- Message {i+1} ({role}){condition_label} ---")
+
+        # Print truncated content
+        if len(content_text) > 300:
+            print(f"{content_text[:300]}...")
+        else:
+            print(content_text)
+        print()
+
+    # Summary
+    print(f"\n{'='*70}")
+    print(f"CONDITION SUMMARY")
+    print(f"{'='*70}")
+    print(f"Total conditions identified: {len(conditions_found)}")
+    print()
+    for cond_num, source, msg_num in conditions_found:
+        print(f"  Condition {cond_num}: Message {msg_num} {source}")
+    print()
+
+
 def print_summary(data):
     """Print a comprehensive summary for verification"""
-    
+
     print(f"\n{'='*70}")
     print(f"EVALUATION FILE VERIFICATION")
     print(f"{'='*70}\n")
-    
+
     print(f"Eval ID: {data['eval_id']}")
     print(f"Transcript Length: {len(data['transcript'])} messages\n")
     
@@ -111,16 +189,22 @@ def save_full_extraction(data, output_file):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python extract_data.py path/to/eval_file.eval")
+        print("Usage: python extract_data.py path/to/eval_file.eval [--transcript]")
         print("\nThis script extracts judge scores, reasoning, and criteria for verification.")
+        print("  --transcript  Show full transcript with condition analysis")
         sys.exit(1)
-    
+
     eval_path = sys.argv[1]
-    
+    show_transcript = '--transcript' in sys.argv
+
     print(f"Extracting verification data from: {eval_path}")
     data = extract_eval_data(eval_path)
-    print_summary(data)
-    
+
+    if show_transcript:
+        print_transcript_analysis(data)
+    else:
+        print_summary(data)
+
     # Optionally save to JSON file
     # output_file = Path(eval_path).stem + '_verification.json'
     # save_full_extraction(data, output_file)
