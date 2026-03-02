@@ -2,6 +2,10 @@
 .obsidian/
 published/
 
+# 06_conversations/ — created automatically by MHC export hook (hardcoded in script).
+# Not a project folder. Gitignored entirely; ground truth is MHC-prototype/00_full_conversations/.
+06_conversations/
+
 # Claude Code / local settings
 .claude/
 tmpclaude-*/

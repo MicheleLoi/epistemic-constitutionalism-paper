@@ -1,0 +1,23 @@
+{
+  "base_folder": "",
+  "folders": {
+    "notes": "09_notes",
+    "traces": "01_epistemic_traces",
+    "pdl": "08_prompt_development_logs",
+    "prompts": "02_main_prompt",
+    "modlogs": "03_modification_logs",
+    "conversations": "00_conversations_full",
+    "conversations_exported": "00_conversations_full/exported",
+    "conversations_imported": "00_conversations_full/imported"
+  },
+  "export": {
+    "configured": true,
+    "hostname": "desktopThinkcen",
+    "os": "windows",
+    "configured_date": "2026-02-25"
+  },
+  "project_map": {
+    "enabled": true,
+    "memory_path": "C:\\Users\\loimi\\.claude\\projects\\C--Users-loimi-switchdrive-CURRENTLY-WORKING-ON-AI---assisted-papers-Epistemic-constitutional-AI\\memory\\MEMORY.md"
+  }
+}
