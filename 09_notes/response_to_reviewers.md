@@ -133,7 +133,7 @@ We thank both reviewers for thorough, substantive engagement with the paper. The
 
 **Reviewer comment:** Fricker, Goldman, Lackey, and the broader bias/benchmarking ecosystem are missing.
 
-**Response:** We have added two engagements. First, a paragraph in Section 3 engaging with Lackey (2008) on testimony as an epistemic source and Fricker (2007) on epistemic injustice: "Our focus differs: where that literature examines conditions for warranted trust between persons, we ask what norms should govern an artificial system's processing of testimonial claims---a question of epistemic governance rather than interpersonal ethics, though the concerns are structurally related." Second, Fricker is invoked again in Section 7's epistemic-injustice safeguard paragraph. Both references have been added to the References section.
+**Response:** We engage with this literature in Section 7, where Fricker (2007) is invoked directly in the epistemic-injustice safeguard paragraph: the system's model of a source's expected position must be grounded in documented affiliations rather than stereotypes, lest costly-signal logic reproduce precisely the epistemic injustices Fricker identifies. Lackey (2008) and Fricker (2007) have been added to the References section. We do not add a dedicated literature-review paragraph in Section 3, as we judge the engagement in Section 7---where the normative stakes are directly at issue---to be more purposeful than a signposting note at the verification/testimony distinction.
 
 ### Point 19: Insufficient engagement with "LLMs are not epistemic agents" critique
 
@@ -201,7 +201,6 @@ We thank both reviewers for thorough, substantive engagement with the paper. The
 
 ### Section 3 (The Problem)
 - Added boundary conditions for costly signaling (defeasibility, three defeaters)
-- Added engagement with testimony literature (Lackey 2008, Fricker 2007)
 
 ### Section 4 (The Epistemic Constitution)
 - Added paragraph addressing "LLMs lack beliefs" challenge
