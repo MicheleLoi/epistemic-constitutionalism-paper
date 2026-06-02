@@ -1,0 +1,24 @@
+sessions:
+  SID-20260602-133619:
+    date: '2026-06-02'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+  SID-20260602-133822:
+    date: '2026-06-02'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260602-133619
+  SID-20260602-134411:
+    date: '2026-06-02'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260602-133822
+  SID-20260602-134807:
+    date: '2026-06-02'
+    goal: 'Riparazione indice git + sganciamento conversazioni (cherry-pick su main); onboarding MHC-W Case C; architettura ibrida MHC-W+MHC-C con content_schemas su misura; adozione decision_log; hook deterministico artifacts_produced; brief adattatore mhc-harness-client->MHC-W'
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260602-134411
