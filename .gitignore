@@ -24,3 +24,6 @@ __pycache__/
 venv/
 .env
 
+
+# Conversation transcripts — kept local, not part of public materials (untracked 2026-06-02)
+00_conversations_full/
