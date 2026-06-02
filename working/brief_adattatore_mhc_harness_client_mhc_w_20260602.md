@@ -3,10 +3,21 @@ artifact_type: work_item_brief
 titolo: Adattatore mhc-harness-client → MHC-W (libreria-ponte discipline-grade)
 progetto: Epistemic constitutional AI
 data: 2026-06-02
-stato: parcheggio (non per esecuzione immediata)
+stato: COSTRUITO e testato 2026-06-02 (era spec/parcheggio)
 origine_sessione: SID-20260602-134807
 authority: _org/decision_log.md 2026-06-02 §"Architettura MHC ibrida + adozione del decision_log"
 ---
+
+> **Stato realizzazione (2026-06-02):** implementato come `mhc_harness_client.py` nel root del
+> progetto. Endpoint live: `placement_log` (per `mhc-place`), `reconcile_check` (per
+> `mhc-reconcile`), più `register`/`get_session`/`list_artifacts`. Funzioni crypto = stub che
+> sollevano `HarnessNotAvailable` (solo MHC-H). Ledger: `_org/harness_log.jsonl` (append-only).
+> Collaudo superato: `reconcile_check` rileva il drift di un path registrato ma assente su disco.
+>
+> **Requisito d'uso:** le skill fanno `from mhc_harness_client import ...`; l'import risolve solo
+> se la **root del progetto è su `sys.path`** — eseguire le chiamate harness con Python dalla root
+> (o `PYTHONPATH=<root>`). In Claude Code la cwd è già la root, quindi gli step harness delle skill
+> si agganciano; da altra cwd l'import fallisce e la skill degrada (graceful, come da design).
 
 # Adattatore `mhc-harness-client` → MHC-W
 
