@@ -23,41 +23,173 @@
   },
   "session_history": [
     {
-      "id": "SID-20260602-133619",
-      "started": "2026-06-02T13:36:19.597855",
-      "ended": "2026-06-02T13:37:08.167575",
+      "id": "SID-20260602-201326",
+      "started": "2026-06-02T20:13:26.208177",
+      "ended": "2026-06-02T20:14:08.762427",
       "exported": true,
-      "jsonl_fingerprint": "",
-      "jsonl_sha256": "1ffdfb19e08639bd86aa3bc4bbcaf6883cc5f2aee950e7991b2c7cfef55f7af0",
-      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\Epistemic constitutional AI\\conversations\\exported\\Epistemic_constitutional_AI_SID-20260602-133619.md",
-      "export_sha256": "3a02eda567e4815f072c75d5366e730360a153a7a5237d47b14eea99f2be86e2"
+      "jsonl_fingerprint": "c473070a-787f-4e5f-921e-e5791e8598f4.jsonl",
+      "jsonl_sha256": "9b8b0508a8233c88c7357ddb90d1b628aa64d4b6e187d866a1e76939fe4835b1",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\Epistemic constitutional AI\\conversations\\exported\\Epistemic_constitutional_AI_SID-20260602-201326.md",
+      "export_sha256": "6465641a5e4edf4ff17c5b9e631508dcbf5d52d419caa8b42a930a372b537c9c"
+    },
+    {
+      "id": "SID-20260603-095318",
+      "started": "2026-06-03T09:53:18.552838",
+      "ended": "2026-06-03T09:53:19.853543",
+      "exported": false,
+      "jsonl_fingerprint": "c473070a-787f-4e5f-921e-e5791e8598f4.jsonl"
+    },
+    {
+      "id": "SID-20260603-095328",
+      "started": "2026-06-03T09:53:28.007399",
+      "ended": "2026-06-03T11:56:42.901204",
+      "exported": true,
+      "jsonl_fingerprint": "c473070a-787f-4e5f-921e-e5791e8598f4.jsonl",
+      "jsonl_sha256": "b1ea0a29df4bb3d2e8175605c7d67dd9d4767e4d63813b45b790727bbd7dae22",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\Epistemic constitutional AI\\conversations\\exported\\Epistemic_constitutional_AI_SID-20260603-095328.md",
+      "export_sha256": "4420a96f7b09dcd4502cad0f596dc0fc6fe72879d531549ea70f84ad18575fc0"
+    },
+    {
+      "id": "SID-20260603-115755",
+      "started": "2026-06-03T11:57:55.243382",
+      "ended": "2026-06-03T12:48:55.792236",
+      "exported": true,
+      "jsonl_fingerprint": "3267b4a0-4070-48b0-bd6f-479f169d1701.jsonl",
+      "jsonl_sha256": "1ab5f0dd4e6cd62ae5d2ffe1cd57d1b94a9e9e09ca562de4d3f2e2b796e0ffc7",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\Epistemic constitutional AI\\conversations\\exported\\Epistemic_constitutional_AI_SID-20260603-115755.md",
+      "export_sha256": "c2d5d3418b06bdbc843d530a9b8dfd504c298237b0ed4cb84224e9cd911917fd"
+    },
+    {
+      "id": "SID-20260603-131154",
+      "started": "2026-06-03T13:11:54.661298",
+      "ended": "2026-06-03T13:30:27.073202",
+      "exported": true,
+      "jsonl_fingerprint": "3267b4a0-4070-48b0-bd6f-479f169d1701.jsonl",
+      "jsonl_sha256": "13014359b383f6203de915c5aad4aaf592a70909588d60c244c6bd734eb2b2dc",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\Epistemic constitutional AI\\conversations\\exported\\Epistemic_constitutional_AI_SID-20260603-131154.md",
+      "export_sha256": "e79eb49a742644a06e43c3161baac74f5b21cfa4bf903e1a2bd47c9628a76569"
+    },
+    {
+      "id": "SID-20260603-135603",
+      "started": "2026-06-03T13:56:03.688584",
+      "ended": "2026-06-03T14:29:47.702063",
+      "exported": true,
+      "jsonl_fingerprint": "3267b4a0-4070-48b0-bd6f-479f169d1701.jsonl",
+      "jsonl_sha256": "9db9a699be023465a845359de1be6b9013d87819cb3fd992597d308f3a120e74",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\Epistemic constitutional AI\\conversations\\exported\\Epistemic_constitutional_AI_SID-20260603-135603.md",
+      "export_sha256": "e31cc31a600babd8c9190cabf56d193a1465d1769a550c87b2b0aab1261edaf6"
+    },
+    {
+      "id": "SID-20260603-144614",
+      "started": "2026-06-03T14:46:14.378228",
+      "ended": "2026-06-03T15:22:28.146133",
+      "exported": true,
+      "jsonl_fingerprint": "3267b4a0-4070-48b0-bd6f-479f169d1701.jsonl",
+      "jsonl_sha256": "c18998de7180f8916d2cffc672317af02377e9d3a6fb8a409bc48edb92e6f4d9",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\Epistemic constitutional AI\\conversations\\exported\\Epistemic_constitutional_AI_SID-20260603-144614.md",
+      "export_sha256": "c64d6a4099f3c076c9ec9bbd6217945f64e8a4550ba3d3cd7ccf34127aea3263"
+    },
+    {
+      "id": "SID-20260603-154931",
+      "started": "2026-06-03T15:49:31.849268",
+      "ended": "2026-06-03T16:05:44.053476",
+      "exported": true,
+      "jsonl_fingerprint": "3267b4a0-4070-48b0-bd6f-479f169d1701.jsonl",
+      "jsonl_sha256": "4d06da2cd1de27aa2f2c03fbe1c73b729390847bb8615db4ab4f7c6125618a4b",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\Epistemic constitutional AI\\conversations\\exported\\Epistemic_constitutional_AI_SID-20260603-154931.md",
+      "export_sha256": "ab4f696042fbbe1893ff247472f0260c452a687909da2eef0d63423a4ae69887"
+    },
+    {
+      "id": "SID-20260603-161034",
+      "started": "2026-06-03T16:10:34.680238",
+      "ended": "2026-06-03T16:14:49.776462",
+      "exported": true,
+      "jsonl_fingerprint": "3267b4a0-4070-48b0-bd6f-479f169d1701.jsonl",
+      "jsonl_sha256": "8f8ce7b5de51b6766dd96d5adc766a32b37fe9f774f3bc936e24dd951ab4ab2a",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\Epistemic constitutional AI\\conversations\\exported\\Epistemic_constitutional_AI_SID-20260603-161034.md",
+      "export_sha256": "d475d45589ca6321f35f1003f2a61fa278960246b1b34c2555f82119bfd175d4"
+    },
+    {
+      "id": "SID-20260603-180254",
+      "started": "2026-06-03T18:02:54.636124",
+      "ended": "2026-06-03T18:02:58.651505",
+      "exported": true,
+      "jsonl_fingerprint": "3267b4a0-4070-48b0-bd6f-479f169d1701.jsonl",
+      "jsonl_sha256": "b03255d6ab25ebf412e68731774d53aef95d38df1791631dd636dc87c10f8114",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\Epistemic constitutional AI\\conversations\\exported\\Epistemic_constitutional_AI_SID-20260603-180254.md",
+      "export_sha256": "99515b477530ea59e7d1551a8256b399ceee9d7d9c04f41df17c68d0bebc804d"
+    },
+    {
+      "id": "SID-20260602-133619",
+      "started": "2026-06-02T13:36:19",
+      "exported": true,
+      "jsonl_fingerprint": "27e39417-6662-4dcc-a9af-4e3c9d798501.jsonl",
+      "reconstructed": true,
+      "reconstructed_in": "SID-20260603-192214",
+      "note": "Fingerprint physically present; conversation already exported. Registered to stop false-orphan recovery loop (cerotto 2026-06-03).",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\Epistemic constitutional AI\\conversations\\exported\\Epistemic_constitutional_AI_SID-20260602-133619.md"
     },
     {
       "id": "SID-20260602-133822",
-      "started": "2026-06-02T13:38:22.306705",
-      "ended": "2026-06-02T13:42:25.276207",
+      "started": "2026-06-02T13:38:22",
       "exported": true,
-      "jsonl_fingerprint": "27e39417-6662-4dcc-a9af-4e3c9d798501.jsonl",
-      "jsonl_sha256": "34f1b824e6094989abb316941086f061ceae84803219e3f9eeed675889f15092",
-      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\Epistemic constitutional AI\\conversations\\exported\\Epistemic_constitutional_AI_SID-20260602-133822.md",
-      "export_sha256": "f0cfc93c983f304f46e876f6906f66051da4eb3d383fc4a8ed1d8721264da96c"
+      "jsonl_fingerprint": "f1d59a57-a264-4d5f-a78b-e17739266860.jsonl",
+      "reconstructed": true,
+      "reconstructed_in": "SID-20260603-192214",
+      "note": "Fingerprint physically present; conversation already exported. Registered to stop false-orphan recovery loop (cerotto 2026-06-03).",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\Epistemic constitutional AI\\conversations\\exported\\Epistemic_constitutional_AI_SID-20260602-133822.md"
     },
     {
       "id": "SID-20260602-134411",
-      "started": "2026-06-02T13:44:11.594837",
-      "ended": "2026-06-02T13:44:22.737488",
+      "started": "2026-06-02T13:44:11",
       "exported": true,
-      "jsonl_fingerprint": "f1d59a57-a264-4d5f-a78b-e17739266860.jsonl",
-      "jsonl_sha256": "6de6247581e9eefb436581a1a6ccd37941353b426d623ab45b6f20ec074442ca",
-      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\Epistemic constitutional AI\\conversations\\exported\\Epistemic_constitutional_AI_SID-20260602-134411.md",
-      "export_sha256": "c9f04d7f9882f92be374a51c91ad8009d2418f426f99938f1b27b48a5c46c14c"
+      "jsonl_fingerprint": "3923dec5-7c7b-4d2a-87fd-f976eab46b9a.jsonl",
+      "reconstructed": true,
+      "reconstructed_in": "SID-20260603-192214",
+      "note": "Fingerprint physically present; conversation already exported. Registered to stop false-orphan recovery loop (cerotto 2026-06-03).",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\Epistemic constitutional AI\\conversations\\exported\\Epistemic_constitutional_AI_SID-20260602-134411.md"
+    },
+    {
+      "id": "SID-20260602-134807",
+      "started": "2026-06-02T13:48:07",
+      "exported": true,
+      "jsonl_fingerprint": "17878590-7621-40c0-8724-47de9ba4bcc7.jsonl",
+      "reconstructed": true,
+      "reconstructed_in": "SID-20260603-192214",
+      "note": "Fingerprint physically present; conversation already exported. Registered to stop false-orphan recovery loop (cerotto 2026-06-03).",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\Epistemic constitutional AI\\conversations\\exported\\Epistemic_constitutional_AI_SID-20260602-134807.md"
+    },
+    {
+      "id": "SID-20260602-165225",
+      "started": "2026-06-02T16:52:25",
+      "exported": true,
+      "jsonl_fingerprint": "427800bc-73e6-40cf-ad70-cb0fc36ab2e8.jsonl",
+      "reconstructed": true,
+      "reconstructed_in": "SID-20260603-192214",
+      "note": "Fingerprint physically present; conversation already exported. Registered to stop false-orphan recovery loop (cerotto 2026-06-03).",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\Epistemic constitutional AI\\conversations\\exported\\Epistemic_constitutional_AI_SID-20260602-165225.md"
+    },
+    {
+      "id": "SID-20260602-192019",
+      "started": "2026-06-02T19:20:19",
+      "exported": true,
+      "jsonl_fingerprint": "c2d0e59c-eb92-43a4-8a43-0396c4e7ca6a.jsonl",
+      "reconstructed": true,
+      "reconstructed_in": "SID-20260603-192214",
+      "note": "Fingerprint physically present; conversation already exported. Registered to stop false-orphan recovery loop (cerotto 2026-06-03).",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\Epistemic constitutional AI\\conversations\\exported\\Epistemic_constitutional_AI_SID-20260602-192019.md"
+    },
+    {
+      "id": "SID-20260602-194748",
+      "started": "2026-06-02T19:47:48",
+      "exported": true,
+      "jsonl_fingerprint": "8ef7f16b-968d-4a83-8c89-1e9ea58597d4.jsonl",
+      "reconstructed": true,
+      "reconstructed_in": "SID-20260603-192214",
+      "note": "Fingerprint physically present; conversation already exported. Registered to stop false-orphan recovery loop (cerotto 2026-06-03).",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\Epistemic constitutional AI\\conversations\\exported\\Epistemic_constitutional_AI_SID-20260602-194748.md"
     }
   ],
-  "current_session": {
-    "id": "SID-20260602-134807",
-    "started": "2026-06-02T13:48:07.160540",
-    "jsonl_fingerprint": "3923dec5-7c7b-4d2a-87fd-f976eab46b9a.jsonl"
-  },
   "mhc_w_path": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W",
   "onboarding": {
     "completed": true,
@@ -65,5 +197,10 @@
     "completed_in_session": "SID-20260602-134807",
     "mhc_w_version": "v5.0",
     "case": "C"
+  },
+  "current_session": {
+    "id": "SID-20260603-192214",
+    "started": "2026-06-03T19:22:14.063853",
+    "jsonl_fingerprint": "3267b4a0-4070-48b0-bd6f-479f169d1701.jsonl"
   }
 }
