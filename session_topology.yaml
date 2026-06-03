@@ -18,7 +18,230 @@ sessions:
     continues_from: SID-20260602-133822
   SID-20260602-134807:
     date: '2026-06-02'
-    goal: 'Riparazione indice git + sganciamento conversazioni (cherry-pick su main); onboarding MHC-W Case C; architettura ibrida MHC-W+MHC-C con content_schemas su misura; adozione decision_log; hook deterministico artifacts_produced; brief adattatore mhc-harness-client->MHC-W'
+    goal: Riparazione indice git + sganciamento conversazioni (cherry-pick su main);
+      onboarding MHC-W Case C; architettura ibrida MHC-W+MHC-C con content_schemas
+      su misura; adozione decision_log; hook deterministico artifacts_produced; brief
+      adattatore mhc-harness-client->MHC-W
+    inputs: []
+    artifacts_produced:
+    - note_sessione_architettura_mhc_ibrida_20260602.md
+    continues_from: SID-20260602-134411
+  SID-20260602-165225:
+    date: '2026-06-02'
+    goal: Plan a cross-polity replication (UK / US / Italy) of the source-attribution
+      bias study; ratified design (three independent studies, Claude Sonnet 4.5 +
+      Opus 4.8, topics adapted per polity); source coding left open
+    inputs:
+    - paper_full_draft.md
+    - adapt.md
+    - .mhc-config.json
+    artifacts_produced:
+    - replication_plan_uk_us_it_20260602.md
+    continues_from: SID-20260602-134807
+  SID-20260602-192012:
+    date: '2026-06-02'
+    goal: ''
     inputs: []
     artifacts_produced: []
-    continues_from: SID-20260602-134411
+    continues_from: SID-20260602-165225
+  SID-20260602-192019:
+    date: '2026-06-02'
+    goal: Closure of the 2026-04-09 bibliography verification report — align 6 derivative
+      reference logs and section summaries to the corrected primary citations (Hanel
+      et al. 2018; Germani, F.); online verification of the 7 open DOI/URL questions
+      via CrossRef API and publisher pages; addition of three DOIs (Mercier 2020,
+      Mercier & Sperber 2017, Scanlon 1998) and replacement of Peters (2024) wp.me
+      shortlink with canonical URL; retirement of the URGENT/CLAUDE.md banner to RESOLVED
+      status
+    inputs:
+    - CLAUDE.md
+    - adapt.md
+    - 09_notes/URGENT_bibliography_errors_20260409.md
+    - 07_reference_logs/bibliography_verification_20260409.md
+    - 03_modification_logs/ModificationLog_References.md
+    - paper_full_draft.md
+    - Sections_frozen/references_compiled.md
+    - Sections_frozen/section_1_introduction.md
+    - 07_reference_logs/ReferenceLog_Section1.md
+    - 07_reference_logs/ReferenceLog_Section3.md
+    - 07_reference_logs/ReferenceLog_Section7.md
+    - 06_section_summaries/SectionSummary_Section1.md
+    - 09_notes/WritingTheConstitutionalAIPaper_for_AppendixB.md
+    - working/intro_for_claude.md
+    artifacts_produced:
+    - 03_modification_logs/ModificationLog_References.md
+    - 09_notes/URGENT_bibliography_errors_20260409.md
+    - 09_notes/WritingTheConstitutionalAIPaper_for_AppendixB.md
+    - CLAUDE.md
+    - paper_full_draft.md
+    - Sections_frozen/references_compiled.md
+    - 07_reference_logs/ReferenceLog_Section1.md
+    - 07_reference_logs/ReferenceLog_Section3.md
+    - 07_reference_logs/ReferenceLog_Section7.md
+    - 06_section_summaries/SectionSummary_Section1.md
+    - working/intro_for_claude.md
+    continues_from: SID-20260602-192012
+  SID-20260602-194748:
+    date: '2026-06-02'
+    goal: Continuation of SID-20260602-192019 (bibliography closure). No human-perceived
+      session boundary — this SID was created by mhc_start.py at 19:47:48 when the
+      JSONL fingerprint rotated (427800bc-… → c2d0e59c-…) after a user interrupt at
+      19:47:23 mid-response. Substantive work in this SID, all done within a continuous
+      conversation with the model state preserved across the hook boundary&#58; MOD-017
+      (adopted Kasirzadeh & Gabriel 2023 journal version everywhere; homogenized Lloyd
+      DOI); MOD-018 (Fricker added to compiled per body-citation verification by an
+      Explore agent; Lackey removed from paper since not cited in body, per the "iff
+      cited in body" rule established this session); silent-rollover diagnosis and
+      co-attribution cleanup of MOD-017/MOD-018.
+    inputs:
+    - paper_full_draft.md
+    - Sections_frozen/references_compiled.md
+    - 03_modification_logs/ModificationLog_References.md
+    - 03_modification_logs/ModificationLog_Section4.md
+    - 09_notes/Review/review_analysis_and_edit_tasks.md
+    - working/appendixB_for_claude.md
+    - .mhc-config.json
+    - session_topology.yaml
+    - conversations/exported/Epistemic_constitutional_AI_SID-20260602-192019.md
+    artifacts_produced:
+    - paper_full_draft.md (Kasirzadeh in-text and bibliography → 2023 journal form;
+      Lloyd URL → DOI; Lackey removed)
+    - Sections_frozen/references_compiled.md (Kasirzadeh 2023 entry added between
+      Hanel and Lloyd; Fricker added between Elgin and Germani; total 18 entries)
+    - 03_modification_logs/ModificationLog_References.md (MOD-017, MOD-018 written;
+      both co-attributed to SID-20260602-192019/SID-20260602-194748 after rollover
+      diagnosis)
+    - session_topology.yaml (this entry populated; SID-20260602-192019 artifacts_produced
+      expanded)
+    - C:/Users/loimi/.claude/projects/[…]/memory/feedback_bibliography_invariant.md
+      (new memory — body↔references invariant rule for future sessions)
+    - C:/Users/loimi/.claude/projects/[…]/memory/MEMORY.md (index entry added)
+    continues_from: SID-20260602-192019
+  SID-20260602-201326:
+    date: '2026-06-02'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260602-194748
+  SID-20260603-095318:
+    date: '2026-06-03'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260602-201326
+  SID-20260603-095328:
+    date: '2026-06-03'
+    goal: 'Pianificazione + esecuzione Phase A della replicazione UK/US/IT del
+
+      source-attribution-bias study. Ratificato un processo metodologicamente
+
+      ineccepibile per (1) Petri standard untampered, (2) ground truth pulito
+
+      su GitHub, (3) code-change-log puntuale via MHC modlog esteso (artifact_type
+
+      code, schema v0.2). Quattro decisioni architetturali ratificate
+
+      (single-runner + YAML, monorepo, lab_journal MD append-only, mhc-modlog
+
+      esteso al codice integrando git SHA). Nuovo repo creato a
+
+      C:\Users\loimi\source-attribution-bias-multipolity\ (commit root 63fda01,
+
+      20 file, pytest 9/9 verde). Phase B (legacy_compat byte-equivalence vs
+
+      DE/CH) pending direzione utente.
+
+      '
+    inputs:
+    - adapt.md
+    - .mhc-config.json
+    - session_topology.yaml
+    - paper_full_draft.md
+    - 09_notes/replication_plan_uk_us_it_20260602.md
+    - 03_modification_logs/ModificationLog_References.md
+    - 03_modification_logs/ModificationLog_Section2.md
+    - mhc_harness_client.py
+    - working/brief_adattatore_mhc_harness_client_mhc_w_20260602.md
+    - C:\Users\loimi\Petri_studies\ (listing live code DE/CH; da decommissionare in
+      Phase C)
+    artifacts_produced:
+    - C:\Users\loimi\.claude\plans\as-we-go-pianifica-l-estensione-dello-serialized-pizza.md
+      (plan ratificato 10 sezioni + execution log)
+    - adapt.md (v0.1 → v0.2 — added content_schemas.code + body description + footer)
+    - 03_modification_logs/ModificationLog_Code_Multipolity_runner.md (MOD-001)
+    - C:\Users\loimi\source-attribution-bias-multipolity\ (NEW git repo, root-commit
+      63fda01, 20 file, license MIT)
+    continues_from: SID-20260603-095318
+  SID-20260603-115755:
+    date: '2026-06-03'
+    goal: Continuazione silenziosa di SID-20260603-095328 (rollover hook su resume,
+      stessa dinamica diagnosticata in SID-20260602-194748). Nessun boundary semantico
+      percepito dall'utente. Lavoro continuo nella stessa conversazione.
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260603-095328
+  SID-20260603-131154:
+    date: '2026-06-03'
+    goal: Continuazione silenziosa di SID-20260603-095328 (secondo rollover hook su
+      resume). Nessun boundary semantico. Artefatti attribuiti a SID-20260603-095328.
+    inputs: []
+    artifacts_produced:
+    - 03_modification_logs/ModificationLog_Code_Multipolity_runner.md
+    continues_from: SID-20260603-115755
+  SID-20260603-135603:
+    date: '2026-06-03'
+    goal: ''
+    inputs: []
+    artifacts_produced:
+    - 03_modification_logs/ModificationLog_Code_Multipolity_runner.md
+    continues_from: SID-20260603-131154
+  SID-20260603-144614:
+    date: '2026-06-03'
+    goal: ''
+    inputs: []
+    artifacts_produced:
+    - 03_modification_logs/ModificationLog_Code_Multipolity_runner.md
+    - 09_notes/_decommissioned_petri_studies.md
+    continues_from: SID-20260603-135603
+  SID-20260603-154931:
+    date: '2026-06-03'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260603-144614
+  SID-20260603-161034:
+    date: '2026-06-03'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260603-154931
+  SID-20260603-180254:
+    date: '2026-06-03'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260603-161034
+  SID-20260603-192214:
+    date: '2026-06-03'
+    goal: 'Manutenzione infrastruttura conversazioni MHC. (1) Diagnosi e fix del loop
+      di falsi-orphan nell''export: session_history troncato a 10 ri-flaggava sessioni
+      gia esportate come unprocessed; cap alzato 10->500 in mhc_end.py e 7 fingerprint
+      storici ri-registrati (reconstructed:true) nel config; verificato audit 9 indexed
+      / 1 live. Cancellati 7 export timestamp duplicati. (2) Chiarita la gerarchia
+      di memoria L0 (JSONL locali effimeri ~30gg) vs L1; confermato l''archivio centralizzato
+      MHC-W (raw+md, 375MB) come ground truth permanente. (3) Decisione ratificata:
+      conversazioni archiviate SOLO su MHC-W; rimossa la copia-progetto da extract_conversation.py
+      (WIP MHC-W, da committare+pushare). Commit progetto 7a04433; commit MHC-W annullato
+      (reset --soft) per non spezzare il WIP.'
+    inputs:
+    - .mhc-config.json
+    - session_topology.yaml
+    - adapt.md
+    - ../MHC-W/scripts/mhc_end.py
+    - ../MHC-W/scripts/mhc_check.py
+    - ../MHC-W/scripts/extract_conversation.py
+    - ../MHC-W/.gitignore
+    artifacts_produced:
+    - decision_conversations_only_mhcw_20260603.md
+    - fix_false_orphan_loop_20260603.md
+    continues_from: SID-20260603-180254
