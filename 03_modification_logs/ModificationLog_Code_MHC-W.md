@@ -57,7 +57,8 @@ local tooling that runs the hooks on this and other projects, so its changes are
 
 - **target_repo:** N/A — file locale al workspace Epistemic, non al repo MHC-W
   - path: `C:\Users\loimi\switchdrive\CURRENTLY WORKING ON\AI - assisted papers\Epistemic constitutional AI\.claude\skills\mhc-end\SKILL.md`
-- **commit_sha:** *(pending)*
+- **commit_sha:** `4c0d0c2` (branch `review-response`, modlog-only — vedi nota git
+  in fondo all'entry)
 - **file_path:** `.claude/skills/mhc-end/SKILL.md`
 - **change_type:** `refactor` (downstream sync)
 - **rationale (the WHY):** Il refactor MOD-001 (sandbox→audit-based-recovery, commit
