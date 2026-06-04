@@ -6,13 +6,10 @@ published/
 # Not a project folder. Gitignored entirely; ground truth is MHC-prototype/00_full_conversations/.
 06_conversations/
 
-# Claude Code / local settings
+# Claude Code / local settings + tmp working dirs
 .claude/
-tmpclaude-*/
-
-# Claude tmp working dirs
 tmpclaude-*
-.claude/
+tmpclaude-*/
 
 # OS / editor
 .DS_Store
@@ -29,5 +26,8 @@ venv/
 .env
 
 
-# Conversation transcripts — kept local, not part of public materials (untracked 2026-06-02)
+# Conversation transcripts — kept local, not part of public materials (untracked 2026-06-02).
+# `conversations/` is the export hook's actual project dir; transcripts now live only in MHC-W,
+# so it must be ignored too (it was the unignored gap that nearly committed transcripts).
 00_conversations_full/
+conversations/
