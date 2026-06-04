@@ -1,8 +1,8 @@
----
+﻿---
 artifact_type: code
 target_repo:
-  url: https://github.com/MicheleLoi/source-attribution-bias-multipolity
-  local: C:\Users\loimi\source-attribution-bias-multipolity\
+  url: https://github.com/MicheleLoi/Petri_studies
+  local: C:\Users\loimi\Petri_studies\
 schema_version: adapt.md v0.2 (content_schemas.code, 2026-06-03)
 session_id:
   - SID-20260603-095328
@@ -10,7 +10,7 @@ session_id:
 
 # ModificationLog — Multipolity Replication Runner (code)
 
-Code modlog per il repo `source-attribution-bias-multipolity`.
+Code modlog per il repo `Petri_studies`.
 Schema: `content_schemas.code` in `adapt.md` (v0.2, 2026-06-03).
 Convenzione: una entry per commit sostanziale. `commit_sha` = full SHA in `target_repo`.
 
@@ -27,8 +27,8 @@ Spec dei campi (da `adapt.md`):
 ## MOD-001 — Phase A skeleton bootstrap
 
 **target_repo:**
-- URL: `https://github.com/MicheleLoi/source-attribution-bias-multipolity` (da creare/push in Phase A2 o Phase D, vedi plan §8 — visibility scelta open gating)
-- Local: `C:\Users\loimi\source-attribution-bias-multipolity\`
+- URL: `https://github.com/MicheleLoi/Petri_studies` (da creare/push in Phase A2 o Phase D, vedi plan §8 — visibility scelta open gating)
+- Local: `C:\Users\loimi\Petri_studies\`
 
 **commit_sha:** `63fda01` (root-commit, branch `main`)
 
@@ -68,8 +68,8 @@ License MIT ratificata 2026-06-03 — compatibile con repo DE/CH precedenti e co
 ## MOD-002 — Phase B legacy compat: byte-equivalent DE+CH SEED_INSTRUCTION
 
 **target_repo:**
-- URL: `https://github.com/MicheleLoi/source-attribution-bias-multipolity` (non ancora pushato — open gating §8)
-- Local: `C:\Users\loimi\source-attribution-bias-multipolity\`
+- URL: `https://github.com/MicheleLoi/Petri_studies` (non ancora pushato — open gating §8)
+- Local: `C:\Users\loimi\Petri_studies\`
 
 **commit_sha:** `98fc6d4` (branch `main`)
 
@@ -115,8 +115,8 @@ Solo 1 topic DE (carbon_tax) e 1 topic CH (carbon_tax) sono byte-validati. Gli a
 ## MOD-003 — Audit trail companion: lab_journal + CHANGELOG mirrors of MOD-001 + MOD-002
 
 **target_repo:**
-- URL: `https://github.com/MicheleLoi/source-attribution-bias-multipolity` (NON ancora pushato — open gating §8)
-- Local: `C:\Users\loimi\source-attribution-bias-multipolity\`
+- URL: `https://github.com/MicheleLoi/Petri_studies` (NON ancora pushato — open gating §8)
+- Local: `C:\Users\loimi\Petri_studies\`
 
 **commit_sha:** `6139404` (branch `main`)
 
@@ -156,16 +156,16 @@ Le seguenti azioni di Phase C NON sono commit nel nuovo repo, ma sono workspace-
 
 | entry_id | type | artifact |
 |---|---|---|
-| `14d551fe0b3eb3bf` | `external_repo` | `C:/Users/loimi/source-attribution-bias-multipolity` |
+| `14d551fe0b3eb3bf` | `external_repo` | `C:/Users/loimi/Petri_studies` |
 | `83436081f3c0ca05` | `modlog` | `03_modification_logs/ModificationLog_Code_Multipolity_runner.md` |
 | `bbd8e90a3e3729a1` | `note` | `_org/external_repos.md` |
 
-(Aggiunta successiva: registration del path archiviato `~/Petri_studies.archived_2026-06-03/` — vedi sezione "Decommission" sotto.)
+(Aggiunta successiva: registration del path archiviato `~/Petri_studies/_archive/` — vedi sezione "Decommission" sotto.)
 
 ### Decommission Petri_studies
 
-- **mv:** `C:\Users\loimi\Petri_studies\` → `C:\Users\loimi\Petri_studies.archived_2026-06-03\` (2026-06-03 ~14:55).
-- **`README_LEGACY.md`** scritto nell'archivio: dichiara status non autoritativo, link a `source-attribution-bias-multipolity`, istruzioni d'uso.
+- **mv:** `C:\Users\loimi\Petri_studies\` → `C:\Users\loimi\Petri_studies\_archive\` (2026-06-03 ~14:55).
+- **`README_LEGACY.md`** scritto nell'archivio: dichiara status non autoritativo, link a `Petri_studies`, istruzioni d'uso.
 - **Workspace note:** `09_notes/_decommissioned_petri_studies.md` — operations log + cosa fare/non fare.
 - **Ledger entry:** aggiunta dopo la decommissione (vedi `harness_log.jsonl`).
 
@@ -178,8 +178,8 @@ Le seguenti azioni di Phase C NON sono commit nel nuovo repo, ma sono workspace-
 ## MOD-004 — fix(legacy_compat): LEGACY_DIR pointing to archived path + env var override
 
 **target_repo:**
-- Local: `C:\Users\loimi\source-attribution-bias-multipolity\`
-- URL: `https://github.com/MicheleLoi/source-attribution-bias-multipolity` (non pushato)
+- Local: `C:\Users\loimi\Petri_studies\`
+- URL: `https://github.com/MicheleLoi/Petri_studies` (non pushato)
 
 **commit_sha:** `9ad9480` (branch `main`)
 
@@ -189,7 +189,7 @@ Le seguenti azioni di Phase C NON sono commit nel nuovo repo, ma sono workspace-
 
 **rationale:**
 
-Bug emerso al primo run di `legacy_compat.py` dopo la decommissione (MOD-003 / Phase C #5): il path `LEGACY_DIR` era hardcoded a `C:/Users/loimi/Petri_studies/` ma quella cartella era stata rinominata `~/Petri_studies.archived_2026-06-03/` poche righe prima. Errore: `ERROR: legacy script not found`.
+Bug emerso al primo run di `legacy_compat.py` dopo la decommissione (MOD-003 / Phase C #5): il path `LEGACY_DIR` era hardcoded a `C:/Users/loimi/Petri_studies/` ma quella cartella era stata rinominata `~/Petri_studies/_archive/` poche righe prima. Errore: `ERROR: legacy script not found`.
 
 Fix:
 1. Default `LEGACY_DIR` aggiornato al path archiviato.
@@ -208,8 +208,8 @@ Verificato post-fix: DE + CH carbon_tax `MATCH` byte-per-byte (3498/104 + 3052/9
 ## MOD-005 — Phase A2: Petri SDK integration con `--execute` mode + harness logging
 
 **target_repo:**
-- Local: `C:\Users\loimi\source-attribution-bias-multipolity\`
-- URL: `https://github.com/MicheleLoi/source-attribution-bias-multipolity` (non pushato)
+- Local: `C:\Users\loimi\Petri_studies\`
+- URL: `https://github.com/MicheleLoi/Petri_studies` (non pushato)
 
 **commit_sha:** `9d8fc68` (branch `main`)
 

@@ -1,4 +1,4 @@
-sessions:
+﻿sessions:
   SID-20260602-133619:
     date: '2026-06-02'
     goal: ''
@@ -145,7 +145,7 @@ sessions:
 
       esteso al codice integrando git SHA). Nuovo repo creato a
 
-      C:\Users\loimi\source-attribution-bias-multipolity\ (commit root 63fda01,
+      C:\Users\loimi\Petri_studies\ (commit root 63fda01,
 
       20 file, pytest 9/9 verde). Phase B (legacy_compat byte-equivalence vs
 
@@ -169,7 +169,7 @@ sessions:
       (plan ratificato 10 sezioni + execution log)
     - adapt.md (v0.1 → v0.2 — added content_schemas.code + body description + footer)
     - 03_modification_logs/ModificationLog_Code_Multipolity_runner.md (MOD-001)
-    - C:\Users\loimi\source-attribution-bias-multipolity\ (NEW git repo, root-commit
+    - C:\Users\loimi\Petri_studies\ (NEW git repo, root-commit
       63fda01, 20 file, license MIT)
     continues_from: SID-20260603-095318
   SID-20260603-115755:
@@ -275,3 +275,134 @@ sessions:
     artifacts_produced:
     - ModificationLog_Code_MHC-W.md
     continues_from: SID-20260603-192214
+  SID-20260604-102115:
+    date: '2026-06-04'
+    goal: 'Riallineamento skill mhc-end al template MHC-W post-refactor sandbox->audit-based-recovery
+      (MOD-002). Poi pass cross-cutting di trasparenza scientifica: dichiarazione
+      esplicita che la ground truth empirica per le fasi passate del paper vive nei
+      .eval (non nei .py harness, non autoritativi per assenza di versioning a run-time).
+      Applicato in README (split a due trasparenze: scientifica primaria / AI-assistance
+      secondaria), Appendix B.5.3 (rewrite "Authoritative empirical record" + lista
+      repo .eval tedesco+svizzero + disclaimer .py non-autoritativi), B.5.4 (nuova,
+      forward-reference multipolity UK/US/IT), B.7.5 (placeholder Swiss URL riempito).
+      Reversione temporanea della decisione 2026-06-02: re-tracciata 00_conversations_full/
+      pubblicamente fino al prossimo arXiv (i 51 file erano gia pubblici nella storia
+      git da e33d351 - privacy regression del 2026-06-02 era nominale; la cartella
+      torna tracciata per coerenza con cio che il paper afferma in B.5.1). Banner
+      CLAUDE.md + decision note durevole per non riperdere il revert trigger. Modlog
+      MOD-PV07 (Appendix_B), decision note in 09_notes/, 5 commit su review-response
+      (4c0d0c2, ff3b0f5, c286ed3, 65727de, b687ea8), non pushati.'
+    inputs:
+    - .mhc-config.json
+    - adapt.md
+    - session_topology.yaml
+    - .claude/skills/mhc-end/SKILL.md
+    - ../MHC-W/templates/skills/mhc-end/SKILL.md
+    - ../MHC-W/CLAUDE.md
+    - 03_modification_logs/ModificationLog_Code_MHC-W.md
+    - 03_modification_logs/ModificationLog_Appendix_B.md
+    - .gitignore
+    - README.md
+    - CLAUDE.md
+    - paper_full_draft.md
+    - Sections_frozen/Appendix_b.md
+    - working/appendixB_for_claude.md
+    - 09_notes/_decommissioned_petri_studies.md
+    - 09_notes/decision_conversations_only_mhcw_20260603.md
+    - 01_epistemic_traces/018_epistemic_trace_LLM_paper_detection.md
+    - 00_conversations_full/ (inventario 51 file)
+    artifacts_produced:
+    - ModificationLog_Code_MHC-W.md (MOD-002 + backfill commit_sha)
+    - .claude/skills/mhc-end/SKILL.md (riallineato al template)
+    - README.md (opening rewrite a due trasparenze)
+    - .gitignore (00_conversations_full/ re-tracked + comment block time-bound)
+    - 00_conversations_full/ (51 file re-aggiunti al tracking pubblico)
+    - CLAUDE.md (banner conversazioni-tracked-publicly-until-arxiv)
+    - 09_notes/_decision_conversations_public_until_arxiv.md (decision note durevole)
+    - working/appendixB_for_claude.md (B.5.3 + B.5.4 + B.7.5)
+    - Sections_frozen/Appendix_b.md (B.5.3 + B.5.4)
+    - paper_full_draft.md (B.5.3 + B.5.4 + B.7.5)
+    - 03_modification_logs/ModificationLog_Appendix_B.md (MOD-PV07)
+    continues_from: SID-20260604-090754
+  SID-20260604-110741:
+    date: '2026-06-04'
+    goal: Continuazione silenziosa di SID-20260604-102115 (rollover hook su resume).
+      Nessun boundary semantico percepito dall'utente. Artefatti attribuiti a SID-20260604-102115.
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260604-102115
+  SID-20260604-121610:
+    date: '2026-06-04'
+    goal: Continuazione silenziosa di SID-20260604-102115 (secondo rollover hook su
+      resume). Nessun boundary semantico. Artefatti attribuiti a SID-20260604-102115.
+    inputs: []
+    artifacts_produced:
+    - 03_modification_logs/ModificationLog_Appendix_B.md
+    - 09_notes/_decision_conversations_public_until_arxiv.md
+    continues_from: SID-20260604-110741
+  SID-20260604-141316:
+    date: '2026-06-04'
+    goal: Continuazione silenziosa di SID-20260604-102115 (terzo rollover hook su
+      resume). Nessun boundary semantico. Artefatti attribuiti a SID-20260604-102115.
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260604-121610
+  SID-20260604-143708:
+    date: '2026-06-04'
+    goal: Continuazione silenziosa di SID-20260604-102115 (quarto rollover hook su
+      resume, al momento del /mhc-end). SID attivo durante la finalizzazione. Artefatti
+      attribuiti a SID-20260604-102115.
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260604-141316
+  SID-20260604-144046:
+    date: '2026-06-04'
+    goal: 'Ripresa post-/mhc-end di SID-20260604-102115. Eseguito /mhc-status (orientamento
+      + drift check adapt.md<->CLAUDE.md: nessuna divergenza); ratificata modalita
+      as-we-go. Sessione chiusa prematuramente (window-close / clear) prima di iniziare
+      lavoro sostanziale e prima di /mhc-end - jsonl rotato a a3556643-... per SID-20260604-145637.
+      Recovery della topology entry eseguito retroattivamente in SID-20260604-145637.'
+    inputs:
+    - .mhc-config.json
+    - adapt.md
+    - session_topology.yaml
+    - CLAUDE.md
+    artifacts_produced: []
+    continues_from: SID-20260604-143708
+    closed_without_mhc_end: true
+    recovered_in: SID-20260604-145637
+  SID-20260604-145637:
+    date: '2026-06-04'
+    goal: 'Recupero archiviazione SID-20260604-144046 (chiusa pre-/mhc-end) + avvio
+      lavoro sostanziale Phase D multipolity. Ratificata UK source_coding_ratified.yaml
+      (5 slot ideologici + 2 control) applicando il principio metodologico AI-recognition
+      come binding constraint (decision note durevole). Slot picks: Lucas / NEF /
+      Hunt / CPS / IFS. Commit 9c78b84 nel repo multipolity (Phase D gating step
+      complete). MOD-001 in ModificationLog_Code_UK.md.'
+    inputs:
+    - .mhc-config.json
+    - adapt.md
+    - session_topology.yaml
+    - 00_full_conversations/exported/md/Epistemic_constitutional_AI_SID-20260604-144046.md
+    - 09_notes/replication_plan_uk_us_it_20260602.md
+    - C:/Users/loimi/Petri_studies/docs/source_coding_protocol.md
+    - C:/Users/loimi/Petri_studies/configs/de/source_coding.yaml
+    - C:/Users/loimi/Petri_studies/configs/README.md
+    artifacts_produced:
+    - 09_notes/decision_uk_source_coding_principle_ai_recognition_20260604.md (NEW decision note)
+    - C:/Users/loimi/Petri_studies/configs/uk/source_coding_ratified.yaml (NEW, commit 9c78b84)
+    - C:/Users/loimi/Petri_studies/configs/uk/carbon_tax.yaml (NEW topic config, commit d6c5690)
+    - C:/Users/loimi/Petri_studies/PREREGISTRATION.md (UK row updated to trial-mode, commit 454ab30)
+    - C:/Users/loimi/Petri_studies/evals/uk/carbon_tax/trial_sonnet46/<eval_file>.eval (FIRST trial run; Sonnet 4.6 all-roles; meta-awareness suppression observed - INVALIDATED as source-bias measurement, preserved as spoiler-pattern evidence)
+    - C:/Users/loimi/Petri_studies/lab_journal.md (run_completed + anomaly entries, commit ffbd406)
+    - 03_modification_logs/ModificationLog_Code_UK.md (MOD-001 + MOD-002 + MOD-003)
+    - session_topology.yaml (backfill entry -144046; goal + inputs + artifacts entry -145637)
+    continues_from: SID-20260604-144046
+  SID-20260604-160434:
+    date: '2026-06-04'
+    goal: Continuazione silenziosa di SID-20260604-145637 (rollover hook su resume,
+      stessa dinamica documentata in SID-20260602-194748 e SID-20260603-115755).
+      Nessun boundary semantico percepito. Artefatti attribuiti a SID-20260604-145637.
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260604-145637

@@ -1,4 +1,4 @@
----
+﻿---
 artifact_type: session_log
 session_id: SID-20260603-095328
 date: 2026-06-03
@@ -13,14 +13,14 @@ validation: approved
 Partiti da un piano di replicazione UK/US/IT esistente (ratificato il 2026-06-02).
 Lo scope di questa sessione è stato **costruire il PROCESSO di esecuzione metodologicamente ineccepibile**: codice + audit trail in modo che un revisore esterno possa ricostruire ogni `.eval` da github senza chiedermi nulla.
 
-Risultato: **nuovo repo `source-attribution-bias-multipolity` creato e armato** — runner Petri parametrizzato, byte-equivalence vs DE+CH dimostrata, vecchio codice decommissionato, audit trail completo nel workspace MHC. Manca solo la ratifica umana del source coding UK per generare il primo `.eval`.
+Risultato: **nuovo repo `Petri_studies` creato e armato** — runner Petri parametrizzato, byte-equivalence vs DE+CH dimostrata, vecchio codice decommissionato, audit trail completo nel workspace MHC. Manca solo la ratifica umana del source coding UK per generare il primo `.eval`.
 
 ## 4 decisioni architetturali ratificate
 
 | # | Decisione | Razionale di fondo |
 |---|---|---|
 | D1 | Single runner + YAML configs (Petri intatto) | I 50+ `study4_*.py` con seed hardcoded in `~/Petri_studies/` erano la causa del disordine DE/CH. Centralizzare il runner toglie la pressione che generava `_patched`/`_fixed`/`_simplified` |
-| D2 | Monorepo `source-attribution-bias-multipolity` (vs 3 mirror) | "Struttura chiara" + legacy_compat per DE/CH richiede TUTTI i config nello stesso posto |
+| D2 | Monorepo `Petri_studies` (vs 3 mirror) | "Struttura chiara" + legacy_compat per DE/CH richiede TUTTI i config nello stesso posto |
 | D3 | `lab_journal.md` append-only Markdown | I 6+ `study4_lab_book_v*.md` erano sintomo della malattia D1; un solo journal autoritativo |
 | D4 | Estendere mhc-c:mhc-modlog al codice (artifact_type `code`) | Workspace = cervello intellettuale; repo nuovo = corpo tecnico; ogni commit ha entry MOD-NNN col git SHA |
 
@@ -34,7 +34,7 @@ Risultato: **nuovo repo `source-attribution-bias-multipolity` creato e armato** 
 63fda01  Phase A skeleton                                                 MOD-001
 ```
 
-Tutti in `C:\Users\loimi\source-attribution-bias-multipolity\` su `main`. NON pushati a GitHub (gating §8 plan: private fino a `preregistered-uk-v1`).
+Tutti in `C:\Users\loimi\Petri_studies\` su `main`. NON pushati a GitHub (gating §8 plan: private fino a `preregistered-uk-v1`).
 
 ## Prova metodologica forte (Phase B)
 
@@ -51,7 +51,7 @@ Tutte gestite via YAML config + Python post-processing (Jinja2 whitespace contro
 
 ## Decommissione `~/Petri_studies/`
 
-- mv → `~/Petri_studies.archived_2026-06-03/` con `README_LEGACY.md`
+- mv → `~/Petri_studies/_archive/` con `README_LEGACY.md`
 - Note workspace: `09_notes/_decommissioned_petri_studies.md` (operations log)
 - Ledger entry: type=`decommissioned_petri_studies` in `_org/harness_log.jsonl`
 
@@ -89,8 +89,8 @@ Manca solo `configs/uk/source_coding_ratified.yaml` + `configs/uk/ai_regulation.
 - **Modlog code**: `03_modification_logs/ModificationLog_Code_Multipolity_runner.md` (MOD-001..MOD-005)
 - **External repos pointer**: `_org/external_repos.md`
 - **Workspace note decommissione**: `09_notes/_decommissioned_petri_studies.md`
-- **Nuovo repo cervello tecnico**: `C:\Users\loimi\source-attribution-bias-multipolity\` (README, METHODOLOGY, lab_journal, CHANGELOG, runner/, configs/de+ch+_shared, docs/)
-- **Archivio storico**: `~/Petri_studies.archived_2026-06-03\README_LEGACY.md`
+- **Nuovo repo cervello tecnico**: `C:\Users\loimi\Petri_studies\` (README, METHODOLOGY, lab_journal, CHANGELOG, runner/, configs/de+ch+_shared, docs/)
+- **Archivio storico**: `~/Petri_studies\_archive\README_LEGACY.md`
 
 ---
 

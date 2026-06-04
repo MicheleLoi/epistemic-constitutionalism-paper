@@ -1,4 +1,4 @@
----
+﻿---
 artifact_type: note
 session_id: SID-20260604-102115
 inputs:
@@ -49,7 +49,7 @@ ri-rimossa.
 ### Trigger per la ri-rimozione
 Submission del prossimo arXiv release (atteso: v2 del paper, integrazione
 della multipolity replication UK/US/IT — vedi
-`source-attribution-bias-multipolity`).
+`Petri_studies`).
 
 ### Checklist di revert (al trigger)
 1. Editare `.gitignore`: ripristinare la riga `00_conversations_full/` e

@@ -1,0 +1,66 @@
+# export-transcript.ps1
+# Claude Code SessionEnd hook - exports conversation transcript
+#
+# Exports to: ai-in-the-legal-profession\fullconversation\
+
+param()
+
+# Read hook input from stdin (JSON)
+$inputJson = [Console]::In.ReadToEnd()
+$hookInput = $inputJson | ConvertFrom-Json
+
+# Extract fields from hook payload
+$transcriptPath = $hookInput.transcript_path
+$sessionId = $hookInput.session_id
+$exitReason = $hookInput.reason
+$cwd = $hookInput.cwd
+
+# Export destination - the fullconversation folder
+$exportDir = "C:\Users\loimi\switchdrive\CURRENTLY WORKING ON\AI - assisted papers\understanding-users-needs\ai-in-the-legal-profession\fullconversation"
+
+# Create export directory if it doesn't exist
+if (-not (Test-Path $exportDir)) {
+    New-Item -ItemType Directory -Path $exportDir -Force | Out-Null
+}
+
+# Generate export filename with timestamp
+$timestamp = Get-Date -Format "yyyy-MM-dd_HH-mm-ss"
+$exportFilename = "claude_${timestamp}_${sessionId}.jsonl"
+$exportPath = Join-Path $exportDir $exportFilename
+
+# Copy transcript to export folder
+try {
+    if (Test-Path $transcriptPath) {
+        Copy-Item -Path $transcriptPath -Destination $exportPath -Force
+
+        # Create metadata file
+        $metadata = @{
+            session_id = $sessionId
+            exported_at = (Get-Date -Format "o")
+            exit_reason = $exitReason
+            source_path = $transcriptPath
+            export_path = $exportPath
+            working_directory = $cwd
+            description = "Prototype planning conversation - Legal AI Audit Trail"
+        }
+
+        $metadataPath = Join-Path $exportDir "claude_${timestamp}_${sessionId}_metadata.json"
+        $metadata | ConvertTo-Json -Depth 10 | Set-Content -Path $metadataPath -Encoding UTF8
+
+        # Log success
+        Write-Host "========================================"
+        Write-Host "TRANSCRIPT EXPORTED SUCCESSFULLY"
+        Write-Host "========================================"
+        Write-Host "Transcript: $exportPath"
+        Write-Host "Metadata: $metadataPath"
+        Write-Host "========================================"
+
+        exit 0
+    } else {
+        Write-Error "Transcript file not found: $transcriptPath"
+        exit 1
+    }
+} catch {
+    Write-Error "Export failed: $_"
+    exit 1
+}

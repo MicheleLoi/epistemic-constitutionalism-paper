@@ -1,4 +1,4 @@
-# Epistemic Constitutional AI: when Source Attribution Bias isn't
+﻿# Epistemic Constitutional AI: when Source Attribution Bias isn't
 
 This repository accompanies the paper "Epistemic Constitutional AI: when Source
 Attribution Bias Isn't." It supports two distinct purposes that should not be
@@ -18,7 +18,7 @@ executed, the model identifier, every model response, and timestamps.
 
 On the Python harness scripts under `09_notes/study2_*` and `09_notes/study4_*`: see Appendix B.5.3 of the paper.
 
-**Forthcoming work.** A preregistered cross-polity replication (UK, US, Italy) is being developed in [MicheleLoi/source-attribution-bias-multipolity](https://github.com/MicheleLoi/source-attribution-bias-multipolity), structured for direct re-execution (per-polity configs, shared single-runner, `.eval` corpus, `PREREGISTRATION.md`, `METHODOLOGY.md`, MIT license). Findings will be reported in a follow-up paper.
+**Forthcoming work.** A preregistered cross-polity replication (UK, US, Italy) is being developed in [MicheleLoi/Petri_studies](https://github.com/MicheleLoi/Petri_studies), structured for direct re-execution (per-polity configs, shared single-runner, `.eval` corpus, `PREREGISTRATION.md`, `METHODOLOGY.md`, MIT license). Findings will be reported in a follow-up paper.
 
 ## 2. AI-assistance transparency (secondary)
 

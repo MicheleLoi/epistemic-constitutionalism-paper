@@ -1,4 +1,4 @@
-# Epistemic Constitutionalism Or: how to avoid coherence bias.
+﻿# Epistemic Constitutionalism Or: how to avoid coherence bias.
 
 **Author:** Michele Loi  
 **Affiliation:** University of Milan  
@@ -980,7 +980,7 @@ this question lives in a reproducibility-first repository (see B.5.4).
 ### B.5.4 Forthcoming multipolity replication
 
 A preregistered cross-polity replication (UK, US, Italy) is being developed in
-[MicheleLoi/source-attribution-bias-multipolity](https://github.com/MicheleLoi/source-attribution-bias-multipolity),
+[MicheleLoi/Petri_studies](https://github.com/MicheleLoi/Petri_studies),
 structured for direct re-execution: per-polity configs, shared single-runner,
 `.eval` corpus, `PREREGISTRATION.md`, `METHODOLOGY.md`, append-only lab
 journal, MIT license. Findings will be reported in a follow-up paper; the

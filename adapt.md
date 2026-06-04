@@ -1,4 +1,4 @@
----
+﻿---
 artifact_type: project_adaptation
 project_name: Epistemic constitutional AI
 project_nature: research_workspace
@@ -95,14 +95,14 @@ Il blocco `content_schemas:` nel frontmatter **non** usa i default MHC-C: è sta
 - **`pdl`** — voci `PDL-NNN` di decisione. Campi: `issue`, `source_in_conversation` (citazione dalla conversazione), `analysis`, `verification`, `decision`, `affects`. Evidenza: `08_prompt_development_logs/PromptDevelopmentLog_Section6.md`.
 - **`note`** / **`output`** — lasciati ai **default** MHC-C: le note del progetto sono eterogenee, irrigidirle in uno schema sarebbe controproducente (Ockham).
 - **`code`** — modlog code-aware introdotto 2026-06-03 (SID-20260603-095328) per la replicazione multipolity (vedi piano `~/.claude/plans/as-we-go-pianifica-l-estensione-dello-serialized-pizza.md` §4bis). Campi:
-  - **`target_repo`** — URL del repo + path locale del clone (es. `https://github.com/MicheleLoi/source-attribution-bias-multipolity` + `C:\Users\loimi\source-attribution-bias-multipolity\`).
+  - **`target_repo`** — URL del repo + path locale del clone (es. `https://github.com/MicheleLoi/Petri_studies` + `C:\Users\loimi\Petri_studies\`).
   - **`commit_sha`** — SHA del commit documentato.
   - **`file_path`** — file modificato (lista se multipli).
   - **`change_type`** — uno di: `creation` / `refactor` / `feature` / `fix` / `config` / `test` / `docs` / `decommission` / `lock`.
   - **`rationale`** — il PERCHÉ. Cuore della disciplina MHC.
   - **`affects_evals`** — lista di `.eval` files la cui reproducibility dipende da questa modifica; `none (skeleton only)` per i primi commit pre-eval, `none (cosmetic)` per docs/style.
 
-  Convenzione di file: le entry vivono in `03_modification_logs/ModificationLog_Code_<context>.md`, dove `<context>` = `Multipolity_runner` (cambiamenti al runner / template / schema condivisi) o `<polity>` (UK / US / IT — cambiamenti ai config per polity). Razionale: i modlog del paper coprono il *cervello intellettuale*; i modlog code coprono il *corpo tecnico*. Audit trail = ogni commit nel repo `source-attribution-bias-multipolity` ha entry MHC nel workspace che lo lega a un razionale + set di .eval impattati.
+  Convenzione di file: le entry vivono in `03_modification_logs/ModificationLog_Code_<context>.md`, dove `<context>` = `Multipolity_runner` (cambiamenti al runner / template / schema condivisi) o `<polity>` (UK / US / IT — cambiamenti ai config per polity). Razionale: i modlog del paper coprono il *cervello intellettuale*; i modlog code coprono il *corpo tecnico*. Audit trail = ogni commit nel repo `Petri_studies` ha entry MHC nel workspace che lo lega a un razionale + set di .eval impattati.
 
 Per modificare uno schema in futuro: edita il blocco `content_schemas:` qui sopra — la skill corrispondente leggerà l'override. Per tornare al default: rimuovi il tipo dal blocco.
 

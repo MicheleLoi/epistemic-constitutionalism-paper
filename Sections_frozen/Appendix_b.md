@@ -1,4 +1,4 @@
-# APPENDIX B: Paper Writing Documentation
+﻿# APPENDIX B: Paper Writing Documentation
 
 This appendix documents the AI-assisted writing process used to produce this paper. Following principles of epistemic transparency advocated in the paper itself, we provide a complete account of how human direction and AI text generation were combined, what artifacts were produced, and what lessons emerged regarding the differential suitability of AI models for various writing tasks.
 
@@ -287,7 +287,7 @@ this question lives in a reproducibility-first repository (see B.5.4).
 ### B.5.4 Forthcoming multipolity replication
 
 A preregistered cross-polity replication (UK, US, Italy) is being developed in
-[MicheleLoi/source-attribution-bias-multipolity](https://github.com/MicheleLoi/source-attribution-bias-multipolity),
+[MicheleLoi/Petri_studies](https://github.com/MicheleLoi/Petri_studies),
 structured for direct re-execution: per-polity configs, shared single-runner,
 `.eval` corpus, `PREREGISTRATION.md`, `METHODOLOGY.md`, append-only lab
 journal, MIT license. Findings will be reported in a follow-up paper; the

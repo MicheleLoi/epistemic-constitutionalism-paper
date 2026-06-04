@@ -1,4 +1,4 @@
-# Modification Log: Appendix B
+﻿# Modification Log: Appendix B
 
 **Document:** Appendix_B.md (Paper Writing Documentation)
 **Conversation:** Conversation_Transcript_Claude_2025-12-26_AI_assisted_paper_writing_documentation_and_transparency
@@ -245,7 +245,7 @@ truth for the past phases.
   declaring the `09_notes/study*.py` files non-authoritative and pointing to
   the 2026-06-03 decommissioning note.
 - **B.5.4 added** ("Forthcoming multipolity replication") — forward-references
-  `MicheleLoi/source-attribution-bias-multipolity` (preregistered, MIT,
+  `MicheleLoi/Petri_studies` (preregistered, MIT,
   reproducibility-first repo for the UK/US/IT cross-polity study).
 - **B.7.5 placeholder** `[Swiss-replication-repo-URL]` filled with
   `https://github.com/MicheleLoi/source-attribution-bias-swiss-replication`.
