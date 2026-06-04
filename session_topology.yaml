@@ -247,7 +247,31 @@ sessions:
     continues_from: SID-20260603-180254
   SID-20260604-090754:
     date: '2026-06-04'
-    goal: ''
-    inputs: []
-    artifacts_produced: []
+    goal: Continuazione (rollover) di SID-20260603-192214. Creata la skill MHC-C /mhc-reconcile
+      (wiring a mhc_harness_client.reconcile_check, backend filesystem discipline-grade);
+      chiuso il refactor MHC-W sandbox->audit-based-recovery (pytest 96 verde, MAX_SESSION_HISTORY
+      10->500 per chiudere il loop falsi-orphan alla radice, run_export 6-tuple, 18
+      test riallineati, cleanup doc sandbox + rimozione riferimenti security), commit
+      d4733b2 pushato su origin/main (fast-forward); coerenza MHC-W<->Epistemic riverificata
+      (audit 10 indexed / 0 unprocessed); minuzie Epistemic (.gitignore ora ignora
+      conversations/, dedup .claude, rimosso nul). Indagine del modello MHC corrente
+      (MHC-C/H/G + Chameleon; MHC-W/MHC-L superati). Commit Epistemic non pushati
+      (branch revision in corso).
+    inputs:
+    - .mhc-config.json
+    - adapt.md
+    - session_topology.yaml
+    - mhc_harness_client.py
+    - working/brief_adattatore_mhc_harness_client_mhc_w_20260602.md
+    - .claude/skills/mhc-place/SKILL.md
+    - ../MHC-W/scripts/mhc_start.py
+    - ../MHC-W/scripts/mhc_end.py
+    - ../MHC-W/scripts/mhc_check.py
+    - ../MHC-W/scripts/extract_conversation.py
+    - ../MHC-Work/briefs/mhc-c/pm_executor_reconcile_skill_20260527.md
+    - ../MHC-H/
+    - ../MHC-C/
+    - ../Chameleon/
+    artifacts_produced:
+    - ModificationLog_Code_MHC-W.md
     continues_from: SID-20260603-192214
