@@ -1,0 +1,49 @@
+# NOTICE: Bibliography errors found (2026-04-09)
+#
+# Read 09_notes/URGENT_bibliography_errors_20260409.md before any revision work.
+# Critical: "Van der Linden et al. (2018)" has wrong authors — should be Hanel et al.
+# Full verification report: 07_reference_logs/bibliography_verification_20260409.md
+
+# Claude Code Instructions
+
+This project uses the **Meaningful Human Control** (MHC) methodology.
+
+## Session Start
+
+**At the start of every Claude Code session**, before the user types anything:
+
+1. Read `../MHC-W/CLAUDE.md` — gives you the command set, architecture, version, and routing
+2. Read `../MHC-W/router.md` — gives you the artifact chain and your role in maintained control
+
+Do this **silently**. Do not announce "loading MHC…" unless something requires user attention (missing config, handoff file found, etc.).
+
+## MHC Commands
+
+When user types any MHC-* command, read `../MHC-W/CLAUDE.md` for routing, then the appropriate agent file.
+
+**Shorthand:** `mhc` = `MHC-start`. Do not attempt it as a shell command.
+
+## Available Commands
+
+| Command       | Purpose                                              |
+| ------------- | ---------------------------------------------------- |
+| `MHC-start`   | Initialize session, configure export, show workflows |
+| `MHC-trace`   | Create epistemic trace (Brainstorm)                  |
+| `MHC-PDL`     | Create prompt development log (Design)               |
+| `MHC-prompt`  | Generate complete prompt (Design)                    |
+| `MHC-modlog`  | Create modification log entry (Refine)               |
+| `MHC-note`    | Capture to notes desktop                             |
+| `MHC-status`  | Show project status, resume workflows                |
+| `MHC-guide`   | Show methodology guide                               |
+| `MHC-tools`   | List all commands                                    |
+| `MHC-adapt`   | Learn about workflow adaptation                      |
+| `MHC-handoff` | Generate portable handoff artifact                   |
+| `MHC-resume`  | Collaborator entry point                             |
+| `MHC-recover` | Export current conversation (Claude Code)            |
+| `MHC-end`     | Wrap up session (Web mode)                           |
+| `MHC-import`  | Import external conversation                         |
+| `MHC-harvest` | Extract artifacts from conversation                  |
+
+---
+
+*MHC-W v3.32*

@@ -26,8 +26,13 @@ venv/
 .env
 
 
-# Conversation transcripts — kept local, not part of public materials (untracked 2026-06-02).
-# `conversations/` is the export hook's actual project dir; transcripts now live only in MHC-W,
-# so it must be ignored too (it was the unignored gap that nearly committed transcripts).
-00_conversations_full/
+# Conversation transcripts policy — see 09_notes/_decision_conversations_public_until_arxiv.md
+#
+# 00_conversations_full/ — TRACKED PUBLICLY until next arXiv version (reverses 2026-06-02
+# untracking; files were already public in git history from e33d351 onward, so the
+# privacy regression was nominal). At next arXiv submission: re-add the ignore line +
+# `git rm -r --cached 00_conversations_full/` to untrack without deleting.
+#
+# conversations/ remains ignored — export hook's project dir; per 2026-06-03 decision
+# (decision_conversations_only_mhcw_20260603.md) all future exports go to MHC-W archive only.
 conversations/
