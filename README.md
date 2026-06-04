@@ -1,26 +1,43 @@
 # Epistemic Constitutional AI: when Source Attribution Bias isn't
 
-## Transparency Materials
+This repository accompanies the paper "Epistemic Constitutional AI: when Source
+Attribution Bias Isn't." It supports two distinct purposes that should not be
+confused.
 
-This repository contains full documentation of the AI-assisted writing process for the paper "Epistemic Constitutional AI: when Source Attribution Bias Isn't."
+## 1. Scientific reproducibility (primary)
 
-## Quick Links
+The empirical claims in the paper rest on Petri-framework evaluation runs whose
+**immutable `.eval` records** are the authoritative ground truth. Each `.eval`
+file contains, in self-contained form: the prompts issued, the harness code as
+executed, the model identifier, every model response, and timestamps.
 
-- **Paper:** [arXiv link TBD]
-- **Empirical Data:** [MicheleLoi/source-attribution-bias-data](https://github.com/MicheleLoi/source-attribution-bias-data)
-- **Methodology Documentation:** See Appendix B in the paper for detailed process documentation
+| Study | Authoritative `.eval` records |
+|---|---|
+| Section 2 + Appendix A (German source-attribution-bias study) | [MicheleLoi/source-attribution-bias-data](https://github.com/MicheleLoi/source-attribution-bias-data) — 21 `.eval` files |
+| Section 2 Swiss replication (Appendix B.7) | [MicheleLoi/source-attribution-bias-swiss-replication](https://github.com/MicheleLoi/source-attribution-bias-swiss-replication) — 6 `.eval` files (3 valid, 3 spoiled) |
 
-## Overview
+On the Python harness scripts under `09_notes/study2_*` and `09_notes/study4_*`: see Appendix B.5.3 of the paper.
 
-The paper was written December 23–26, 2025 with AI assistance (Claude Opus 4.5, Claude Sonnet 4.5) using a transparency methodology inspired by Loi (2025, JPEP). All conversations, decisions, corrections, and iterations are documented here.
+**Forthcoming work.** A preregistered cross-polity replication (UK, US, Italy) is being developed in [MicheleLoi/source-attribution-bias-multipolity](https://github.com/MicheleLoi/source-attribution-bias-multipolity), structured for direct re-execution (per-polity configs, shared single-runner, `.eval` corpus, `PREREGISTRATION.md`, `METHODOLOGY.md`, MIT license). Findings will be reported in a follow-up paper.
 
-**Appendix B of the paper** provides the complete methodological account. This README serves as a navigation guide to the raw materials.
+## 2. AI-assistance transparency (secondary)
+
+The rest of this repository documents the process by which the paper was written
+with AI assistance — conversations, decisions, corrections, iterations. This is
+secondary to (1): if a reviewer can replicate the empirical findings from the
+`.eval` records above, they do not need this material to evaluate the science.
+It is provided for those interested in methodology, AI-assisted writing
+practice, or process-level scrutiny — and because the project takes "epistemic
+transparency" as a thesis, it tries to practice it.
+
+The paper was written December 23–26, 2025 with AI assistance (Claude Opus 4.5,
+Claude Sonnet 4.5) using a transparency methodology inspired by Loi (2025,
+JPEP). **Appendix B of the paper** is the canonical methodological account; the
+folders below are the raw materials underlying it.
 
 ---
 
-## Repository Structure
-Repository structure (transparency archive)
-Repository structure (transparency archive)
+## Repository Structure (transparency archive)
 
 ```
 .
