@@ -259,16 +259,39 @@ Additionally available:
 - Section Guidance documents with associated Prompt Development Logs (05_section_guidance/, 08_prompt_development_logs/)
 - Verification reports documenting data accuracy checks (09_notes/)
 
-### B.5.3 Source Data Repository
+### B.5.3 Authoritative empirical record
 
-The empirical data underlying Section 2 and Appendix A is available at:
+Empirical claims in Section 2 and Appendix A rest on the `.eval` files produced
+by the Petri framework runs, not on the harness scripts that generated them.
+Each `.eval` is self-contained (prompts, harness code as executed, model id,
+all responses, timestamps), and is the authoritative artifact against which
+any reported finding can be verified.
 
-**Repository:** GitHub MicheleLoi/source-attribution-bias-data
+**Repositories:**
 
-Contents:
-- 21 .eval files (complete evaluation data)
-- README with data structure documentation
-- All materials necessary to verify reported findings
+- **Section 2 + Appendix A (German study):**
+  [MicheleLoi/source-attribution-bias-data](https://github.com/MicheleLoi/source-attribution-bias-data)
+  — 21 `.eval` files, README with data structure documentation.
+- **Section 2 Swiss replication (see B.7.5):**
+  [MicheleLoi/source-attribution-bias-swiss-replication](https://github.com/MicheleLoi/source-attribution-bias-swiss-replication)
+  — 6 `.eval` files (3 valid, 3 spoiled), lab book, seed files.
+
+**On the Python harness scripts in `09_notes/study2_*` and `09_notes/study4_*`:**
+these are working copies, iteratively edited and never git-versioned during
+their productive life. They are retained here as explanatory material but are
+**not authoritative** — the executable record of what ran is in the `.eval`
+files above. The original harness directory was formally decommissioned on
+2026-06-03 (`09_notes/_decommissioned_petri_studies.md`); subsequent work on
+this question lives in a reproducibility-first repository (see B.5.4).
+
+### B.5.4 Forthcoming multipolity replication
+
+A preregistered cross-polity replication (UK, US, Italy) is being developed in
+[MicheleLoi/source-attribution-bias-multipolity](https://github.com/MicheleLoi/source-attribution-bias-multipolity),
+structured for direct re-execution: per-polity configs, shared single-runner,
+`.eval` corpus, `PREREGISTRATION.md`, `METHODOLOGY.md`, append-only lab
+journal, MIT license. Findings will be reported in a follow-up paper; the
+infrastructure is published in advance.
 
 ---
 

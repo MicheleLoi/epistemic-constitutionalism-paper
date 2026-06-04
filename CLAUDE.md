@@ -1,3 +1,11 @@
+# NOTE: Conversations tracked publicly (temporary)
+#
+# 00_conversations_full/ is TRACKED in this repo until the next arXiv version
+# is published (decision 2026-06-04, SID-20260604-102115). It reverses the
+# 2026-06-02 untracking. At next arXiv submission: re-add the ignore line +
+# `git rm -r --cached 00_conversations_full/`.
+# See 09_notes/_decision_conversations_public_until_arxiv.md
+
 # NOTE: Bibliography verification (2026-04-09) — RESOLVED
 #
 # Primary fix applied 2026-04-22 (MOD-014): Van der Linden → Hanel et al. (2018);

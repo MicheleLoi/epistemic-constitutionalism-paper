@@ -215,3 +215,58 @@ All modifications improve accuracy and transparency of the documentation.
 - B.8.2: Updated reference to include MOD-013
 
 **Rationale:** Accurate phase attribution is essential for understanding the paper's development timeline. The distinction between pre-v1 and post-v1 changes matters for transparency.
+
+---
+
+### MOD-PV07: Authoritative empirical record declared; multipolity replication forward-referenced
+
+**Date:** 2026-06-04
+**Session:** SID-20260604-102115
+**Type:** Content addition + structural rename
+
+**Issue:** B.5.3 was titled "Source Data Repository" and listed only the German
+study `.eval` repo as "data available". It did not (a) declare the `.eval` files
+as **authoritative ground truth** for empirical claims, (b) list the Swiss
+replication repo (covered separately in B.7 but not aggregated here), (c) flag
+the Python harness scripts in `09_notes/study*.py` as non-authoritative working
+copies, or (d) point at the forthcoming multipolity replication repository.
+
+The omission was load-bearing: with ~50 historical harness `.py` files (suffixed
+`_fixed` / `_simplified` / `_v1`, never git-versioned at run time, formally
+decommissioned 2026-06-03), a reader could plausibly mistake the `.py` corpus
+for the replicable record. The `.eval` files — self-contained (prompts, code as
+executed, model id, responses, timestamps) — are the only defensible ground
+truth for the past phases.
+
+**Changes:**
+- **B.5.3 renamed** "Source Data Repository" → "Authoritative empirical record".
+  Body rewritten to (a) declare `.eval` files as authoritative, (b) list both
+  German + Swiss repos in a single table, (c) add an explicit paragraph
+  declaring the `09_notes/study*.py` files non-authoritative and pointing to
+  the 2026-06-03 decommissioning note.
+- **B.5.4 added** ("Forthcoming multipolity replication") — forward-references
+  `MicheleLoi/source-attribution-bias-multipolity` (preregistered, MIT,
+  reproducibility-first repo for the UK/US/IT cross-polity study).
+- **B.7.5 placeholder** `[Swiss-replication-repo-URL]` filled with
+  `https://github.com/MicheleLoi/source-attribution-bias-swiss-replication`.
+
+**Cross-cutting reflections (same decision):**
+- **README.md** opening rewritten to mirror the two-types transparency framing
+  ((1) scientific reproducibility primary, (2) AI-assistance secondary). Commit
+  `c286ed3`.
+- **`00_conversations_full/`** re-tracked publicly until next arXiv version
+  (reverses the 2026-06-02 untracking; the 51 files were already public in git
+  history from `e33d351` onward). Commit `65727de`. Decision recorded in
+  `09_notes/_decision_conversations_public_until_arxiv.md`. Banner added to
+  `CLAUDE.md` with revert trigger.
+
+**Rationale:** Scientific transparency for the past phases of this paper is
+defensible only at the `.eval` level (immutable run records); the `.py` files
+cannot serve as ground truth absent run-time versioning. Declaring this
+explicitly in the paper's Data Availability section avoids documental
+"casino" — a reviewer should not have to infer authoritativeness from
+folder names. The forward-reference to the multipolity repo signals that
+future-phase reproducibility is reproducibility-first by design.
+
+**Locations:** B.5.3 (rewrite), B.5.4 (new), B.7.5 (URL fill), with derivative
+edits in README.md, CLAUDE.md, .gitignore, 09_notes/ as noted above.
