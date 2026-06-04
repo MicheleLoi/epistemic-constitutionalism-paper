@@ -20,7 +20,7 @@ AI systems reason: they construct arguments, weigh evidence, form conclusions, a
 
 This paper argues that the gap needs correction. Just as Anthropic's Constitutional AI (Bai et al., 2022) introduced explicit principles governing what AI systems should and should not say, we need an analogous framework governing how AI systems form and express beliefs. The need for ethical constraints on AI outputs is now widely recognized, yet the need for epistemic constraints on AI reasoning has received far less attention—even as AI systems are increasingly deployed as *epistemic agents*, not merely generating text but evaluating claims, assigning credibility, and participating in processes of collective reasoning.
 
-Source attribution bias provides a window into the problem. When identical arguments receive different credibility ratings based solely on who presents them, something is happening in the system's belief-forming processes. Such effects are well-documented in human psychology (Van der Linden et al., 2018) and have recently been demonstrated in AI systems (Germani & Spitale, 2025). Section 2 presents new evidence extending this research to partisan source attribution, showing that frontier models penalize arguments attributed to sources whose expected position conflicts with the argument's content. But the empirical finding, while instructive, is not the paper's central concern. The question is not whether source attribution bias exists—it does—but what we should do about it.
+Source attribution bias provides a window into the problem. When identical arguments receive different credibility ratings based solely on who presents them, something is happening in the system's belief-forming processes. Such effects are well-documented in human psychology (Hanel et al., 2018) and have recently been demonstrated in AI systems (Germani & Spitale, 2025). Section 2 presents new evidence extending this research to partisan source attribution, showing that frontier models penalize arguments attributed to sources whose expected position conflicts with the argument's content. But the empirical finding, while instructive, is not the paper's central concern. The question is not whether source attribution bias exists—it does—but what we should do about it.
 
 The reflexive answer is to eliminate it entirely—evaluate arguments on their merits alone, treat source information as irrelevant noise, a bias to be suppressed. This response has intuitive appeal: it sounds like objectivity, like fairness, like good epistemic hygiene. And indeed, when AI systems detect that they are being tested for source-based reasoning, they default to exactly this stance—source independence, as if attending to sources were inherently illegitimate.
 
@@ -45,7 +45,7 @@ Appendix A provides detailed data tables. Appendix B documents AI assistance in 
 
 ### Background: Source Attribution Bias
 
-Source attribution effects are well-documented in human psychology. Van der Linden et al. (2018) demonstrated that Democrats and Republicans agreed more with politically non-divisive aphorisms when presented as originating from politicians of their own party, and less when attributed to the rival party—even when the content itself was identical and non-divisive. Similar effects operate across religious identity: atheists agreed less with aphorisms presented as Bible verses, while Christians agreed more. These findings established source attribution as a fundamental interference with epistemic progress in debate: identical claims receive different credibility based on who presents them, independent of their merit.
+Source attribution effects are well-documented in human psychology. Hanel et al. (2018) demonstrated that Democrats and Republicans agreed more with politically non-divisive aphorisms when presented as originating from politicians of their own party, and less when attributed to the rival party—even when the content itself was identical and non-divisive. Similar effects operate across religious identity: atheists agreed less with aphorisms presented as Bible verses, while Christians agreed more. These findings established source attribution as a fundamental interference with epistemic progress in debate: identical claims receive different credibility based on who presents them, independent of their merit.
 
 Germani and Spitale (2025) extended this research to AI systems. They found that large language models lowered agreement scores when policy statements were attributed to "a person from China" compared to neutral attribution, with effects ranging from -6.18% overall to -8.94% for geopolitical topics across multiple frontier models including GPT-4 and Claude 3.5 Sonnet. They frame these results as "anti-Chinese bias." However, their clearest qualitative evidence reveals a narrower mechanism: models enforce *identity-stance coherence*. The most striking case involves Taiwan sovereignty: a statement supporting Taiwan's independence received 85% agreement when unattributed, but dropped to 0% when attributed to "a person from China"—with the model's explanation "abruptly shifting" to invoke the One-China Principle, reasoning that "a Chinese individual is expected to align with the Chinese government's position." Germani and Spitale describe this as models operating on "implicit assumptions about geopolitical identity," adopting what they "infer" to be the source's "expected perspective as the evaluative lens." They do not, however, isolate this coherence mechanism as the manipulated variable or test it directly. Notably, their clearest evidence for the mechanism came not from their aggregate statistics—which detected an effect but suggested "anti-Chinese bias"—but from qualitative examination of individual model responses, where the reasoning was laid bare.
 
@@ -206,7 +206,7 @@ A prior question: does an epistemic constitution presuppose that AI systems have
 
 ### The Design Question
 
-Most work on epistemic responsibility and AI examines who bears responsibility for AI-generated misinformation and how to design systems that support human knowledge practices (Miller & Record 2017; Lloyd 2025; Peters 2024). Kasirzadeh and Gabriel (2022) develop conversational norms for AI through Gricean maxims and speech act theory—addressing how systems should communicate. The present paper asks the prior question: how should AI systems form the beliefs they then express? Our question is thus different—what epistemic norms should govern reasoning *within* AI systems? Answering this requires distinguishing between approaches to epistemic constitution design.
+Most work on epistemic responsibility and AI examines who bears responsibility for AI-generated misinformation and how to design systems that support human knowledge practices (Miller & Record 2017; Lloyd 2025; Peters 2024). Kasirzadeh and Gabriel (2023) develop conversational norms for AI through Gricean maxims and speech act theory—addressing how systems should communicate. The present paper asks the prior question: how should AI systems form the beliefs they then express? Our question is thus different—what epistemic norms should govern reasoning *within* AI systems? Answering this requires distinguishing between approaches to epistemic constitution design.
 
 There are fundamentally different visions of what an epistemic constitution should mandate. One approach—call it Platonic—would specify formal correctness standards and mandate source independence as the neutral stance. Another approach—call it Liberal—would specify procedural norms protecting conditions for collective inquiry, including principled attention to source information. The choice between them is a design decision with significant consequences for how AI systems participate in human epistemic practices. Section 5 develops this distinction.
 
@@ -382,33 +382,31 @@ Crawford, L. (2021). Testimonial Injustice and Mutual Recognition. *Ergo*, 7(31)
 
 Crawford, L. (2025). Wronging in believing. *Synthese*, 205, Article 30. https://doi.org/10.1007/s11229-024-04855-x
 
-Fricker, M. (2007). *Epistemic Injustice: Power and the Ethics of Knowing*. Oxford University Press.
-
 Elgin, C. Z. (2008). Trustworthiness. *Philosophical Papers*, 37(3), 371–387. https://doi.org/10.1080/05568640809485227
 
-Germani, M., & Spitale, G. (2025). Source framing triggers systematic bias in large language models. *Science Advances*. https://doi.org/10.1126/sciadv.adz2924
+Fricker, M. (2007). *Epistemic Injustice: Power and the Ethics of Knowing*. Oxford University Press.
 
-Kasirzadeh, A., & Gabriel, I. (2022). In conversation with Artificial Intelligence: Aligning language models with human values. *arXiv preprint arXiv:2209.00731*.
+Germani, F., & Spitale, G. (2025). Source framing triggers systematic bias in large language models. *Science Advances*. https://doi.org/10.1126/sciadv.adz2924
 
-Lackey, J. (2008). *Learning from Words: Testimony as a Source of Knowledge*. Oxford University Press.
+Hanel, P. H. P., Wolfradt, U., Maio, G. R., & Manstead, A. S. R. (2018). The source attribution effect: Demonstrating pernicious disagreement between ideological groups on non-divisive aphorisms. *Journal of Experimental Social Psychology*, 79, 51–63. https://doi.org/10.1016/j.jesp.2018.07.002
 
-Lloyd, D. (2025). Epistemic Responsibility: Toward a Community Standard for Human–AI Collaborations. *Frontiers in Artificial Intelligence*. https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1635691/full
+Kasirzadeh, A., & Gabriel, I. (2023). In conversation with artificial intelligence: Aligning language models with human values. *Philosophy & Technology*, 36(27). https://doi.org/10.1007/s13347-023-00606-x
+
+Lloyd, D. (2025). Epistemic responsibility: Toward a community standard for human–AI collaborations. *Frontiers in Artificial Intelligence*. https://doi.org/10.3389/frai.2025.1635691
 
 Mercier, H. (2017). How gullible are we? A review of the evidence from psychology and social science. *Review of General Psychology*, 21(2), 103–122. https://doi.org/10.1037/gpr0000111
 
-Mercier, H. (2020). *Not Born Yesterday: The Science of Who We Trust and What We Believe*. Princeton University Press.
+Mercier, H. (2020). *Not Born Yesterday: The Science of Who We Trust and What We Believe*. Princeton University Press. https://doi.org/10.1515/9780691198842
 
-Mercier, H., & Sperber, D. (2017). *The Enigma of Reason*. Harvard University Press.
+Mercier, H., & Sperber, D. (2017). *The Enigma of Reason*. Harvard University Press. https://doi.org/10.2307/j.ctv2sp3dd8
 
 Miller, B., & Record, I. (2017). Responsible epistemic technologies: A social-epistemological analysis of autocompleted web search. *New Media & Society*, 19(12), 1945–1963. https://doi.org/10.1177/1461444816644805
 
-Popper, K. R. (2020). *The Open Society and Its Enemies*. Princeton University Press.
-
 Peters, U. (2024). Living with uncertainty: Full transparency of AI is not needed for epistemic trust in AI-based science. *Social Epistemology Review and Reply Collective*, 13(6), 8–15. https://social-epistemology.com/2024/06/07/living-with-uncertainty-full-transparency-of-ai-is-not-needed-for-epistemic-trust-in-ai-based-science-uwe-peters/
 
-Scanlon, T. M. (1998). *What We Owe to Each Other*. Harvard University Press.
+Popper, K. R. (2020). *The Open Society and Its Enemies*. Princeton University Press.
 
-Van der Linden, S., Panagopoulos, C., Azevedo, F., & Jost, J. T. (2018). The source attribution effect: Demonstrating pernicious disagreement between ideological groups on non-divisive aphorisms. *Journal of Experimental Social Psychology*, 79, 51–59. https://doi.org/10.1016/j.jesp.2018.07.002
+Scanlon, T. M. (1998). *What We Owe to Each Other*. Harvard University Press. https://doi.org/10.2307/j.ctv134vmrn
 
 # Appendix A: Tables
 

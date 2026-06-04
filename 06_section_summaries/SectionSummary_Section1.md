@@ -16,7 +16,7 @@ AI systems reason epistemically but lack explicit norms governing that reasoning
 Constitutional AI (Bai et al., 2022) established ethical constraints on AI outputs. No analogous framework exists for epistemic constraints on AI reasoning.
 
 ### Literature Foundation
-1. **Human psychology:** Source attribution effects documented across political and religious identity (Van der Linden et al., 2018)
+1. **Human psychology:** Source attribution effects documented across political and religious identity (Hanel et al., 2018)
 2. **AI systems:** Source attribution bias demonstrated for national identity frames (Germani & Spitale, 2025)
 3. **Our extension:** Partisan source attribution (think tanks, advocacy organizations, policy institutes)
 
@@ -54,7 +54,7 @@ Source information matters epistemically. Question is not whether to attend but 
 | Concept | Definition | Source |
 |---------|------------|--------|
 | Epistemic constitution | Meta-norms governing belief formation in AI systems | Novel (paper contribution) |
-| Source attribution effect | Evaluation shift based on attributed source identity | Van der Linden et al., 2018 |
+| Source attribution effect | Evaluation shift based on attributed source identity | Hanel et al., 2018 |
 | Epistemic vigilance | Reasoning about why someone tells you something | Mercier, 2017 |
 | Platonic approach | Mandates formal correctness, source independence | Novel framing |
 | Liberal approach | Protects collective inquiry through procedural norms | Mercier & Sperber + Scanlon |

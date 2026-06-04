@@ -38,7 +38,7 @@ No new citations required because:
 | Citation | Sections Used |
 |----------|---------------|
 | Bai et al. (2022) | 1, 4 |
-| Van der Linden et al. (2018) | 1 |
+| Hanel et al. (2018) | 1 |
 | Germani & Spitale (2025) | 1 |
 | Mercier & Sperber (2017) | 1, 5, 6, 7 |
 | Mercier (2020) | 6 |

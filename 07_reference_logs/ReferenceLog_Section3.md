@@ -47,7 +47,7 @@ None. Section 3 does not add citations beyond the Mercier sources.
 | Citation | First Used | Role |
 |----------|------------|------|
 | Bai et al. (2022) | Section 1 | Constitutional AI anchor |
-| Van der Linden et al. (2018) | Section 1 | Source attribution in human psychology |
+| Hanel et al. (2018) | Section 1 | Source attribution in human psychology |
 | Germani & Spitale (2025) | Section 1 | Prior AI source attribution work |
 | Mercier (2017) | Section 3 | Epistemic vigilance framework |
 | Mercier & Sperber (2017) | Section 3 | Argumentative theory of reason |

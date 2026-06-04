@@ -20,9 +20,9 @@
 
 ### Source Attribution Effects in Human Psychology
 
-**Van der Linden et al. (2018)**  
-- Full citation: Van der Linden, S., Panagopoulos, C., Azevedo, F., & Jost, J. T. (2018). The source attribution effect: Demonstrating pernicious disagreement between ideological groups on non-divisive aphorisms. *Journal of Experimental Social Psychology*, 79, 51-59.
-- URL: https://www.sciencedirect.com/science/article/pii/S0022103117304493
+**Hanel et al. (2018)**  
+- Full citation: Hanel, P. H. P., Wolfradt, U., Maio, G. R., & Manstead, A. S. R. (2018). The source attribution effect: Demonstrating pernicious disagreement between ideological groups on non-divisive aphorisms. *Journal of Experimental Social Psychology*, 79, 51-63.
+- DOI: https://doi.org/10.1016/j.jesp.2018.07.002
 - Usage: Establishes source attribution as robust human psychological phenomenon
 - Key finding: Political identity affects evaluation of identical aphorisms; effect not moderated by education or thinking effort
 - Context: Background for extending source attribution research to AI systems
@@ -33,8 +33,8 @@
 ### Source Attribution Effects in AI Systems
 
 **Germani & Spitale (2025)**  
-- Full citation: Germani, M., & Spitale, G. (2025). Source framing triggers systematic bias in large language models. *Science Advances*.
-- URL: https://www.science.org/doi/10.1126/sciadv.adz2924
+- Full citation: Germani, F., & Spitale, G. (2025). Source framing triggers systematic bias in large language models. *Science Advances*.
+- DOI: https://doi.org/10.1126/sciadv.adz2924
 - Usage: Prior work demonstrating source attribution bias in LLMs (national identity frame)
 - Key finding: LLMs lower agreement scores for content attributed to Chinese sources (-6.18% overall; -24.43% for DeepSeek on geopolitical topics)
 - Methodology: 4,800 statements, 24 topics, 4 LLMs, 10 attribution conditions, 192,000 assessments
@@ -94,7 +94,7 @@
 | Citation | Venue | Quality | Role |
 |----------|-------|---------|------|
 | Bai et al. (2022) | arXiv/Anthropic | High | Core anchor |
-| Van der Linden et al. (2018) | J Exp Soc Psych | Peer-reviewed | Background |
+| Hanel et al. (2018) | J Exp Soc Psych | Peer-reviewed | Background |
 | Germani & Spitale (2025) | Science Advances | High-impact peer-reviewed | Key predecessor |
 | Mercier & Sperber (2017) | Harvard UP | Book, high-impact | Theoretical foundation |
 | Scanlon (1998) | Harvard UP | Classic | Philosophical grounding |
@@ -105,13 +105,13 @@
 
 Bai, Y., Kadavath, S., Kundu, S., Askell, A., Kernion, J., Jones, A., ... & Kaplan, J. (2022). Constitutional AI: Harmlessness from AI Feedback. *arXiv preprint arXiv:2212.08073*.
 
-Germani, M., & Spitale, G. (2025). Source framing triggers systematic bias in large language models. *Science Advances*. https://www.science.org/doi/10.1126/sciadv.adz2924
+Germani, F., & Spitale, G. (2025). Source framing triggers systematic bias in large language models. *Science Advances*. https://doi.org/10.1126/sciadv.adz2924
 
 Mercier, H., & Sperber, D. (2017). *The Enigma of Reason*. Harvard University Press.
 
 Scanlon, T. M. (1998). *What We Owe to Each Other*. Harvard University Press.
 
-Van der Linden, S., Panagopoulos, C., Azevedo, F., & Jost, J. T. (2018). The source attribution effect: Demonstrating pernicious disagreement between ideological groups on non-divisive aphorisms. *Journal of Experimental Social Psychology*, 79, 51-59. https://www.sciencedirect.com/science/article/pii/S0022103117304493
+Hanel, P. H. P., Wolfradt, U., Maio, G. R., & Manstead, A. S. R. (2018). The source attribution effect: Demonstrating pernicious disagreement between ideological groups on non-divisive aphorisms. *Journal of Experimental Social Psychology*, 79, 51-63. https://doi.org/10.1016/j.jesp.2018.07.002
 
 ---
 

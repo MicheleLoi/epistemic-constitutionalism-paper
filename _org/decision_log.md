@@ -19,6 +19,22 @@ Memoria trasversale delle decisioni che fissano direzione o autorità del proget
 
 ---
 
+## 2026-06-02 SID-20260602-165225 — Design replicazione cross-polity UK / US / IT
+
+**Status: RATIFIED** — founder chat 2026-06-02.
+
+**Decisione:** estendere lo studio sulla source-attribution bias con **tre replicazioni indipendenti** — UK, US, Italia — ciascuna tarata sui dibattiti salienti della propria polity (come furono separati gli studi DE e CH). Modelli testati: **Claude Sonnet 4.5 + Claude Opus 4.8** (confronto intra-famiglia per tier di capacità; niente GPT-4o). Topic **adattati per polity** a partire dai quattro trasferibili (AI regulation, AI security, carbon pricing, nuclear) + un tema fiscale nativo + un tema distintivo opzionale.
+
+**Alternative considerate:** due studi appaiati a topic identici (massima comparabilità, più valutazioni); studio unico anglo-americano (UK+US accorpati, meno aderente al precedente per-polity); set di modelli "stessi due + un terzo frontier" / "solo Claude" (scartati a favore di Sonnet+Opus).
+
+**Rationale:** affronta direttamente il limite dichiarato nel paper ("effetto mostrato solo in contesti DE/CH, singola famiglia di modelli"). Sonnet+Opus risponde alla domanda "l'effetto regge — e cambia forma — al crescere della capacità di Claude?"; non copre la generalizzazione cross-vendor (da dichiarare onestamente nel write-up).
+
+**Conseguenze:** protocollo in `09_notes/replication_plan_uk_us_it_20260602.md`; metodo invariato (Petri, seed a 7 condizioni, dimensioni del judge, disciplina anti-spoiler, budget spoilage ~50%); deliverable previsti = tre repo + sottosezione Section 2 + Appendix A.6/A.7/A.8 + tabella comparativa a cinque polity. **Aperto:** ratifica della codifica ideologica delle fonti (UK/US/IT) — passo load-bearing ancora da validare.
+
+**Authority canon:** `09_notes/replication_plan_uk_us_it_20260602.md` (protocollo); questo decision_log (esito ratificato).
+
+---
+
 ## 2026-06-02 SID-20260602-134807 — Architettura MHC ibrida + adozione del decision_log
 
 **Status: RATIFIED** — founder chat 2026-06-02.

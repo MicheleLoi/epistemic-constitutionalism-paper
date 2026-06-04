@@ -45,7 +45,7 @@ This document tracks how the paper was written, including input-output relations
 - ModificationLog_Section1
 
 **Key Decisions:**
-- Positioned study within source attribution literature (Van der Linden et al. 2018, Germani & Spitale 2025)
+- Positioned study within source attribution literature (Hanel et al. 2018, Germani & Spitale 2025)
 - Three-finding preview structure established
 - AI rhetorical tell elimination pattern identified
 
