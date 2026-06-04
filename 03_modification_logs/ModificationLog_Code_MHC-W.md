@@ -1,7 +1,9 @@
 ---
 artifact_type: code_modlog
 context: MHC-W (framework infrastructure — archived)
-session_id: SID-20260604-090754
+session_id:
+  - SID-20260604-090754
+  - SID-20260604-102115
 validation: approved
 ---
 
@@ -50,4 +52,34 @@ local tooling that runs the hooks on this and other projects, so its changes are
   unit suite — `pytest tests/`: **96 passed**, all four scripts `py_compile` OK)
 
 ---
-*Code modlog opened 2026-06-04 (SID-20260604-090754). Schema `code` per adapt.md.*
+
+## MOD-002 — Propagate sandbox-removal to local `mhc-end` skill copy
+
+- **target_repo:** N/A — file locale al workspace Epistemic, non al repo MHC-W
+  - path: `C:\Users\loimi\switchdrive\CURRENTLY WORKING ON\AI - assisted papers\Epistemic constitutional AI\.claude\skills\mhc-end\SKILL.md`
+- **commit_sha:** *(pending)*
+- **file_path:** `.claude/skills/mhc-end/SKILL.md`
+- **change_type:** `refactor` (downstream sync)
+- **rationale (the WHY):** Il refactor MOD-001 (sandbox→audit-based-recovery, commit
+  `d4733b2` su MHC-W) ha aggiornato il **template** in
+  `MHC-W/templates/skills/mhc-end/SKILL.md` rimuovendo la sezione `## Sandbox mode`.
+  La **copia installata** in questo progetto era pre-refactor (83 righe, sezione
+  sandbox presente) e descriveva un meccanismo (`_parallel/<SID>/`, directive
+  `[MHC sandbox]`) ormai inesistente nell'infrastruttura. Il SessionStart hook
+  l'ha segnalata come stale (`[MHC hint] 1 core skill out of sync: mhc-end`).
+  Riallineata copiando il template fresco (68 righe). Nessuna perdita funzionale:
+  il branch sandbox era dead code che non poteva più attivarsi (l'hook che emetteva
+  `[MHC sandbox]` è stato rimosso). Razionale di coerenza: la doc che Claude legge
+  in sessione ora corrisponde all'infrastruttura che esegue.
+- **affects_evals:** `none` (skill documentation; nessun impatto su `.eval` files)
+- **nota git:** Il file modificato vive in `.claude/skills/mhc-end/SKILL.md`,
+  gitignored da `.gitignore:10` (`.claude/`) per design — `.claude/` è trattato come
+  config locale rigenerabile, non source del progetto. Di conseguenza il commit
+  che traccia MOD-002 contiene **solo questo modlog**, non il diff della skill.
+  La canonical source del contenuto è già committata upstream: template MHC-W
+  `templates/skills/mhc-end/SKILL.md` @ `d4733b2` (vedi MOD-001). MOD-002 è la
+  registrazione disciplinare della propagazione locale; il diff effettivo è
+  ispezionabile via `diff` contro il template MHC-W o ri-applicabile da template.
+
+---
+*Code modlog opened 2026-06-04 (SID-20260604-090754); MOD-002 added 2026-06-04 (SID-20260604-102115). Schema `code` per adapt.md.*
