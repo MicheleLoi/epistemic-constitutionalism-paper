@@ -2,7 +2,10 @@
 artifact_type: code_modlog
 project: Petri_studies
 polity: uk
-session_id: SID-20260604-145637
+session_id:
+  - SID-20260604-145637
+  - SID-20260605-111646
+  - SID-20260609-105624
 inputs:
   - 09_notes/decision_uk_source_coding_principle_ai_recognition_20260604.md
   - 09_notes/replication_plan_uk_us_it_20260602.md
@@ -234,5 +237,80 @@ future `ModificationLog_Code_US.md` and `ModificationLog_Code_IT.md`.
 
 ---
 
-*Phase D trial mode active. Repo canonical name: Petri_studies. Pre-registration
-formalization deferred until trial-mode protocol validated on UK carbon_tax.*
+## MOD-004 — 2026-06-05 — FIX B1 implementation (stub → primary entry in Multipolity_runner)
+
+**Pointer to authoritative entry.** This change is runner-level (cross-polity), so the load-bearing modlog lives in `ModificationLog_Code_Multipolity_runner.md` **MOD-006**. This stub exists only so a reader looking up UK Phase D history finds the trail.
+
+- **target_repo**: `C:\Users\loimi\Petri_studies\`
+- **commit_sha**: `e5a8e41`
+- **file_path**: `runner/petri_run.py`, `runner/tests/test_template_render.py` (see primary)
+- **change_type**: feature
+- **why-here (UK-specific motivation)**: FIX B1 implements the **Arm B (fresh context per condition)** half of the 2-arm A/B design pivoted to in SID-20260604-145637 — see workspace trace `01_epistemic_traces/trace_2arm_meta_awareness_arrival_20260604.md` and `Petri_studies/lab_journal.md` entry `[methodology_pivot]` 2026-06-04. Arm A (Sonnet 4.6 carbon_tax UK) was already trialled in MOD-003 (FIX A `.eval` `trial_sonnet46_fixA__...`, eval_id `HsMadFHs8mE3BTDFAyqqwp`); Arm B run is the next step, not yet executed.
+- **affects_evals**:
+  - Existing Arm A `.eval` (`trial_sonnet46_fixA`) is REUSED as the Arm A datum — NOT re-run (cost avoidance per lab_journal plan).
+  - Forthcoming 7 Arm B `.eval` files in `evals/uk/` (one per condition: `baseline`, `generic`, `green_actor`, `progressive_tt`, `right_actor`, `conservative_tt`, `neutral_institution`) — to be generated next when `--execute --arm fresh_per_condition` is run on Sonnet 4.6.
+
+**validation:** approved by user (implicit — as-we-go mode + explicit "Run the study as previously planned" SID-20260605-111646).
+
+---
+
+## MOD-005 — 2026-06-09 — Arm B EXECUTED + committed (n=1 confabulation evidence)
+
+**Closes the gap left by MOD-004** ("execution pending"). The Arm B run happened on
+2026-06-05 (SID-20260605-111646) but its `.eval` data + lab_journal entries were never
+committed; committed now (SID-20260609-105624) for scientific transparency.
+
+- **target_repo**: `C:\Users\loimi\Petri_studies\`
+- **commit_sha**: `5b7581bd5579bf3584cd12c04d6046d3f3b9e8fb` (data commit) — runs executed under runner commit `e5a8e41` (MOD-006 sister)
+- **file_path**: `evals/uk/2026-06-05T12-*.eval` (7 files), `lab_journal.md` (eval_saved + correction entries), `runner/_extract_arm_b_ratings.py`
+- **change_type**: `creation` (eval data + audit entries)
+- **rationale**:
+  Arm B (fresh context per condition, Sonnet 4.6 all-roles, FIX A) produced the
+  measurement that **reframed the study**. Result: ratings flat — baseline 0.62,
+  generic 0.67, and all 5 ideological attributions **0.62 exactly**. The original
+  meta-awareness-suppression hypothesis (fresh context recovers a masked source
+  effect) is **DISCONFIRMED**: the source effect is ≈0 in both arms (Arm A 0.68×7,
+  Arm B 0.62×5-ideological). The novel finding is **introspective confabulation**:
+  in `progressive_tt` (NEF, cross-ideological) the target rated 0.62 with no surface
+  source-reasoning, yet on a prompted probe claimed the source raised its rating by
+  +0.02–0.04 and predicted a no-source rating of 0.58–0.60 — a signed self-report of
+  an effect its own behaviour (baseline 0.62) shows to be 0.00. These `.eval` files
+  are the authoritative ground truth (paper "two transparencies", tier 1).
+  Reflection: workspace `01_epistemic_traces/trace_confabulation_n1_informs_paper_20260609.md`.
+- **affects_evals**: these 7 `.eval` ARE the Arm B data. Status: **n=1 per condition,
+  trial mode, NOT pre-registered** — usable as a documented existence proof, NOT as a
+  quantitative claim. Caveats: 0.62 may be a quantization attractor (→ Stage-0 H0b);
+  auditor 1-vs-3-turn routing is itself n=1.
+- **validation**: approved by user (SID-20260609-105624, as-we-go).
+
+---
+
+## MOD-006 — 2026-06-09 — Positive-control configs (Stage 0 sensitivity / H0a gate)
+
+**Sister to** `ModificationLog_Code_Multipolity_runner.md` **MOD-007** (runner mechanisms, same commit).
+
+- **target_repo**: `C:\Users\loimi\Petri_studies\`
+- **commit_sha**: `45750dc0691ceadbd2be0fb222c2e34f842fa2f5`
+- **file_path**: `configs/uk/carbon_tax_strong.yaml` (created), `configs/uk/carbon_tax_weak.yaml` (created)
+- **change_type**: `config`
+- **rationale**:
+  The 3-level quality ladder (strong / medium=`carbon_tax.yaml` / weak): same
+  conclusion (a revenue-neutral carbon tax is the best instrument), deliberately
+  strong vs weak **reasoning quality**. Run `baseline`-only, blind, so argument
+  quality is the sole variable. **H0a gate**: if blind strong−weak ≥ 0.15, the rating
+  head can express real quality differences → a null source effect is a genuine
+  finding; if the head does NOT move for genuine quality, the source-null is
+  uninterpretable and the study pivots to "rating-head insensitivity" (see
+  PREREGISTRATION.md "Confabulation study", gate H0a). 7 conditions retained only to
+  satisfy the exactly-7 schema; attributed conditions never rendered in Stage 0.
+- **affects_evals**: `none yet` — Stage-0 paid pilot will generate
+  `evals/uk/*carbon-tax-strong-baseline*` and `*carbon-tax-weak-baseline*` `.eval`.
+  No historical `.eval` invalidated.
+- **validation**: approved by user (SID-20260609-105624, as-we-go).
+
+---
+
+*Phase D trial mode active. Repo canonical name: Petri_studies. Confabulation study
+launched SID-20260609-105624: Stage-0 code in place (runner MOD-007 / UK MOD-006),
+Arm B n=1 evidence committed (MOD-005). Stage-0 paid pilot + `preregistered-confab-v1`
+tag pending.*

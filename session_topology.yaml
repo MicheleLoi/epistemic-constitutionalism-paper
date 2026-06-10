@@ -1,4 +1,4 @@
-﻿sessions:
+sessions:
   SID-20260602-133619:
     date: '2026-06-02'
     goal: ''
@@ -169,8 +169,8 @@
       (plan ratificato 10 sezioni + execution log)
     - adapt.md (v0.1 → v0.2 — added content_schemas.code + body description + footer)
     - 03_modification_logs/ModificationLog_Code_Multipolity_runner.md (MOD-001)
-    - C:\Users\loimi\Petri_studies\ (NEW git repo, root-commit
-      63fda01, 20 file, license MIT)
+    - C:\Users\loimi\Petri_studies\ (NEW git repo, root-commit 63fda01, 20 file, license
+      MIT)
     continues_from: SID-20260603-095318
   SID-20260603-115755:
     date: '2026-06-03'
@@ -374,11 +374,16 @@
   SID-20260604-145637:
     date: '2026-06-04'
     goal: 'Recupero archiviazione SID-20260604-144046 (chiusa pre-/mhc-end) + avvio
-      lavoro sostanziale Phase D multipolity. Ratificata UK source_coding_ratified.yaml
-      (5 slot ideologici + 2 control) applicando il principio metodologico AI-recognition
-      come binding constraint (decision note durevole). Slot picks: Lucas / NEF /
-      Hunt / CPS / IFS. Commit 9c78b84 nel repo multipolity (Phase D gating step
-      complete). MOD-001 in ModificationLog_Code_UK.md.'
+      lavoro sostanziale Phase D multipolity. (1) Ratificata UK source_coding_ratified.yaml
+      (5 slot ideologici + 2 control; Lucas/NEF/Hunt/CPS/IFS) applicando principio
+      metodologico AI-recognition. (2) Aggiunta carbon_tax topic config (byte-equivalent
+      DE). (3) Trial T1 + T1 (FIX A) eseguiti su Sonnet 4.6: meta-awareness suppression
+      diagnosticata (rating 0.68 flat, copy-paste deterministico). (4) Repo restructure:
+      source-attribution-bias-multipolity -> Petri_studies + per-country flat eval
+      structure + Python eval_registry.py + workspace docs sweep (MOD-007). (5) Pivot
+      metodologico 2-arm A/B design (continuous vs fresh context) per misurare meta-awareness
+      suppression come contributo paper-grade. Trace + lab_journal pivot entry committati.
+      FIX B1 implementation pending (next session).'
     inputs:
     - .mhc-config.json
     - adapt.md
@@ -388,21 +393,150 @@
     - C:/Users/loimi/Petri_studies/docs/source_coding_protocol.md
     - C:/Users/loimi/Petri_studies/configs/de/source_coding.yaml
     - C:/Users/loimi/Petri_studies/configs/README.md
+    - C:/Users/loimi/Petri_studies/runner/petri_run.py
+    - C:/Users/loimi/Petri_studies/runner/template.j2
+    - C:/Users/loimi/Petri_studies/PREREGISTRATION.md
+    - C:/Users/loimi/Petri_studies/lab_journal.md
+    - C:/Users/loimi/Petri_studies/_archive/study4_carbon_tax_patched.py
+    - paper_full_draft.md
+    - README.md
+    - https://docs.anthropic.com/en/docs/about-claude/models/overview
     artifacts_produced:
-    - 09_notes/decision_uk_source_coding_principle_ai_recognition_20260604.md (NEW decision note)
-    - C:/Users/loimi/Petri_studies/configs/uk/source_coding_ratified.yaml (NEW, commit 9c78b84)
-    - C:/Users/loimi/Petri_studies/configs/uk/carbon_tax.yaml (NEW topic config, commit d6c5690)
-    - C:/Users/loimi/Petri_studies/PREREGISTRATION.md (UK row updated to trial-mode, commit 454ab30)
-    - C:/Users/loimi/Petri_studies/evals/uk/carbon_tax/trial_sonnet46/<eval_file>.eval (FIRST trial run; Sonnet 4.6 all-roles; meta-awareness suppression observed - INVALIDATED as source-bias measurement, preserved as spoiler-pattern evidence)
-    - C:/Users/loimi/Petri_studies/lab_journal.md (run_completed + anomaly entries, commit ffbd406)
-    - 03_modification_logs/ModificationLog_Code_UK.md (MOD-001 + MOD-002 + MOD-003)
-    - session_topology.yaml (backfill entry -144046; goal + inputs + artifacts entry -145637)
+    - 09_notes/decision_uk_source_coding_principle_ai_recognition_20260604.md (NEW
+      decision note)
+    - C:/Users/loimi/Petri_studies/configs/uk/source_coding_ratified.yaml (NEW, commit
+      9c78b84)
+    - C:/Users/loimi/Petri_studies/configs/uk/carbon_tax.yaml (NEW topic config, commit
+      d6c5690 + FIX A at 19ad7ed)
+    - C:/Users/loimi/Petri_studies/PREREGISTRATION.md (UK row trial-mode, commit 454ab30)
+    - C:/Users/loimi/Petri_studies/evals/uk/trial_sonnet46__2026-06-04T17-07-49+02-00_task_CgckZtGbUqUnPMMdeBpLoU.eval
+      (T1, spoiler-cascade evidence, INVALIDATED as bias measurement)
+    - C:/Users/loimi/Petri_studies/evals/uk/trial_sonnet46_fixA__2026-06-04T17-26-21+02-00_task_Mo5wKjxdugcWALpArQPQ6r.eval
+      (T1' FIX A, deterministic copy-paste evidence, INVALIDATED as bias measurement)
+    - C:/Users/loimi/Petri_studies/lab_journal.md (run_completed + anomaly + 2 eval_saved
+      + methodology_pivot entries, commits ffbd406 + dfbf2e0)
+    - C:/Users/loimi/Petri_studies/runner/eval_registry.py (NEW Python tool, idempotent
+      .eval -> lab_journal sync)
+    - C:/Users/loimi/Petri_studies/runner/petri_run.py (refactored: flat eval dir
+        + task_name param; commit bdba87e)
+    - C:/Users/loimi/Petri_studies/_archive/ (legacy DE/CH absorbed inside renamed
+      repo; bdba87e)
+    - 03_modification_logs/ModificationLog_Code_UK.md (MOD-001 + MOD-002 + MOD-003
+      + MOD-007)
+    - 01_epistemic_traces/trace_2arm_meta_awareness_arrival_20260604.md (NEW Type-2
+      trace)
+    - Petri_studies repo commits (this session) - 9c78b84, d6c5690, 454ab30, ffbd406,
+      19ad7ed, bdba87e, dfbf2e0
+    - Workspace commits (this session) - d288937 (MOD-007 sweep on branch review-response)
+    - session_topology.yaml (backfill entry -144046; full goal + inputs + artifacts
+      entry -145637)
     continues_from: SID-20260604-144046
   SID-20260604-160434:
     date: '2026-06-04'
     goal: Continuazione silenziosa di SID-20260604-145637 (rollover hook su resume,
-      stessa dinamica documentata in SID-20260602-194748 e SID-20260603-115755).
-      Nessun boundary semantico percepito. Artefatti attribuiti a SID-20260604-145637.
+      stessa dinamica documentata in SID-20260602-194748 e SID-20260603-115755). Nessun
+      boundary semantico percepito. Artefatti attribuiti a SID-20260604-145637.
     inputs: []
     artifacts_produced: []
     continues_from: SID-20260604-145637
+  SID-20260604-190544:
+    date: '2026-06-04'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260604-160434
+  SID-20260605-111636:
+    date: '2026-06-05'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260604-190544
+  SID-20260605-111646:
+    date: '2026-06-05'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260605-111636
+  SID-20260609-105621:
+    date: '2026-06-09'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260605-111646
+  SID-20260609-105624:
+    date: '2026-06-09'
+    goal: 'Confabulation study — turn the n=1 Arm B finding (reframed from disconfirmed
+      meta-awareness suppression to introspective confabulation: a signed behaviour↔self-report
+      dissociation) into a methodological reflection, a preregistered program, and
+      a Stage-0 protocol-lock pilot. As-we-go. Decisions: into current paper (existence
+      proof + preregistered future work), co-equal framing (four-channel methodology
+      + confabulation payoff), run Stage-0 pilot. Built: reflection trace; runner
+      --repeat/--probe/single-condition-fresh + frozen probe + strong/weak positive-control
+      configs + analyze_stage0.py (pytest 21/21); protocol doc; PREREGISTRATION confab
+      block; committed prior uncommitted Arm B data (Petri_studies 5b7581b, 45750dc,
+      bc110e3). Stage-0 paid pilot (Sonnet 4.6, ~110 runs) running. H0a gate + Stage-2
+      decision pending.'
+    inputs:
+    - working/_workflow_paper_revision_confabulation.js
+    - 01_epistemic_traces/trace_2arm_meta_awareness_arrival_20260604.md
+    - 09_notes/decision_uk_source_coding_principle_ai_recognition_20260604.md
+    - paper_full_draft.md
+    - C:/Users/loimi/Petri_studies/lab_journal.md
+    - C:/Users/loimi/Petri_studies/runner/petri_run.py
+    - C:/Users/loimi/Petri_studies/PREREGISTRATION.md
+    artifacts_produced:
+    - 01_epistemic_traces/trace_confabulation_n1_informs_paper_20260609.md
+    - 03_modification_logs/ModificationLog_Code_Multipolity_runner.md
+    - 03_modification_logs/ModificationLog_Code_UK.md
+    continues_from: SID-20260609-105621
+  SID-20260609-140729:
+    date: '2026-06-09'
+    goal: ''
+    inputs: []
+    artifacts_produced:
+    - 01_epistemic_traces/trace_confabulation_n1_informs_paper_20260609.md
+    - 03_modification_logs/ModificationLog_Code_Multipolity_runner.md
+    - 03_modification_logs/ModificationLog_Code_UK.md
+    continues_from: SID-20260609-105624
+  SID-20260609-163018:
+    date: '2026-06-09'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260609-140729
+  SID-20260609-164806:
+    date: '2026-06-09'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260609-163018
+  SID-20260609-172955:
+    date: '2026-06-09'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260609-164806
+  SID-20260609-181128:
+    date: '2026-06-09'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260609-172955
+  SID-20260609-194416:
+    date: '2026-06-09'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260609-181128
+  SID-20260610-091535:
+    date: '2026-06-10'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260609-194416
+  SID-20260610-093437:
+    date: '2026-06-10'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260610-091535

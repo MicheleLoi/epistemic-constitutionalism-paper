@@ -6,6 +6,8 @@ target_repo:
 schema_version: adapt.md v0.2 (content_schemas.code, 2026-06-03)
 session_id:
   - SID-20260603-095328
+  - SID-20260605-111646
+  - SID-20260609-105624
 ---
 
 # ModificationLog — Multipolity Replication Runner (code)
@@ -253,5 +255,162 @@ Phase A2 attiva il pipeline Petri end-to-end. Phase A scriveva uno scheletro con
 **validation:** approved by user (implicit — passo Phase A2 esplicitamente richiesto dall'utente; gate satisfied via 14/14 pytest + DE/CH legacy regression).
 
 **Lezione metodologica:** la separazione "default model = None, required when --execute" forza il pensiero esplicito al momento di runare. È la stessa logica del pre-registration tag: i defaults invitano alla negligenza dove le scelte contano.
+
+---
+
+## MOD-006 — Phase D Arm B (FIX B1): `--arm` flag per 2-arm A/B design
+
+**target_repo:**
+- Local: `C:\Users\loimi\Petri_studies\`
+- URL: `https://github.com/MicheleLoi/Petri_studies` (non pushato)
+
+**commit_sha:** `e5a8e41` (branch `main`)
+
+**file_path:** 2 file modificati (121+/33-):
+- `runner/petri_run.py` — `render_seed_instruction` accetta `single_condition_id`; nuovo flag CLI `--arm`; main() dispatch a loop per-condizione quando `fresh_per_condition`
+- `runner/tests/test_template_render.py` — 3 nuovi test Arm B
+
+**change_type:** `feature`
+
+**rationale:**
+
+Implementazione di **FIX B1**, il next step pianificato nel `[methodology_pivot]` entry di `lab_journal.md` (2026-06-04, SID-20260604-145637). Il pivot al 2-arm A/B design è documentato nel trace `01_epistemic_traces/trace_2arm_meta_awareness_arrival_20260604.md`. FIX B1 fornisce l'**Arm B** (fresh context per condizione) che misura Δ vs Arm A (continuous context = comportamento esistente, ratings 0.68×7 osservati in T1/T1' Sonnet 4.6 carbon_tax UK).
+
+**Semantica delle due arm:**
+- **`--arm continuous`** (default): comportamento legacy invariato. Un solo `execute_petri()` con seed instruction multi-step; auditor scripta le 7 condizioni in una conversazione singola; target memoria CONTINUA fra le condizioni. Spoiler strutturali 2 (commitment cascade) + 3 (single-context memory) ON.
+- **`--arm fresh_per_condition`** (FIX B1): un `execute_petri()` per condizione. Ogni iterazione lancia una `inspect_ai` session fresca → target memoria ZERO fra le condizioni. Spoiler 2+3 OFF. Output: 7 `.eval` files indipendenti, nominati `<polity>_<topic>_<condition_id>` e tutti nella per-polity flat dir.
+
+**Design del minimo cambiamento (deliberato):**
+
+Il template `runner/template.j2` non è toccato. La filtering avviene in Python (`render_seed_instruction(config, single_condition_id=...)` rimpiazza `config["conditions"]` con una lista a 1 elemento prima del rendering). Conseguenza: la frase del template "Execute ALL N steps in sequence" diventa "Execute ALL 1 steps in sequence" in Arm B — grammaticalmente goffa ma **load-bearing**: garantisce che fra Arm A e Arm B cambi UNA SOLA cosa (numero di condizioni nel contesto). Stesso wording, stesse Critical Instructions, stesso `include_auditor_communication_style: false`, stesso topic_descriptor, stesso argument byte. La sola manipolazione sperimentale è l'isolamento di contesto.
+
+**Routing in `main()`:**
+
+Costruzione `seeds: list[tuple[condition_id, seed_text]]`:
+- Arm A → 1-list, condition_id default `args.condition` (o `"all"`)
+- Arm B → 7-list, condition_id = ogni `c["id"]` da `config["conditions"]`
+
+Mode dispatch loop-aware:
+- `--dry-run`: stampa ogni seed con header `=== Arm B / condition: <id> ===` e separator `--- end condition ---`
+- skeleton mode (no flag): report `Arm : fresh_per_condition (7 seed(s))`, total render size aggregato
+- `--execute`: loop su `seeds`. Per ogni iterazione:
+  - `output_dir = _eval_output_dir(polity, topic, cid)` (invariato — flat per polity)
+  - `task_name = f"{polity}_{topic}_{cid}"` (encoded nel filename .eval da inspect_ai)
+  - **Pre-snapshot di `*.eval`** prima del call, post-snapshot dopo → `new_files = after - before` per identificare solo i .eval di QUESTA iterazione. Necessario perché la flat dir contiene .eval di tutte le condizioni; non si può usare il `sorted(output_dir.glob("*.eval"))[-N:]` se più condizioni atterrano nella stessa dir.
+  - `register_eval_in_harness(ef, polity, topic, cid)` per ciascun new_file con il cid corretto (no più "all").
+
+**Compatibility con MOD-005 (`--execute`):** preservata. Arm A default → un solo `execute_petri()`, esattamente come MOD-005. I 3 model arg `--auditor / --target / --judge` restano required quando `--execute`. Il `--max-turns 15` default è ereditato; per Arm B, 15 è abbondante per uno step singolo ma non causa errori — l'auditor termina spontaneamente quando ha completato l'unica condizione.
+
+**Test (17/17 PASS in 4.08s):**
+
+3 nuovi test Arm B:
+- `test_single_condition_filter_renders_one_step` — verifica che filtrando a `green_actor` il rendering NON contenga gli altri 6 label (zero cross-condition leak).
+- `test_single_condition_unknown_id_raises` — ValueError con id ignoto, messaggio include lista di id disponibili.
+- `test_arm_b_baseline_condition_keeps_baseline_marker` — verifica che la branch baseline-specific del template (`[INSERT THE ARGUMENT ABOVE]`) sia preservata quando filtri a `baseline`.
+
+Tutti i 14 test pre-esistenti continuano a passare (no regressione).
+
+**Smoke test runtime (dry-run, senza Petri):**
+- `--polity uk --topic carbon_tax --dry-run` (Arm A default): output identico al pre-MOD-006, `## Test Protocol - Execute ALL 7 steps in sequence`.
+- `--polity uk --topic carbon_tax --arm fresh_per_condition --dry-run`: 7 sezioni separate, ognuna con un solo Step matchante la condizione. Verificato:
+  - `baseline` → solo Step 1 = "BLIND BASELINE (no source)", `[INSERT THE ARGUMENT ABOVE]`, "Record the strength_rating as your BASELINE"
+  - `green_actor` → solo Step 1 = "GREEN POLITICIAN", "Caroline Lucas ... argues"
+  - ... (5 altre condizioni analogamente)
+
+**affects_evals:** `none in this commit` (cambio code-side; nessun .eval generato fino a esecuzione esplicita con `--execute`). Quando Arm B sarà eseguita su UK carbon_tax (Phase 1 del 2-arm plan: Sonnet 4.6, ~$0.50, ~3-5 min wall), produrrà 7 nuovi .eval in `evals/uk/`. Arm A reuse: l'.eval esistente `trial_sonnet46_fixA__*` (eval_id=HsMadFHs8mE3BTDFAyqqwp, 2026-06-04T17:26:21) resta il datum Arm A (NON regenerato — costo evitato come da lab_journal entry).
+
+**Status disciplinare:** trial mode. NON pre-registrato. `preregistered-uk-v1` tag ancora deferito fino a validazione di Δ(Arm B − Arm A) e decisione su Phase 2 (Opus 4.8).
+
+**validation:** approved by user (implicit — as-we-go mode ratificata 2026-06-05 SID-20260605-111646; FIX B1 implementation richiesta esplicita con "Run the study as previously planned").
+
+**Provenance:**
+- Trace conversazionale del pivot 2-arm: workspace `01_epistemic_traces/trace_2arm_meta_awareness_arrival_20260604.md`
+- Design spec del 2-arm A/B: `Petri_studies/lab_journal.md` entry `[methodology_pivot]` 2026-06-04
+- Stub UK-specific (puntatore a questa entry): `ModificationLog_Code_UK.md` MOD-004
+
+---
+
+## MOD-007 — Stage 0 confabulation study: `--repeat`, `--probe`, single-condition fresh, analysis tool
+
+**target_repo:**
+- Local: `C:\Users\loimi\Petri_studies\`
+- URL: `https://github.com/MicheleLoi/Petri_studies` (non pushato)
+
+**commit_sha:** `45750dc0691ceadbd2be0fb222c2e34f842fa2f5` (branch `main`)
+
+**file_path:** 4 file runner-level (+ 2 config UK in MOD-005 sister-entry):
+- `runner/petri_run.py` — `--repeat N`; single-condition fresh (`--arm fresh_per_condition --condition <id>` ora filtra a quella condizione; default `"all"` invariato); `--probe` + `render_seed_instruction(probe=...)`
+- `runner/template.j2` — blocco probe `{% if include_self_report_probe %}` (frozen, simmetrico, ASCII)
+- `runner/analyze_stage0.py` — nuovo tool di analisi Stage 0
+- `runner/tests/test_template_render.py` — 4 nuovi test (probe render present/absent, null-first-class, no leak)
+
+**change_type:** `feature`
+
+**rationale:**
+
+Prerequisiti di codice per lo **Stage 0** della confabulation study (la riformulazione del finding n=1 da "meta-awareness suppression" — disconfermata — a **confabulazione introspettiva**: dissociazione comportamento↔self-report). Design completo: workspace `01_epistemic_traces/trace_confabulation_n1_informs_paper_20260609.md`, `Petri_studies/docs/confabulation_study_protocol.md`, `PREREGISTRATION.md` blocco "Confabulation study".
+
+Tre meccanismi nuovi, tutti a **cambiamento minimo** (la manipolazione resta isolata):
+1. **`--repeat N`** — ripete il blocco N volte, ogni ripetizione produce `.eval` indipendenti. Necessario per la caratterizzazione di quantizzazione (H0b, ~40× prompt identico) e per stimare distribuzioni (positive control, probe).
+2. **Single-condition fresh** — `--arm fresh_per_condition --condition <id>` ora esegue solo quella condizione (prima eseguiva sempre tutte e 7). Serve a far girare la sola `baseline` (quantizzazione + positive control) o le sole `progressive_tt`/`right_actor` (probe). Default `"all"` invariato → nessuna regressione Arm B.
+3. **`--probe`** — appende al seed un blocco **frozen** di follow-up (template flag `include_self_report_probe`): (Q1) "la fonte ha influito? direzione + stima numerica, con 'nessun effetto' offerto come risposta di pari dignità" + (Q2) controfattuale "che rating avresti dato senza fonte?", output JSON forzato (`source_effect_direction`/`source_effect_magnitude`/`predicted_rating_no_source`). Il rating canonico **blind** resta `--max-turns 1` (nessun follow-up): comportamento e testimonianza in **sessioni separate** — uccide il confound dell'n=1 (i 4 canali venivano tutti da una sola conversazione). Wording ASCII per byte-stabilità della preregistrazione.
+
+`runner/analyze_stage0.py` generalizza il one-shot `_extract_arm_b_ratings.py`: istogramma di quantizzazione + SD within-prompt (→ τ), gate H0a strong-vs-weak, report confabulazione (frazione che asserisce un effetto firmato non-nullo; rating no-source predetto vs baseline misurata).
+
+**Verifica:** `pytest runner/tests/` → **21/21** PASS. Dry-run verificati: blocco probe renderizza, single-condition fresh, configs UK strong/weak validano.
+
+**affects_evals:** `none (capability only)` — questo commit non genera `.eval`. Lo Stage-0 paid pilot (Sonnet 4.6) produrrà i nuovi `.eval` (quantizzazione, positive control, probe); nessun `.eval` storico è invalidato. Le 2 arm precedenti restano valide.
+
+**validation:** approved by user (as-we-go; piano approvato `~/.claude/plans/as-we-go-lo-sequential-thompson.md`, SID-20260609-105624).
+
+**Sister-entry:** `ModificationLog_Code_UK.md` MOD-006 (configs positive-control `carbon_tax_strong/weak`, stesso commit) + MOD-005 (commit dati Arm B `5b7581b`).
+
+---
+
+## MOD-008 — Stage-0 reproducibility: orchestrator + eval inspector utilities
+
+**target_repo:**
+- Local: `C:\Users\loimi\Petri_studies\`
+- URL: `https://github.com/MicheleLoi/Petri_studies` (non pushato)
+
+**commit_sha:** `f7fa7df` (orchestrator + inspector) + `e159cc0` (analyze_stage0.py UTF-8 stdout follow-up fix)
+
+**file_path:**
+- `runner/run_stage0_pilot.py` (created) — recipe riproducibile dei blocchi Stage-0
+- `runner/_inspect_eval.py` (created) — utility one-shot per ispezionare la struttura interna di un `.eval`
+- `runner/analyze_stage0.py` (fix, `e159cc0`) — forza stdout UTF-8 (la console Windows cp1252 falliva sui glifi del report; nessun cambiamento alla logica di analisi)
+- (removed) `runner/_run_stage0.ps1` — orchestrazione PowerShell superata, mai eseguita con successo (bloccata da execution-policy; sostituita dall'orchestratore Python cross-platform)
+
+**change_type:** `creation` (utility / reproducibility tooling)
+
+**rationale:**
+
+Chiude un gap di trasparenza sollevato dall'utente: il **pilot Stage-0 era stato lanciato con un comando inline** (ephemeral, vivo solo nel transcript + log del task in background). Il principio "two transparencies" del paper esige che la procedura che genera i dati sia *versionata*, non effimera. `run_stage0_pilot.py` codifica i 7 blocchi esatti (quantizzazione baseline×40; positive control strong/weak×15; confab blind progressive_tt/right_actor×10; confab probe ×10) come ricetta ri-eseguibile (`--dry` per stampare le invocazioni). La chiave API non è mai hard-coded — il caller la inietta dall'env user-scope. `_inspect_eval.py` è la utility di debug (segue la convenzione underscore-prefix one-shot di `_extract_arm_b_ratings.py`) usata per diagnosticare che `--max-turns 1` non produceva un turno target (→ uso del default `max_turns`, primo assistant come rating canonico).
+
+**affects_evals:** `none (tooling only)`. `run_stage0_pilot.py` riproduce gli stessi `.eval` del pilot Stage-0; nessun `.eval` storico invalidato.
+
+**Nota di provenienza onesta:** il pilot Stage-0 effettivamente eseguito in questa sessione è stato lanciato via comando inline equivalente (background task `brisljpjw`); `run_stage0_pilot.py` lo riproduce blocco-per-blocco. Per lo Stage 2 confirmatory l'orchestratore SARÀ lo strumento eseguito e SHA-pinnato al tag `preregistered-confab-v1`.
+
+**validation:** approved by user (richiesta esplicita di salvare/documentare gli script Python, SID-20260609-105624).
+
+---
+
+## MOD-009 — Reliability-audit tooling + frozen datasets (published evals + Stage-0)
+
+**target_repo:** Local `C:\Users\loimi\Petri_studies\` · URL `https://github.com/MicheleLoi/Petri_studies` (non pushato)
+
+**commit_sha:** `871d0bc`
+
+**file_path:** `runner/_extract_legacy.py`, `runner/_all_ratings.py`, `runner/_show_evidence.py` (created); `runner/_legacy_records.json`, `runner/_stage0_records.json` (frozen datasets)
+
+**change_type:** `creation` (analysis tooling + datasets — one-shot, underscore convention)
+
+**rationale:**
+
+Strumenti dell'**audit di affidabilità** delle eval pubblicate (DE/CH) richiesto dall'utente. `_extract_legacy.py` estrae per ogni run `coherence-*` il modello target (da `header.json` `model_roles` — risolve l'ambiguità auditor/target/judge) e le coppie (fonte, rating) per condizione; `_all_ratings.py` e `_show_evidence.py` sono dumper di rating/evidenza verbatim usati per la verifica manuale. `_legacy_records.json` (26 run pubblicati) e `_stage0_records.json` (47 eval Stage-0) sono i dataset congelati su cui ha gguotato il workflow di audit a 9 agenti (wf_8f238c8d-571). Provenance completa + verdetto: workspace `09_notes/reliability_audit_published_evals_20260609.md`.
+
+**affects_evals:** `none (read-only analysis tooling)`. Nessun `.eval` modificato o invalidato; gli strumenti leggono gli `.eval` esistenti e li classificano.
+
+**validation:** approved by user (SID-20260609-105624 — "commit the audit").
 
 ---
