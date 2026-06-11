@@ -16,7 +16,7 @@ inputs:
   - 09_notes/Review/ (the automated reviews of the arXiv version — deprioritised, see below)
   - workflow wf_f2613054-07c (framing exploration; results archived in transcript dir)
   - workflow wf_5cc454de-b7d (G&S deep-read + coherence-thread extraction + literature sweep)
-validation: pending
+validation: approved
 ---
 
 # DECISION — Empirical-critical paper on source dependence

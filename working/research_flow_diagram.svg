@@ -1,0 +1,61 @@
+<svg width="100%" viewBox="0 0 680 560" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>Source-dependence research flow</title>
+<desc>A vertical pipeline of research steps — calibration pilot, S1 re-measurement, S2/S3 domain and robustness, S4/E1 bias-vs-competence, S5 behavior-vs-testimony, then the paper — each annotated with what it discovers and its possible outcome branches.</desc>
+<defs>
+<marker id="ar" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="var(--color-border-secondary)" stroke-width="1.2"/></marker>
+</defs>
+<text x="40" y="26" font-family="var(--font-serif)" font-size="17" font-weight="700" fill="var(--color-text-primary)">Source dependence — research flow</text>
+<text x="40" y="45" font-size="11.5" fill="var(--color-text-secondary)">Carried by exemplary findings, not measures — every step is publishable on either branch.</text>
+<g stroke="var(--color-border-secondary)" stroke-width="1.3" marker-end="url(#ar)">
+<line x1="185" y1="118" x2="185" y2="142"/>
+<line x1="185" y1="198" x2="185" y2="222"/>
+<line x1="185" y1="278" x2="185" y2="302"/>
+<line x1="185" y1="358" x2="185" y2="382"/>
+<line x1="185" y1="438" x2="185" y2="462"/>
+<line x1="330" y1="90" x2="348" y2="90"/>
+<line x1="330" y1="170" x2="348" y2="170"/>
+<line x1="330" y1="250" x2="348" y2="250"/>
+<line x1="330" y1="330" x2="348" y2="330"/>
+<line x1="330" y1="410" x2="348" y2="410"/>
+</g>
+<g fill="none" stroke="var(--color-border-secondary)" stroke-width="1.4">
+<rect x="40" y="62" width="290" height="56" rx="7"/>
+<rect x="40" y="142" width="290" height="56" rx="7"/>
+<rect x="40" y="222" width="290" height="56" rx="7"/>
+<rect x="40" y="302" width="290" height="56" rx="7"/>
+<rect x="40" y="382" width="290" height="56" rx="7"/>
+<rect x="40" y="462" width="290" height="56" rx="7"/>
+</g>
+<g font-size="13" font-weight="700" fill="var(--color-text-primary)">
+<text x="54" y="86">Step 0 · Calibration pilot</text>
+<text x="54" y="166">S1 · Re-measure the survivor</text>
+<text x="54" y="246">S2 / S3 · Domain &amp; robustness</text>
+<text x="54" y="326">S4 / E1 · Bias vs competence</text>
+<text x="54" y="406">S5 · Behavior vs testimony</text>
+<text x="54" y="486">Paper · empirical-critical synthesis</text>
+</g>
+<g font-size="11" fill="var(--color-text-secondary)">
+<text x="54" y="104">→ cost band + rating-head regime</text>
+<text x="54" y="184">→ is the AI-security penalty real?</text>
+<text x="54" y="264">→ AI-specific? robust to lang/version?</text>
+<text x="54" y="344">→ what KIND of source-sensitivity</text>
+<text x="54" y="424">→ can you learn it by asking?</text>
+<text x="54" y="504">→ the map, not a single magnitude</text>
+</g>
+<g font-size="11" fill="var(--color-text-secondary)">
+<text x="354" y="86">cheap &amp; flat → run all (n=5)</text>
+<text x="354" y="101">expensive tail → cut a tier</text>
+<text x="354" y="164">replicates (~0.30) → anchor</text>
+<text x="354" y="180">fails → even survivor was noise</text>
+<text x="354" y="244">bounded to AI topics</text>
+<text x="354" y="260">or general — or version artifact</text>
+<text x="354" y="309">competence (costly signal)</text>
+<text x="354" y="324">prestige-only → artifact</text>
+<text x="354" y="339">coherence penalty → bias</text>
+<text x="354" y="354">selective vigilance (sleeper)</text>
+<text x="354" y="396">full double dissociation</text>
+<text x="354" y="411">asymmetric</text>
+<text x="354" y="426">testimony tracks behavior</text>
+</g>
+<text x="354" y="492" font-size="10.5" fill="var(--color-text-secondary)">deferred → cross-model · mechanism of AI-ness · human baseline</text>
+</svg>

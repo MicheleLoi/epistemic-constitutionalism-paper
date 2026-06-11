@@ -5,7 +5,7 @@ topic: E1 — Prestige × Stance deconfound of the against-interest credibility 
 project: Epistemic constitutional AI
 date: 2026-06-11
 session_id: SID-20260610-145422
-validation: draft
+validation: approved
 inputs:
   - 09_notes/decision_empirical_critical_framing_20260611.md (the framing + program decision)
   - 09_notes/reliability_audit_published_evals_20260609.md (the c7 confound + intermittency evidence)

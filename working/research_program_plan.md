@@ -5,7 +5,7 @@ topic: Full investigation scheme + live cost model for the empirical-critical so
 project: Epistemic constitutional AI
 date: 2026-06-11
 session_id: SID-20260610-145422
-validation: draft
+validation: approved
 inputs:
   - 09_notes/decision_empirical_critical_framing_20260611.md
   - 09_notes/reliability_audit_published_evals_20260609.md
@@ -120,6 +120,6 @@ measured basis, re-estimated as evidence accrues.
 
 ## 9. Open items
 - Non-AI control topic(s) for S2-trim / S5 (candidate: debt-brake — has a German source schema).
-- Run the calibration pilot to replace the € band with measured numbers.
+- Run the calibration pilot (`working/calibration_pilot_spec.md`) to replace the € band with measured numbers + the rating-head regime classification.
 - Port E1 + the S1/S2/S3/S5 protocols into `Petri_studies/PREREGISTRATION.md` before running.
 - GPT-4o / other-model availability (only if S5c/S6 are un-deferred).
