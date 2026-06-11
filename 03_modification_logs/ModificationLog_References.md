@@ -396,6 +396,40 @@ The Lackey insertion remains a *valid editorial task* (it was planned for a reas
 
 ---
 
+### MOD-019: Germani & Spitale description correction (verified) + Van der Linden→Hanel docx-body completion + arXiv v4
+
+**Date:** 2026-06-11 (SID-20260610-145422; manual session — MHC-W hooks inactive on macOS, manual SID)
+**Type:** Factual correction of a cited-study description + bibliographic body-completion + new arXiv source version
+**Trigger:** User request to correct the sentence describing Germani & Spitale (2025) and deliver a corrected arXiv version. A model-set discrepancy was first surfaced during the empirical-reframe framing work (a literature sweep), then **verified against the primary source before any edit** — explicitly refusing to swap one unverified claim for another.
+
+**Verification (primary source):** G&S read in full via the open-access arXiv full text (arXiv:2505.13488), whose abstract, model list, sample sizes (4,800 statements / 24 topics / 192,000 assessments) and DOI match the published *Science Advances* version (10.1126/sciadv.adz2924). Science.org returned HTTP 403; arXiv full text + EurekAlert/UZH/TechXplore press releases corroborate the four-model list and N. (Caveat: the typeset *Science Advances* HTML was not opened directly.)
+
+**Correction 1 — Germani & Spitale description (three factual errors):**
+- *Models:* "multiple frontier models including GPT-4 and Claude 3.5 Sonnet" → **"OpenAI o3-mini, DeepSeek Reasoner, xAI Grok 2, and Mistral"**. GPT-4 and Claude 3.5 Sonnet appear nowhere in G&S; the draft most likely conflated G&S's models with this paper's own (Claude Sonnet 4.5 + GPT-4o).
+- *Effect sizes:* "-6.18% overall to -8.94% for geopolitical topics" → the −6.18% is **DeepSeek Reasoner's** dataset-wide figure (the strongest model), not a pooled "overall"; **8.94% appears nowhere** in G&S — the geopolitical figure is **24.43%** (DeepSeek, Cluster 7).
+- *Minor:* "compared to neutral attribution" → "compared to a no-source baseline."
+
+> **Before:** "They found that large language models lowered agreement scores when policy statements were attributed to "a person from China" compared to neutral attribution, with effects ranging from -6.18% overall to -8.94% for geopolitical topics across multiple frontier models including GPT-4 and Claude 3.5 Sonnet."
+>
+> **After:** "Germani and Spitale (2025) extended this research to AI systems, testing four models—OpenAI o3-mini, DeepSeek Reasoner, xAI Grok 2, and Mistral. They found that the models lowered agreement scores when policy statements were attributed to "a person from China" compared to a no-source baseline; the effect was strongest for DeepSeek Reasoner, whose agreement scores fell by 6.18% across the full dataset and by 24.43% on geopolitical topics."
+
+The Taiwan 85%→0% example that follows was verified correct and left unchanged.
+
+**Correction 2 — completion of MOD-014 in the arXiv .docx body:** MOD-014 (2026-04-22) corrected Van der Linden → Hanel et al. (2018) in the markdown/frozen sources, but its file list did **not** include the `.docx`. The v3.docx was found internally inconsistent — bibliography already carried the Hanel entry, but the body still cited "Van der Linden et al., 2018" in two places (intro in-text + the Section-1 descriptive sentence). Both body mentions were corrected to Hanel in the new v4.docx, making it consistent with the corrected markdown.
+
+**Files updated:**
+- `paper_full_draft.md` (G&S sentence; Van der Linden already correct here via MOD-014)
+- `published/Arxiv/sources/epistemic_constitutionalism_arxiv.md` (G&S sentence; Van der Linden already correct here)
+- `published/Arxiv/sources/epistemic_constitutional_AI_arxiv_v4.docx` — **new file**, built from v3.docx with both corrections; **v3.docx preserved unchanged**. Validated (1259 paragraphs preserved; "Hanel" now appears in-text + body + bibliography; zero residual "GPT-4 and Claude 3.5", "8.94", or "Van der Linden"). Word → PDF export for the arXiv upload to be done by the user.
+
+**Rationale:** A paper about source-/identity-attribution error misciting its own predecessor study (wrong models, a fabricated effect size) is both a factual defect and a credibility liability. Correcting against the primary source — and refusing to substitute one unverified claim for another — is the same discipline the new empirical work demands.
+
+**Resolution (2026-06-11):** v4 was exported to PDF and **submitted to arXiv by the user** — the public arXiv version is now **v4**, carrying this G&S correction and the Van der Linden body fix. The one remaining arXiv concern is the deeper **audit-invalidated Section-2 empirical tables**, which v4 does *not* address — those belong to the empirical reframe (see `09_notes/decision_empirical_critical_framing_20260611.md`).
+
+**Initiated by:** User request (2026-06-11).
+
+---
+
 **Document Status:** Complete
 **Final output:** references_compiled.md
-**Total modifications:** 18
+**Total modifications:** 19
