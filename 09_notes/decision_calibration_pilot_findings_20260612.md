@@ -53,7 +53,18 @@ Two paper-grade points the pilot establishes: (a) this rating head is **quantize
 effects may be unmeasurable without finer elicitation; (b) the **behaviour↔testimony dissociation**
 (confabulation) reproduces beyond n=1. See [[trace_confabulation_n1_informs_paper_20260609]].
 
-## Open (next session)
-- Argument-strength sweep to find a mid-range (~0.5) E1 base argument.
-- Optional: a **naturalistic probe** (same argument, no auditor/eval framing) to test whether the
-  0.72 rigidity is eval-situational vs intrinsic — the one open thread on the "meta-rule" hypothesis.
+## Update — argument-strength sweep done (2026-06-12)
+- The rating head is a **saturating nonlinearity**, not a uniform quantizer: razor-flat at ≈0.25 (weak) and
+  ≈0.72 (good args), **responsive+noisy in the mid-range** (mediocre 0.45–0.62, σ̂≈0.07). **Saturation at
+  0.72 CONFIRMED** — a mechanism-specified *verystrong* still caps at 0.72 ×5 (resolves the earlier small-n
+  caveat). Framework: [[trace_quantized_rating_head_20260612]]; data: Petri lab journal + `_calibration_ledger.csv`.
+- **E1 base argument → ~mediocre strength** (rates ~0.5): headroom up (→0.72) and down (→0.25), and the head
+  *resolves* there (σ̂≈0.07 ⇒ adaptive n≈10). Next: finalize the mid-range E1 base, re-freeze + port to
+  `PREREGISTRATION.md` + tag.
+- Sharper paper claim: a source effect is measurable **only in the responsive mid-range**; arguments near an
+  attractor yield an artifactual ≈0 — the field's small/unstable effects may be an instrument-placement
+  artifact.
+
+## Still open
+- The **naturalistic probe** (same argument, no auditor/eval framing) — eval-situational vs intrinsic, the
+  "meta-rule" mechanism thread.

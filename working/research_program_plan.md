@@ -105,6 +105,11 @@ self-report probes on the *actual* target models; record tokens in/out and €; 
 > **but strong = moderate = 0.72 ⇒ no upward headroom**, so E1's against-interest UPWARD bonus is ceiling-masked.
 > **→ recalibrate E1's base argument to mid-range (~0.5) before the confirmatory core; E1 not yet locked.**
 > Confabulation reproduced (1/2 c4 probe asserted +0.03 vs flat behavior).
+>
+> **Sweep (2026-06-12):** the rating head is a **saturating nonlinearity** — flat at ≈0.25 / ≈0.72,
+> responsive+noisy in the mid-range (mediocre 0.45–0.62, σ̂≈0.07); a mechanism-specified `verystrong` still
+> caps at 0.72 ⇒ saturation confirmed. **→ E1 base argument = ~mediocre (~0.5, σ̂≈0.07, n≈10)**; measurement
+> is only valid in the responsive mid-range. Trace: `01_epistemic_traces/trace_quantized_rating_head_20260612.md`.
 
 **Update rule (after every batch):**
 1. Append the row with *actuals* (tokens + €).
