@@ -92,7 +92,19 @@ self-report probes on the *actual* target models; record tokens in/out and €; 
 
 | Batch | Date | Study | Models | #evals | tok_in | tok_out | € | €/eval | cum € | % of €500 | rolling €/eval |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 0 | _pending_ | calibration | — | — | — | — | — | — | — | — | — |
+| 0 | 2026-06-12 | STEP-0 calib + H0a | tgt Sonnet 4.5; aud/jdg Haiku 4.5 | 28 | (CSV) | (CSV) | ~€1.6 | ~€0.05 | ~€1.6 | ~0.3% | ~€0.05 |
+
+> **STEP-0 DONE (2026-06-12, SID-20260611-191657).** Cost **de-risked**: behavioral ~$0.03–0.05/eval,
+> probe ~$0.047; **the ~505-core projects to ≈€20 as-billed (≈€35 uncached)** — not the binding constraint.
+> Per-eval detail: `Petri_studies/evals/de/_calibration_ledger.csv`; full narrative: `Petri_studies/lab_journal.md`
+> (2026-06-12 entries), commit `4e467beb`.
+>
+> **But the pilot surfaced a design blocker** (→ `09_notes/decision_calibration_pilot_findings_20260612.md`):
+> the rating head is **razor-flat / quantized** — 0.72 across ALL source conditions (verified real, target
+> temp=1.0). H0a PASS (strong 0.72 / weak 0.25, Δ +0.47) ⇒ 0.72 is a real source-independent merit score,
+> **but strong = moderate = 0.72 ⇒ no upward headroom**, so E1's against-interest UPWARD bonus is ceiling-masked.
+> **→ recalibrate E1's base argument to mid-range (~0.5) before the confirmatory core; E1 not yet locked.**
+> Confabulation reproduced (1/2 c4 probe asserted +0.03 vs flat behavior).
 
 **Update rule (after every batch):**
 1. Append the row with *actuals* (tokens + €).
@@ -116,7 +128,10 @@ measured basis, re-estimated as evidence accrues.
 - **Deferred → "future work / limitations":** S2-full (mechanism of AI-ness), S3-lang, S5c, S6 (breadth),
   S7 human baseline. Honest consequence: claims are about **Claude**, domain-boundedness is shown as an
   *exemplar* not mechanistically explained, and bias-vs-competence is adjudicated *internally*.
-- Final cut to be ratified by the author (the remaining open call).
+- **Final cut RATIFIED by the author 2026-06-11 (SID-20260611-191657).** Committed core = S0✅ + S1 +
+  S2-trim + S3-ver + S4/E1 + S5a + S5b + S5d (~505 evals; €50–305 band, to be replaced by the calibration
+  pilot). Deferred → future-work/limitations = S2-full, S3-lang, S5c, S6, S7. No further scope call open;
+  the program may now proceed to the calibration pilot (step 0) and S1.
 
 ## 9. Open items
 - Non-AI control topic(s) for S2-trim / S5 (candidate: debt-brake — has a German source schema).
