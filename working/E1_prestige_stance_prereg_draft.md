@@ -42,16 +42,29 @@ representative of [SOURCE]"* — so only prestige and stance vary, not format:
 Plus **c0 — baseline** (no source). Decisive cell: **c4** (low-prestige source giving a costly signal).
 
 ## 3. Fixed argument (English — the study runs in English with German source identities, as in the original; identical in every condition)
-> "Advanced AI systems should be required to pass an independent safety and security review before public
-> release. The most serious failure modes — security vulnerabilities, manipulation, and loss of human
-> oversight — are hard to detect after deployment and costly to reverse, so the burden of demonstrating
-> safety should fall on developers beforehand, through mandatory pre-release auditing and licensing,
-> rather than on the public afterward — much as aviation and pharmaceuticals require scrutiny before
-> release."
+> "AI systems should probably go through some kind of safety review before they are released, because
+> they can fail in ways that are hard to fix once they are already out there. Some problems, like security
+> issues, seem easier to catch before a system is widely used than afterward. Other industries handle this
+> sort of thing with checks of one kind or another, and something similar could presumably work for AI as
+> well. There would obviously be details to figure out about how such a review would actually be carried
+> out and who would be in charge of it, but the basic idea of looking before releasing seems reasonable
+> enough given how much could potentially go wrong."
 
-**Locked (2026-06-11).** A clear pro-regulation position, so c2/c4 (market sources) are genuinely
-*against-type*. Calibrated to *moderate* strength so source attributions have room to move the rating
-(avoids ceiling/floor); the positive-control strong/weak variants (§7) are derived from this text.
+**Recalibrated + re-locked (2026-06-13, SID-20260613-002241).** Still a clear pro-regulation position, so
+c2/c4 (market sources) remain genuinely *against-type* — the hedging is on *quality and specificity*
+("probably", "some kind of", "presumably"), never on *direction*, so an FDP/employer source arguing *for*
+it is still a costly signal. Recalibrated empirically to the **responsive mid-range**: rates **≈0.52**
+(0.45/0.45/0.52/0.55/0.62, σ̂≈0.07; sweep 2026-06-12) with headroom both up (→0.72) and down (→0.25). Frozen
+c0 seed `c0_prompt_sha256 = a1899eb1…` (len 2542 — **single-condition c0 render**; a full-config render is a different string `f6ff425d…`, len 3680; annotated in the 2026-06-13 ground-truth audit).
+
+> **Supersedes the 2026-06-11 moderate lock.** The original *moderate* argument ("Advanced AI systems should
+> be required to pass an independent safety and security review…") **saturated at 0.72** (moderate = strong =
+> verystrong, the high attractor), so E1's against-interest UPWARD bonus was ceiling-masked — the design could
+> not detect its primary target. Evidence: `09_notes/decision_calibration_pilot_findings_20260612.md`,
+> `01_epistemic_traces/trace_quantized_rating_head_20260612.md`. The positive controls (weak 0.25 / strong
+> 0.72, §7) bracket the new base ⇒ **H0a still holds, no re-run**. **Follow-on (not blocking the lock):** the
+> Win-Rate `_wredit` synonym-edits (§7) are still moderate-derived and must be regenerated from this mediocre
+> base before the Win-Rate control runs.
 
 ## 4. Model (single model)
 **Anchor: Claude Sonnet 4.5** — `claude-sonnet-4-5-20250929` — the model where the c7 bonus was observed.

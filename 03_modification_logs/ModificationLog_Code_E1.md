@@ -2,7 +2,9 @@
 artifact_type: modlog
 subtype: code
 project: Epistemic constitutional AI
-session_id: SID-20260611-191657
+session_id:
+  - SID-20260611-191657
+  - SID-20260613-002241
 created: 2026-06-12
 validation: approved
 inputs:
@@ -49,5 +51,14 @@ Schema: `code` (adapt.md). All entries are in commit **`4e467beb`** on `Petri_st
 - **rationale:** STEP-0 needs a per-eval ledger the existing `eval_registry.py` (sum-only) cannot produce: per-MODEL usage + as-billed AND uncached cost (cache-write 1.25×, cache-read 0.1×), per-ROLE cost from event roles (isolates the target even in all-Sonnet runs), target-rating + probe self-report extraction, FLAT/QUANTIZED/WANDER regime, H0a verdict. `_diag_determinism.py` established the temp=1.0 + prompt-variation facts that rule out the "deterministic call" artifact.
 - **affects_evals:** none (read-only analysis); writes `evals/de/_calibration_ledger.csv`.
 
+## MOD-005 — Recalibrate E1 base argument to the mid-range + lock (tag `preregistered-e1-v1`)
+- **commit_sha:** `5f54c8a` (Petri_studies `main`; session SID-20260613-002241). Tag: `preregistered-e1-v1`.
+- **file_path:** `configs/de/ai_regulation_e1.yaml` (argument moderate→mediocre + provenance comment), `PREREGISTRATION.md` (NEW E1 cross-cutting registration block), `lab_journal.md` (`[preregistration]` entry)
+- **change_type:** config (+ pre-registration freeze)
+- **rationale (the WHY):** The 2026-06-12 argument-strength sweep showed the rating head is a *saturating nonlinearity*: the original *moderate* base sits on the high attractor (0.72) with no upward headroom (moderate = strong = verystrong = 0.72), so E1's against-interest UPWARD credibility bonus — its primary target — was ceiling-masked. Swapped the base to the empirically mid-range *mediocre* argument (≈0.52; 0.45–0.62, σ̂≈0.07), which keeps a clearly pro-regulation stance (hedged on quality/specificity, **not** direction → c2/c4 stay against-type) and gives headroom both ways. Copied **verbatim** from `ai_regulation_e1_mediocre.yaml` so the sweep's measured placement carries over unchanged. Re-froze the c0 seed: `c0_prompt_sha256` 48b3c100… (len 2386) → **a1899eb1… (len 2542)**; the recomputation was validated by first reproducing the old 48b3c100 hash on the unchanged moderate config (renderer proven faithful), then confirming the post-swap config re-renders to a1899eb1 (MATCH). Positive controls (weak 0.25 / strong 0.72) bracket the new base ⇒ **H0a still holds, no re-run**.
+- **hash rendering-path (annotated 2026-06-13 audit):** `a1899eb1…` is the **single-condition c0 render** (`render_seed_instruction(cfg, single_condition_id='c0')`, len 2542); a naive full-config render is a different string `f6ff425d…` (len 3680). The hash is correct — the path is stated so a verifier does not report a false mismatch. See [[methodology_ground_truth_verification_20260613]].
+- **follow-on (not blocking the lock):** the Win-Rate control `_wredit` synonym-edits remain moderate-derived; regenerate from the mediocre base before the Win-Rate run.
+- **affects_evals:** the 2026-06-12 moderate-base evals were calibration (never bias measurements), so nothing valid is invalidated; all *confirmatory* `evals/de/*ai-regulation-e1*` must postdate the `preregistered-e1-v1` tag (2026-06-13).
+
 ---
-*Code modlog — E1 + STEP-0 calibration. Findings + decision: `C:/Users/loimi/Petri_studies/lab_journal.md` (2026-06-12 entries) + `09_notes/decision_calibration_pilot_findings_20260612.md`.*
+*Code modlog — E1 + STEP-0 calibration + E1 recalibration/lock (MOD-005, 2026-06-13, `preregistered-e1-v1`). Findings + decision: `C:/Users/loimi/Petri_studies/lab_journal.md` + `09_notes/decision_calibration_pilot_findings_20260612.md`.*

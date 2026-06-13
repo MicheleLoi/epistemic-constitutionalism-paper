@@ -23,7 +23,7 @@ decision it forces before E1's confirmatory ~505-core. Full experimental detail 
 [[decision_empirical_critical_framing_20260611]] and the program in `working/research_program_plan.md`.
 
 ## Findings (brief — detail in the lab journal)
-1. **Cost is not the constraint.** ~$0.03–0.05/eval as-billed; the ~505-core projects to **≈€20**
+1. **Cost is not the constraint.** ~$0.03–0.05/eval as-billed; the ~505-core projects to **≈€20** [PROJECTION, not measured: per-eval mean × 505 × FX ≈ €22/€38 @0.92; ground-truth audit 2026-06-13]
    (≈€35 uncached) — far under the €50–305 band and the €300–500 ceiling. The orchestration
    (auditor+judge) is ~66% of cost; the target is ~34% and **uncached** (full-price input each run).
    The cheaper-Haiku-auditor lever is real. c4 was the *cheapest* cell, not the "ceiling" — cost is

@@ -8,6 +8,7 @@ session_id:
   - SID-20260603-095328
   - SID-20260605-111646
   - SID-20260609-105624
+  - SID-20260613-002241
 ---
 
 # ModificationLog — Multipolity Replication Runner (code)
@@ -412,5 +413,27 @@ Strumenti dell'**audit di affidabilità** delle eval pubblicate (DE/CH) richiest
 **affects_evals:** `none (read-only analysis tooling)`. Nessun `.eval` modificato o invalidato; gli strumenti leggono gli `.eval` esistenti e li classificano.
 
 **validation:** approved by user (SID-20260609-105624 — "commit the audit").
+
+---
+
+## MOD-010 — fix(analyze_stage0): brace-balanced rating extractor (ground-truth audit 2026-06-13)
+
+**target_repo:** Local `C:\Users\loimi\Petri_studies\` · URL `https://github.com/MicheleLoi/Petri_studies` (non pushato)
+
+**commit_sha:** `cd678c3` (branch `main`)
+
+**file_path:** `runner/analyze_stage0.py` (`_json_with_key`); same-commit doc corrections to `lab_journal.md` (reader's guide + `[correction]` entry), `configs/de/ai_regulation_e1.yaml` (hash annotation), `PREREGISTRATION.md` (H0b SD).
+
+**change_type:** `fix`
+
+**rationale (the WHY):** `_json_with_key` used a flat-brace regex `{[^{}]*}` to locate the rating JSON; it cannot span a `{` occurring INSIDE a string value, so it silently dropped one valid baseline rating (file `…RMiBm9…`, a clean 0.62) and reported the Confab Stage-0 "medium" group as n=18 / mean 0.635 / SD 0.0236. Replaced with a brace-balanced `json.JSONDecoder.raw_decode` scan from each `{`. Re-derived after the fix: **n=19 / mean 0.6342 / SD 0.0232** (1 structural stub excluded; the old "~2 nulls" framing was 1 stub + 1 parser-dropped). Audit of OLD vs fixed extractor over all 84 `.eval`: exactly 1 drop (uk), 0 in de — the DE E1 pipeline uses `calibration_ledger.py` (brace-robust key:value regex) and was unaffected. The H0a gate (strong 0.760 / weak 0.188 / +0.573 PASS), τ ≈ 0.05, and the source-null are all unchanged: strong/weak parse fine and the gate never depended on the medium group.
+
+**provenance (honest — see [[methodology_ground_truth_verification_20260613]]):** the bug was first flagged by an EXTERNAL, UNATTRIBUTED note pasted into the session. Its authorship was searched across every local Claude transcript and not found (a "ghost"), so it carries no authority. The fix was adopted only after the bug was *independently reproduced* (the dropped 0.62; the 1-of-84 audit) — the correction rests on the reproduced raw `.eval` count, NOT on the note. `analyze_stage0.py` is Stage-0 exploratory analysis code (pre-`preregistered-confab-v1`), so a pre-freeze fix is in-bounds.
+
+**known defect NOT fixed (out of labbook scope):** `calibration_ledger.py regime()` (lines 227–237) hard-codes a stale grid `{0.60,0.62,0.65,0.68}` containing neither E1 attractor (0.25, 0.72); dead/misleading on E1 c0 (single-valued → "FLAT" early) and not persisted to the CSV. The saturating-head claim rests on the raw multiset, not `regime()`. Recorded for a separate fix.
+
+**affects_evals:** `none` — no `.eval` modified or invalidated; this corrects a read-only *analysis* statistic (n) computed over existing immutable `.eval`. The recorded n=18 was never a gate input; the H0a verdict and all confirmatory implications are unchanged.
+
+**validation:** approved by user (SID-20260613-002241 — "correct everything to the highest epistemic standard").
 
 ---

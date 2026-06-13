@@ -95,7 +95,7 @@ self-report probes on the *actual* target models; record tokens in/out and €; 
 | 0 | 2026-06-12 | STEP-0 calib + H0a | tgt Sonnet 4.5; aud/jdg Haiku 4.5 | 28 | (CSV) | (CSV) | ~€1.6 | ~€0.05 | ~€1.6 | ~0.3% | ~€0.05 |
 
 > **STEP-0 DONE (2026-06-12, SID-20260611-191657).** Cost **de-risked**: behavioral ~$0.03–0.05/eval,
-> probe ~$0.047; **the ~505-core projects to ≈€20 as-billed (≈€35 uncached)** — not the binding constraint.
+> probe ~$0.047; **the ~505-core projects to ≈€20 as-billed (≈€35 uncached)** — not the binding constraint. *(These are PROJECTIONS: per-eval mean × 505 × FX; the committed ledger holds only the 38-eval calibration set. Mean-based ≈ €22 / €38 @0.92 — estimates, not measured 505-eval data. The directional claim holds. Ground-truth audit 2026-06-13.)*
 > Per-eval detail: `Petri_studies/evals/de/_calibration_ledger.csv`; full narrative: `Petri_studies/lab_journal.md`
 > (2026-06-12 entries), commit `4e467beb`.
 >

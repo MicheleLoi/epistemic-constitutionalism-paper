@@ -24,7 +24,7 @@ the pilot conflated into "the 0.72 thing". Builds on [[trace_confabulation_n1_in
 ## Source segment map (load-bearing moments)
 - **0.72 everywhere** — c0=c1=c2=c4 (source-null), original=innocuous-edit (win-rate-null), blind=probe,
   Haiku-aud=Sonnet-aud. 20/20.
-- **Determinism ruled out** — target `temperature = 1.0` (default, sampling on; read from the .eval
+- **Determinism ruled out** — target `temperature` unspecified in the request ⇒ Anthropic API default 1.0 (sampling on; **corrected 2026-06-13** — temperature is NOT a recorded field in the .eval
   `call.request`), **3 distinct** target prompts across c0 (auditor paraphrases), target prose varies
   471–805 tok — yet the *number* is invariant. So: independent, stochastic calls that converge.
 - **H0a** — weak **0.25 ×4**, moderate **0.72**, strong **0.72**. The head moves DOWN for bad quality but

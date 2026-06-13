@@ -565,18 +565,20 @@ sessions:
     continues_from: SID-20260610-093437
     manual: true
   SID-20260611-191657:
-    date: '2026-06-11/12'
-    goal: >-
-      Session register + lab-journal cross-link, then the full STEP-0 calibration build+run for E1.
-      Ported E1 (prestige x stance) into Petri_studies (schema relax 7->2-12; auditor-tightening flag;
-      thinking OFF), built the calibration_ledger extractor, and ran 38 evals (target Sonnet 4.5, aud/jdg
-      Haiku 4.5): 20-eval STEP-0 pilot + 8-eval H0a positive control + 10-eval argument-strength sweep.
-      Findings: cost de-risked (~EUR 20 for the ~505 core); the rating head is a SATURATING NONLINEARITY
-      (razor-flat at ~0.25/~0.72 attractors, responsive+noisy mid-range), source-independent on this
-      argument, confabulation reproduced; H0a PASS (strong-weak +0.47) but the moderate argument SATURATES
-      at 0.72 (verystrong still caps) => no upward headroom => E1 base must be recalibrated to mid-range
-      (~mediocre, ~0.5, n~10) before the confirmatory core. E1 not yet locked. Anchor SID for this
-      conversation; hooks rolled the SID twice (->120921 ->155206); artifacts attributed here.
+    date: 2026-06-11/12
+    goal: 'Session register + lab-journal cross-link, then the full STEP-0 calibration
+      build+run for E1. Ported E1 (prestige x stance) into Petri_studies (schema relax
+      7->2-12; auditor-tightening flag; thinking OFF), built the calibration_ledger
+      extractor, and ran 38 evals (target Sonnet 4.5, aud/jdg Haiku 4.5): 20-eval
+      STEP-0 pilot + 8-eval H0a positive control + 10-eval argument-strength sweep.
+      Findings: cost de-risked (~EUR 20 for the ~505 core); the rating head is a SATURATING
+      NONLINEARITY (razor-flat at ~0.25/~0.72 attractors, responsive+noisy mid-range),
+      source-independent on this argument, confabulation reproduced; H0a PASS (strong-weak
+      +0.47) but the moderate argument SATURATES at 0.72 (verystrong still caps) =>
+      no upward headroom => E1 base must be recalibrated to mid-range (~mediocre,
+      ~0.5, n~10) before the confirmatory core. E1 not yet locked. Anchor SID for
+      this conversation; hooks rolled the SID twice (->120921 ->155206); artifacts
+      attributed here.'
     inputs:
     - working/research_program_plan.md
     - working/E1_prestige_stance_prereg_draft.md
@@ -589,17 +591,149 @@ sessions:
     - 01_epistemic_traces/trace_quantized_rating_head_20260612.md
     - 09_notes/decision_calibration_pilot_findings_20260612.md
     - working/research_program_plan.md (final-cut ratified + STEP-0 ledger)
-    - 'Petri_studies commits 4e467be + 4b6df4e (E1 build + 38 evals + lab_journal 5 entries); workspace commits e6b2af4 + c5a948d (branch review-response, unpushed)'
+    - Petri_studies commits 4e467be + 4b6df4e (E1 build + 38 evals + lab_journal 5
+      entries); workspace commits e6b2af4 + c5a948d (branch review-response, unpushed)
     continues_from: SID-20260610-145422
   SID-20260612-120921:
     date: '2026-06-12'
-    goal: 'Silent rollover continuation of SID-20260611-191657 (hook SID roll mid-conversation, no human-perceived boundary). Artifacts attributed to the anchor.'
+    goal: Silent rollover continuation of SID-20260611-191657 (hook SID roll mid-conversation,
+      no human-perceived boundary). Artifacts attributed to the anchor.
     inputs: []
     artifacts_produced: []
     continues_from: SID-20260611-191657
   SID-20260612-155206:
     date: '2026-06-12'
-    goal: 'Silent rollover continuation of SID-20260611-191657 (active SID at /mhc-end). Artifacts attributed to the anchor.'
+    goal: Silent rollover continuation of SID-20260611-191657 (active SID at /mhc-end).
+      Artifacts attributed to the anchor.
     inputs: []
     artifacts_produced: []
     continues_from: SID-20260612-120921
+  SID-20260612-194458:
+    date: '2026-06-12'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260612-155206
+  SID-20260612-194511:
+    date: '2026-06-12'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260612-194458
+  SID-20260612-194547:
+    date: '2026-06-12'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260612-194511
+  SID-20260612-204027:
+    date: '2026-06-12'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260612-194547
+  SID-20260612-204032:
+    date: '2026-06-12'
+    goal: 'Verifica integrità export/chiusura sessioni 2026-06-12; diagnosi forense
+      del bug fingerprint-stale (lag-of-one) in mhc_start.py, provato via SHA-256;
+      5 cerotti correttivi in .mhc-config.json (audit verde: 19 indexed / 1 live);
+      verifica del fix ac6591c (letto i diff + pytest 120 verde), con scoperta della
+      concern bundled del timeout di export; MOD-003 (fingerprint fix) + MOD-004 (export
+      timeout) nel code modlog MHC-W. Il fix si è auto-dimostrato in produzione: questo
+      SID (corretto a 3b6e3412 via transcript_path_at_end) e i rollover successivi
+      (230128/235136/235330, via transcript_path) sono ora etichettati col file reale.'
+    inputs:
+    - .mhc-config.json
+    - session_topology.yaml
+    - adapt.md
+    - ../MHC-W/CLAUDE.md
+    - ../MHC-W/scripts/mhc_start.py
+    - ../MHC-W/scripts/mhc_end.py
+    - ../MHC-W/scripts/mhc_check.py
+    - ../MHC-W/tests/test_mhc_start.py
+    - ../MHC-W/tests/conftest.py
+    - 03_modification_logs/ModificationLog_Code_MHC-W.md
+    - 00_conversations_full/exported (frontmatter 120921/155206/194458/194547)
+    - MHC-W git ac6591c (diff mhc_start.py + mhc_end.py)
+    artifacts_produced:
+    - 03_modification_logs/ModificationLog_Code_MHC-W.md (MOD-003 fingerprint fix
+      + MOD-004 export timeout)
+    - .mhc-config.json (5 cerotti retroattivi 2026-06-12 + auto-correzione 204032
+      via transcript_path_at_end)
+    continues_from: SID-20260612-204027
+  SID-20260612-230128:
+    date: '2026-06-12'
+    goal: Continuazione silenziosa di SID-20260612-204032 (rollover hook su resume;
+      col fix ac6591c il fingerprint è ora correttamente 3b6e3412 via transcript_path).
+      Nessun boundary semantico percepito; artefatti attribuiti al SID anchor.
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260612-204032
+  SID-20260612-235136:
+    date: '2026-06-12'
+    goal: Continuazione silenziosa di SID-20260612-204032 (secondo rollover hook su
+      resume; fingerprint corretto 3b6e3412 via transcript_path grazie al fix ac6591c).
+      Nessun boundary semantico; artefatti attribuiti al SID anchor.
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260612-230128
+  SID-20260612-235330:
+    date: '2026-06-12'
+    goal: Continuazione silenziosa di SID-20260612-204032; SID attivo al /mhc-end
+      (fingerprint 3b6e3412 via transcript_path grazie al fix ac6591c). Artefatti
+      attribuiti al SID anchor.
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260612-235136
+  SID-20260613-002241:
+    date: '2026-06-13'
+    goal: 'Anchor SID for this conversation. Recalibrate the E1 (prestige x stance)
+      base argument to the responsive mid-range (~0.5) and lock E1, so the against-interest
+      UPWARD bonus is not ceiling-masked by the 0.72 saturation attractor. Plus (earlier
+      this session): removed the recurring mhc-end skill-drift by syncing the local
+      .claude copy to the MHC-W template.'
+    inputs:
+    - working/research_program_plan.md
+    - 09_notes/decision_calibration_pilot_findings_20260612.md
+    - 01_epistemic_traces/trace_quantized_rating_head_20260612.md
+    - working/E1_prestige_stance_prereg_draft.md
+    - 03_modification_logs/ModificationLog_Code_E1.md
+    - C:/Users/loimi/Petri_studies/configs/de/ai_regulation_e1.yaml
+    - C:/Users/loimi/Petri_studies/configs/de/ai_regulation_e1_mediocre.yaml
+    - C:/Users/loimi/Petri_studies/evals/de/_calibration_ledger.csv
+    artifacts_produced:
+    - working/E1_prestige_stance_prereg_draft.md (section 3 recalibrated + re-locked)
+    - 03_modification_logs/ModificationLog_Code_E1.md (MOD-005)
+    - C:/Users/loimi/Petri_studies/configs/de/ai_regulation_e1.yaml (argument moderate->mediocre
+      + frozen c0 hash a1899eb1)
+    - C:/Users/loimi/Petri_studies/PREREGISTRATION.md (E1 cross-cutting registration
+      block)
+    - C:/Users/loimi/Petri_studies/lab_journal.md ([preregistration] entry)
+    - Petri_studies commit 5f54c8a + tag preregistered-e1-v1 (E1 LOCKED)
+    - .claude/skills/mhc-end/SKILL.md (synced to MHC-W template; recurring drift removed)
+    - 09_notes/methodology_ground_truth_verification_20260613.md (NEW — ground-truth verification
+      methodology; 4 evidence layers, per-claim matrix, reproduction commands, limits-of-independence)
+    - 03_modification_logs/ModificationLog_Code_Multipolity_runner.md (MOD-010 — analyze_stage0 parser fix)
+    - 'C:/Users/loimi/Petri_studies/runner/analyze_stage0.py (fix: flat-brace regex -> brace-balanced
+      raw_decode; Confab medium n 18->19)'
+    - C:/Users/loimi/Petri_studies/lab_journal.md (reader-guide reconstruction at top + [correction] entry)
+    - Petri_studies commit cd678c3 (ground-truth audit; parser fix + 5 corrections + reader guide)
+    - 01_epistemic_traces/trace_quantized_rating_head_20260612.md (temperature-provenance correction)
+    - working/research_program_plan.md + 09_notes/decision_calibration_pilot_findings_20260612.md
+      (cost-figures flagged as projections)
+    - verification workflow wf_c1614b25-298 (35 agents; 16-claim cross-check; 0 falsified)
+    continues_from: SID-20260612-235330
+  SID-20260613-004813:
+    date: '2026-06-13'
+    goal: Silent rollover continuation of SID-20260613-002241 (hook SID roll on resume;
+      no human-perceived boundary). Artifacts attributed to the anchor.
+    inputs: []
+    artifacts_produced:
+    - 03_modification_logs/ModificationLog_Code_E1.md
+    continues_from: SID-20260613-002241
+  SID-20260613-151905:
+    date: '2026-06-13'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260613-004813
