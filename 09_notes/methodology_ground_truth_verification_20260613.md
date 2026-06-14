@@ -147,6 +147,8 @@ external, unverified input. The fix it pointed to was adopted only after the bug
 (the dropped 0.62 in `…RMiBm9…`, the 1-of-84 audit). This is the canonical instance of the §1b discipline: an
 unattributed input may be correct, but it earns nothing until re-derived from immutable fact.
 
+**Provenance — hypothesis added 2026-06-15 (PI).** The "no originating session" anomaly now has a plausible mechanism. The note most likely began as a Claude-proposed **`spawn_task` chip** (an out-of-scope issue spun off as a background task) that the PI routed through the harness's **"internal" option**, which injects the spawned item **as a pasted prompt** into the current session. That path reproduces exactly the observed signature — accurate, on-target prose with **no transcript of origin** (it was a spawned process, not a session) and no chain of custody. So the ghost was not authorless: it was a spawned agent's finding arriving disguised as a user message. Recorded as a **hypothesis, not established fact**; it does not weaken the §1b discipline (the fix still earned its place only via independent reproduction), but it closes the open provenance question. *(Diagnosed 2026-06-15 while investigating an unrelated orphaned background-task chip.)*
+
 ## 7. How the reader's guide was produced and verified
 
 The guide is a synthesis of 16 per-claim verification records (each with an independent primary re-derivation
