@@ -794,8 +794,10 @@ sessions:
       PENALTY ~0.20 (stance-driven, prestige-independent via TOST, surviving fresh context). Plus:
       Petri_studies lab-journal convention overhaul (a reconstruction is an append-only dated entry;
       retro-migrated the reader guide into the stream), original 7-condition fresh-context side-runs
-      (AI-security + AI-regulation), and the DE/Sonnet-4.6 new-model arm (running at exit). All experimental
-      work + commits live in the Petri_studies repo (matrix result 60c8a92). Anchor SID; hooks rolled to
+      (AI-security + AI-regulation), and the DE/Sonnet-4.6 new-model arm (DONE: the coherence penalty SURVIVES
+      on 4.6, ~-0.18 = same as 4.5 -> model-version is NOT the driver of the earlier EN-sources disappearance,
+      so the EN/4.5 source-nationality arm is the decisive next test). All experimental work + commits live in
+      the Petri_studies repo (matrix result 60c8a92, 4.6 arm 893362d). Anchor SID; hooks rolled to
       160035/191335/195755/221612.'
     inputs:
     - 09_notes/reliability_audit_published_evals_20260609.md
