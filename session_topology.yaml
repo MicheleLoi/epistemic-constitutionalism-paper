@@ -786,19 +786,21 @@ sessions:
     continues_from: SID-20260614-135220
   SID-20260614-145330:
     date: '2026-06-14'
-    goal: 'E1 confirmatory grid: the against-interest +0.10 bonus does NOT replicate (over-determined
-      -- E1 used the wrong topic/argument/sources/arm; argument language matched). Reframed (PI direction):
-      the real DE/CH effect is a source-incongruence PENALTY, not a bonus; the +0.10 was the prestige/ranking
-      confound. Built + ran the prestige x stance MATRIX on the ROBUST case (AI-security) with DE sources
-      adapted to the hawkish argument (CSU/pro-defense vs Green/anti-militarization) = CLEAN H3 COHERENCE
-      PENALTY ~0.20 (stance-driven, prestige-independent via TOST, surviving fresh context). Plus:
-      Petri_studies lab-journal convention overhaul (a reconstruction is an append-only dated entry;
-      retro-migrated the reader guide into the stream), original 7-condition fresh-context side-runs
-      (AI-security + AI-regulation), and the DE/Sonnet-4.6 new-model arm (DONE: the coherence penalty SURVIVES
-      on 4.6, ~-0.18 = same as 4.5 -> model-version is NOT the driver of the earlier EN-sources disappearance,
-      so the EN/4.5 source-nationality arm is the decisive next test). All experimental work + commits live in
-      the Petri_studies repo (matrix result 60c8a92, 4.6 arm 893362d). Anchor SID; hooks rolled to
-      160035/191335/195755/221612.'
+    goal: 'E1 confirmatory grid: the against-interest +0.10 bonus does NOT replicate
+      (over-determined -- E1 used the wrong topic/argument/sources/arm; argument language
+      matched). Reframed (PI direction): the real DE/CH effect is a source-incongruence
+      PENALTY, not a bonus; the +0.10 was the prestige/ranking confound. Built + ran
+      the prestige x stance MATRIX on the ROBUST case (AI-security) with DE sources
+      adapted to the hawkish argument (CSU/pro-defense vs Green/anti-militarization)
+      = CLEAN H3 COHERENCE PENALTY ~0.20 (stance-driven, prestige-independent via
+      TOST, surviving fresh context). Plus: Petri_studies lab-journal convention overhaul
+      (a reconstruction is an append-only dated entry; retro-migrated the reader guide
+      into the stream), original 7-condition fresh-context side-runs (AI-security
+      + AI-regulation), and the DE/Sonnet-4.6 new-model arm (DONE: the coherence penalty
+      SURVIVES on 4.6, ~-0.18 = same as 4.5 -> model-version is NOT the driver of
+      the earlier EN-sources disappearance, so the EN/4.5 source-nationality arm is
+      the decisive next test). All experimental work + commits live in the Petri_studies
+      repo (matrix result 60c8a92, 4.6 arm 893362d). Anchor SID; hooks rolled to 160035/191335/195755/221612.'
     inputs:
     - 09_notes/reliability_audit_published_evals_20260609.md
     - working/E1_prestige_stance_prereg_draft.md
@@ -831,3 +833,15 @@ sessions:
     inputs: []
     artifacts_produced: []
     continues_from: SID-20260614-195755
+  SID-20260614-235641:
+    date: '2026-06-14'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260614-221612
+  SID-20260615-003655:
+    date: '2026-06-15'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260614-235641
