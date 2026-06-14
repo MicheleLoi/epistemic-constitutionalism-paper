@@ -711,14 +711,19 @@ sessions:
     - C:/Users/loimi/Petri_studies/lab_journal.md ([preregistration] entry)
     - Petri_studies commit 5f54c8a + tag preregistered-e1-v1 (E1 LOCKED)
     - .claude/skills/mhc-end/SKILL.md (synced to MHC-W template; recurring drift removed)
-    - 09_notes/methodology_ground_truth_verification_20260613.md (NEW — ground-truth verification
-      methodology; 4 evidence layers, per-claim matrix, reproduction commands, limits-of-independence)
-    - 03_modification_logs/ModificationLog_Code_Multipolity_runner.md (MOD-010 — analyze_stage0 parser fix)
-    - 'C:/Users/loimi/Petri_studies/runner/analyze_stage0.py (fix: flat-brace regex -> brace-balanced
-      raw_decode; Confab medium n 18->19)'
-    - C:/Users/loimi/Petri_studies/lab_journal.md (reader-guide reconstruction at top + [correction] entry)
-    - Petri_studies commit cd678c3 (ground-truth audit; parser fix + 5 corrections + reader guide)
-    - 01_epistemic_traces/trace_quantized_rating_head_20260612.md (temperature-provenance correction)
+    - 09_notes/methodology_ground_truth_verification_20260613.md (NEW — ground-truth
+      verification methodology; 4 evidence layers, per-claim matrix, reproduction
+      commands, limits-of-independence)
+    - 03_modification_logs/ModificationLog_Code_Multipolity_runner.md (MOD-010 — analyze_stage0
+      parser fix)
+    - 'C:/Users/loimi/Petri_studies/runner/analyze_stage0.py (fix: flat-brace regex
+      -> brace-balanced raw_decode; Confab medium n 18->19)'
+    - C:/Users/loimi/Petri_studies/lab_journal.md (reader-guide reconstruction at
+      top + [correction] entry)
+    - Petri_studies commit cd678c3 (ground-truth audit; parser fix + 5 corrections
+      + reader guide)
+    - 01_epistemic_traces/trace_quantized_rating_head_20260612.md (temperature-provenance
+      correction)
     - working/research_program_plan.md + 09_notes/decision_calibration_pilot_findings_20260612.md
       (cost-figures flagged as projections)
     - verification workflow wf_c1614b25-298 (35 agents; 16-claim cross-check; 0 falsified)
@@ -735,5 +740,53 @@ sessions:
     date: '2026-06-13'
     goal: ''
     inputs: []
-    artifacts_produced: []
+    artifacts_produced:
+    - 01_epistemic_traces/trace_quantized_rating_head_20260612.md
+    - 03_modification_logs/ModificationLog_Code_E1.md
+    - 03_modification_logs/ModificationLog_Code_Multipolity_runner.md
+    - 09_notes/decision_calibration_pilot_findings_20260612.md
+    - 09_notes/executive_summary_ground_truth_verification_20260613.md
+    - 09_notes/methodology_ground_truth_verification_20260613.md
     continues_from: SID-20260613-004813
+  SID-20260613-174135:
+    date: '2026-06-13'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260613-151905
+  SID-20260613-182011:
+    date: '2026-06-13'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260613-174135
+  SID-20260614-090902:
+    date: '2026-06-14'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260613-182011
+  SID-20260614-100314:
+    date: '2026-06-14'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260614-090902
+  SID-20260614-135220:
+    date: '2026-06-14'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260614-100314
+  SID-20260614-141350:
+    date: '2026-06-14'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260614-135220
+  SID-20260614-145330:
+    date: '2026-06-14'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260614-141350

@@ -446,7 +446,9 @@
       "jsonl_fingerprint": "75bfad60-e5d6-41ce-8b64-766f9976183a.jsonl",
       "jsonl_sha256": "712ca194778624a31978e12796e94106c8632dac7439489697d700195c9a0b62",
       "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260612-120921.md",
-      "export_sha256": "d5236e2dcc09c7fb86770dd30ae2409226733d2a0cad53e4286fa60fbd6d0af9"
+      "export_sha256": "d5236e2dcc09c7fb86770dd30ae2409226733d2a0cad53e4286fa60fbd6d0af9",
+      "jsonl_fingerprint_actual": "6cf37e70-6499-4edd-8c0e-4d346dd82f39.jsonl",
+      "note": "jsonl_fingerprint (75bfad60) is the stale SessionStart mtime label (a leftover prior file). Actual transcript = 6cf37e70 (anchor conversation, same as SID-20260612-155206), proven: jsonl_sha256 712ca194 matches this export's json_sha256 over source_jsonl 6cf37e70. Root-fixed in MHC-W ac6591c. (cerotto 2026-06-12 SID-20260612-204032)"
     },
     {
       "id": "SID-20260612-155206",
@@ -457,6 +459,193 @@
       "jsonl_sha256": "b4d00c9f02820829eac8ee54bc00a2970dbb838f7ccdeddda08c9007b7d6f74f",
       "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260612-155206.md",
       "export_sha256": "a22dca77f72231a2301bade9ce8b057e80a2f6e0ca347e4e621e2fac5ed52c3b"
+    },
+    {
+      "id": "SID-20260612-194458",
+      "started": "2026-06-12T19:44:58.647274",
+      "ended": "2026-06-12T19:45:10.190500",
+      "exported": true,
+      "jsonl_fingerprint": "6cf37e70-6499-4edd-8c0e-4d346dd82f39.jsonl",
+      "jsonl_sha256": "20173d0e79055f9413fc67d82fdf4d55a09a261f0565de79caba2a914c9c6503",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260612-194458.md",
+      "export_sha256": "22e16d99b429addfa59899bb55d2eec07da95a82544ce7bb435b870e827a00cd",
+      "jsonl_fingerprint_actual": "643dcb69-f5ee-49ef-8866-9893b507b57f.jsonl",
+      "note": "jsonl_fingerprint (6cf37e70) is the stale SessionStart mtime label (previous conversation). Actual transcript = 643dcb69, proven: jsonl_sha256 20173d0e matches this export's json_sha256 over source_jsonl 643dcb69. Root-fixed in MHC-W ac6591c. (cerotto 2026-06-12 SID-20260612-204032)"
+    },
+    {
+      "id": "SID-20260612-194511",
+      "started": "2026-06-12T19:45:11.686232",
+      "ended": "2026-06-12T19:45:12.255278",
+      "exported": false,
+      "jsonl_fingerprint": "643dcb69-f5ee-49ef-8866-9893b507b57f.jsonl",
+      "note": "Ephemeral hook-roll blip (1s, exported:false). jsonl_fingerprint (643dcb69) is the stale SessionStart mtime label; no distinct transcript was exported -- content belongs to the surrounding 194458/194547 conversation transition. (cerotto 2026-06-12 SID-20260612-204032)"
+    },
+    {
+      "id": "SID-20260612-194547",
+      "started": "2026-06-12T19:45:47.296533",
+      "ended": "2026-06-12T19:45:57.302859",
+      "exported": true,
+      "jsonl_fingerprint": "643dcb69-f5ee-49ef-8866-9893b507b57f.jsonl",
+      "jsonl_sha256": "5419c5ae50fc6e33fa82315223973f75c6566cf4f5c1df0702032cbc3365287e",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260612-194547.md",
+      "export_sha256": "0fcc4e3e9cad1cb0821734ca44ab1566d06201ed7761712d09eed32c924e21bc",
+      "jsonl_fingerprint_actual": "75bfad60-e5d6-41ce-8b64-766f9976183a.jsonl",
+      "note": "jsonl_fingerprint (643dcb69) is the stale SessionStart mtime label (previous conversation). Actual transcript = 75bfad60, proven: jsonl_sha256 5419c5ae matches this export's json_sha256 over source_jsonl 75bfad60. Root-fixed in MHC-W ac6591c. (cerotto 2026-06-12 SID-20260612-204032)"
+    },
+    {
+      "id": "SID-20260612-204027",
+      "started": "2026-06-12T20:40:27.637254",
+      "ended": "2026-06-12T20:40:29.118112",
+      "exported": false,
+      "jsonl_fingerprint": "75bfad60-e5d6-41ce-8b64-766f9976183a.jsonl",
+      "note": "Ephemeral hook-roll blip (2s, exported:false). jsonl_fingerprint (75bfad60) is the stale SessionStart mtime label; no distinct transcript was exported -- content belongs to the current 204032 conversation (3b6e3412). (cerotto 2026-06-12 SID-20260612-204032)"
+    },
+    {
+      "id": "SID-20260612-204032",
+      "started": "2026-06-12T20:40:32.959420",
+      "ended": "2026-06-12T21:33:47.793944",
+      "exported": true,
+      "jsonl_fingerprint": "3b6e3412-11f4-47fc-a208-286ddc24e391.jsonl",
+      "jsonl_fingerprint_method": "transcript_path_at_end",
+      "jsonl_sha256": "0eed190738c1f5837011555d5416d81c4765d1b7a095d292344757eb4acaef91",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260612-204032.md",
+      "export_sha256": "049df4b9741a8e6213b8dfb82af96175e6854abd7f83b74d5fca67e020cf9890"
+    },
+    {
+      "id": "SID-20260612-230128",
+      "started": "2026-06-12T23:01:28.743384",
+      "ended": "2026-06-12T23:16:28.114237",
+      "exported": true,
+      "jsonl_fingerprint": "3b6e3412-11f4-47fc-a208-286ddc24e391.jsonl",
+      "jsonl_fingerprint_method": "transcript_path",
+      "jsonl_sha256": "61c0a3e889aabbbb398139ebde7a41de20aa8b8e1dc6f50fe6dfd5ef83d2b556",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260612-230128.md",
+      "export_sha256": "ab39b7bb1ea9731cdea9b35efd958cb4b885f4a76a808e592c357b63614dcdc7"
+    },
+    {
+      "id": "SID-20260612-235136",
+      "started": "2026-06-12T23:51:36.998552",
+      "ended": "2026-06-12T23:53:24.680822",
+      "exported": true,
+      "jsonl_fingerprint": "3b6e3412-11f4-47fc-a208-286ddc24e391.jsonl",
+      "jsonl_fingerprint_method": "transcript_path",
+      "jsonl_sha256": "8ab76d57ff6d3868d8a86a05cd3cf2e162a21949f543e2b827590990e1123bff",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260612-235136.md",
+      "export_sha256": "a2c58f8cab486b27b7f0f873acbbfe3bf82fb800d6da17123cf8769b42f05c96"
+    },
+    {
+      "id": "SID-20260612-235330",
+      "started": "2026-06-12T23:53:30.581499",
+      "ended": "2026-06-13T00:13:25.951984",
+      "exported": true,
+      "jsonl_fingerprint": "3b6e3412-11f4-47fc-a208-286ddc24e391.jsonl",
+      "jsonl_fingerprint_method": "transcript_path",
+      "jsonl_sha256": "8ab76d57ff6d3868d8a86a05cd3cf2e162a21949f543e2b827590990e1123bff",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260612-235330.md",
+      "export_sha256": "789d3df7183cdf54264f32db16f290e380420b78cf974e1d68f4acc69c44cd14",
+      "jsonl_fingerprint_actual": "4728b501-6422-4547-88cd-a5d99cc292a6.jsonl",
+      "recovery_export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_20260612_235330.md",
+      "recovery_export_json_sha256": "625f0126fc50dea189516fa28ff2fa292fdecced8b19666752333f37af887462",
+      "note": "finalize recorded the resume-payload fingerprint 3b6e3412, but Claude Code rotated the live transcript to 4728b501 mid-session -- so export_file above (..._SID-20260612-235330.md, 3b6e3412 frozen at 23:53:24) is INCOMPLETE. The real conversation (4728b501, 42 msgs) was orphan-recovered to recovery_export_file (..._20260612_235330.md). 4728b501 stays live; its final state will be re-captured by the orphan audit at next session start. Root cause beyond ac6591c: the payload transcript_path is itself stale when a resume rotates the transcript file. (cerotto 2026-06-13, anchor SID-20260612-204032)"
+    },
+    {
+      "id": "SID-20260613-002241",
+      "started": "2026-06-13T00:22:41.809480",
+      "ended": "2026-06-13T00:44:18.860924",
+      "exported": true,
+      "jsonl_fingerprint": "c861f8b1-10a9-4c32-9252-0c6b2c760ca3.jsonl",
+      "jsonl_fingerprint_method": "transcript_path",
+      "jsonl_sha256": "075fb7ac7b4205fd04ad7923e81a6a410cf4340363406b58da5304a757fc5b12",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260613-002241.md",
+      "export_sha256": "b9d7c3a29678172e33e9f68818e955f53669215fe515bab93c8aca211d1f0fc2"
+    },
+    {
+      "id": "SID-20260613-004813",
+      "started": "2026-06-13T00:48:13.932162",
+      "ended": "2026-06-13T12:29:29.051735",
+      "exported": true,
+      "jsonl_fingerprint": "c861f8b1-10a9-4c32-9252-0c6b2c760ca3.jsonl",
+      "jsonl_fingerprint_method": "transcript_path",
+      "jsonl_sha256": "9e56c7126bd9d0e9aab2bc115c3ad5969442d66bd6ad2b9114a5b847685433e5",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260613-004813.md",
+      "export_sha256": "64ecf6f7714ecd88e26b693c2e631bb906380f782bcd780791f50d72b0e7eb2c"
+    },
+    {
+      "id": "SID-20260613-151905",
+      "started": "2026-06-13T15:19:05.985174",
+      "ended": "2026-06-13T16:41:39.335706",
+      "exported": true,
+      "jsonl_fingerprint": "c861f8b1-10a9-4c32-9252-0c6b2c760ca3.jsonl",
+      "jsonl_fingerprint_method": "transcript_path",
+      "jsonl_sha256": "cd858dbd5ae9525fb0ffd5f5d633da3d3ab64ff5f9e4653fd235cd909b0b4861",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260613-151905.md",
+      "export_sha256": "7a27adfaec3890fb9112c88d4513d5c9d39a7f8245187cdf1e7857a80ca84f52"
+    },
+    {
+      "id": "SID-20260613-174135",
+      "started": "2026-06-13T17:41:35.541506",
+      "ended": "2026-06-13T18:19:29.343006",
+      "exported": true,
+      "jsonl_fingerprint": "c861f8b1-10a9-4c32-9252-0c6b2c760ca3.jsonl",
+      "jsonl_fingerprint_method": "transcript_path",
+      "jsonl_sha256": "36018730a160107ea5b0cb0dc8015fb9ecef171cf7b7b00cbd8cfc74d3635440",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260613-174135.md",
+      "export_sha256": "5ce699177003691fe1d73cc67f32ea02cd6d81f56fb5e0993f256e0e478b21f1"
+    },
+    {
+      "id": "SID-20260613-182011",
+      "started": "2026-06-13T18:20:11.322829",
+      "ended": "2026-06-13T18:56:41.487650",
+      "exported": true,
+      "jsonl_fingerprint": "718d7cff-7ec8-431a-9998-0466035d735d.jsonl",
+      "jsonl_fingerprint_method": "transcript_path_at_end",
+      "jsonl_sha256": "557698156bd85334326d11e8ec3d1e4542bb2198bb3ad0a6de7380487e7cba7d",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260613-182011.md",
+      "export_sha256": "11d3cea57407189f25336d011e644ec0abbdb55bda0c19f81815940a003ce78e"
+    },
+    {
+      "id": "SID-20260614-090902",
+      "started": "2026-06-14T09:09:02.837222",
+      "ended": "2026-06-14T09:57:16.773838",
+      "exported": true,
+      "jsonl_fingerprint": "718d7cff-7ec8-431a-9998-0466035d735d.jsonl",
+      "jsonl_fingerprint_method": "transcript_path",
+      "jsonl_sha256": "e74362c4b9e5597a97a999797dcbbeeb341b90cc7af4f1864c0ad18712076e91",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260614-090902.md",
+      "export_sha256": "f47e6106452b5098f8fdc3f216d905831896a1f9523614f0e15a39efc0b2ee58"
+    },
+    {
+      "id": "SID-20260614-100314",
+      "started": "2026-06-14T10:03:14.526350",
+      "ended": "2026-06-14T10:52:07.269570",
+      "exported": true,
+      "jsonl_fingerprint": "718d7cff-7ec8-431a-9998-0466035d735d.jsonl",
+      "jsonl_fingerprint_method": "transcript_path",
+      "jsonl_sha256": "c85c1e3c79c76fb8b88adf1d49df3773879f36e91517696be1c3f7a730dd5a4e",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260614-100314.md",
+      "export_sha256": "35ab554d1dc592294e8a2725164856d1eee9a1ca9f7ef2de607ee98aae1038cd"
+    },
+    {
+      "id": "SID-20260614-135220",
+      "started": "2026-06-14T13:52:20.175234",
+      "ended": "2026-06-14T14:01:49.237468",
+      "exported": true,
+      "jsonl_fingerprint": "718d7cff-7ec8-431a-9998-0466035d735d.jsonl",
+      "jsonl_fingerprint_method": "transcript_path",
+      "jsonl_sha256": "9a619a9cafd9a05785ff44e5186793f7d3778970cd82509649e209cb08891625",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260614-135220.md",
+      "export_sha256": "42547aa6c8f2b790d75f38e8b0e0401a9d35969d324f72b8d01bc98c943dbd75"
+    },
+    {
+      "id": "SID-20260614-141350",
+      "started": "2026-06-14T14:13:50.294999",
+      "ended": "2026-06-14T14:13:52.490175",
+      "exported": true,
+      "jsonl_fingerprint": "718d7cff-7ec8-431a-9998-0466035d735d.jsonl",
+      "jsonl_fingerprint_method": "transcript_path_at_end",
+      "jsonl_sha256": "190c55c4195f1a7c15c497bb9d807c7f6c51199afea4d9ef0300736cdf3eec84",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260614-141350.md",
+      "export_sha256": "b44c81be6821d186a09c80dddd513eb8261f7d8989b4f37fa6bed85e949a9e0a"
     }
   ],
   "mhc_w_path": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W",
@@ -466,5 +655,11 @@
     "completed_in_session": "SID-20260602-134807",
     "mhc_w_version": "v5.0",
     "case": "C"
+  },
+  "current_session": {
+    "id": "SID-20260614-145330",
+    "started": "2026-06-14T14:53:30.878982",
+    "jsonl_fingerprint": "f9a0efd8-9fa3-4954-a6d7-c4f70a0dc854.jsonl",
+    "jsonl_fingerprint_method": "transcript_path"
   }
 }
