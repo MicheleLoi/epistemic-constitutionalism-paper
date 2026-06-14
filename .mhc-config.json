@@ -646,6 +646,61 @@
       "jsonl_sha256": "190c55c4195f1a7c15c497bb9d807c7f6c51199afea4d9ef0300736cdf3eec84",
       "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260614-141350.md",
       "export_sha256": "b44c81be6821d186a09c80dddd513eb8261f7d8989b4f37fa6bed85e949a9e0a"
+    },
+    {
+      "id": "SID-20260614-145330",
+      "started": "2026-06-14T14:53:30.878982",
+      "ended": "2026-06-14T15:55:42.791795",
+      "exported": true,
+      "jsonl_fingerprint": "f9a0efd8-9fa3-4954-a6d7-c4f70a0dc854.jsonl",
+      "jsonl_fingerprint_method": "transcript_path",
+      "jsonl_sha256": "12c5794233fd35d6c36c11ae26d2e8746d731814612bc1a0d7d726182447dad2",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260614-145330.md",
+      "export_sha256": "7c3bbd36eb93341c0ea7560f4539d8b461676e778392ebfd76c0b125e58f7303"
+    },
+    {
+      "id": "SID-20260614-160035",
+      "started": "2026-06-14T16:00:35.181515",
+      "ended": "2026-06-14T18:18:17.418437",
+      "exported": true,
+      "jsonl_fingerprint": "f9a0efd8-9fa3-4954-a6d7-c4f70a0dc854.jsonl",
+      "jsonl_fingerprint_method": "transcript_path",
+      "jsonl_sha256": "e1a444defd3de80e25318dc13bf6a03bc96498fbe24ae3c93df9e0746ebca652",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260614-160035.md",
+      "export_sha256": "b8ec0e2b078f9606360a9d09e50a819878b79b390642f490413a6a1190c969fe"
+    },
+    {
+      "id": "SID-20260614-191335",
+      "started": "2026-06-14T19:13:35.886008",
+      "ended": "2026-06-14T19:30:46.861364",
+      "exported": true,
+      "jsonl_fingerprint": "f9a0efd8-9fa3-4954-a6d7-c4f70a0dc854.jsonl",
+      "jsonl_fingerprint_method": "transcript_path",
+      "jsonl_sha256": "afb92a64a8dc328e7bc9c8aad53785bee57cc216bea02cafdfc437d6cc2604ca",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260614-191335.md",
+      "export_sha256": "2d27ac019c4ee00b6bdf997bbcebbb05313adb65f136c4dee8ee819a4c9774ba"
+    },
+    {
+      "id": "SID-20260614-195755",
+      "started": "2026-06-14T19:57:55.295243",
+      "ended": "2026-06-14T21:07:31.763675",
+      "exported": true,
+      "jsonl_fingerprint": "f9a0efd8-9fa3-4954-a6d7-c4f70a0dc854.jsonl",
+      "jsonl_fingerprint_method": "transcript_path",
+      "jsonl_sha256": "203d655bff61106e2d3def0f1c4f9cf28de351b531faf000e530cef17fc54e48",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260614-195755.md",
+      "export_sha256": "f9ec2f5f283fb65b030cc4b073091b0b72aa9e3a6fddb4cc67d6d0bb8abc8d3e"
+    },
+    {
+      "id": "SID-20260614-221612",
+      "started": "2026-06-14T22:16:12.210419",
+      "ended": "2026-06-14T23:13:09.146205",
+      "exported": true,
+      "jsonl_fingerprint": "f9a0efd8-9fa3-4954-a6d7-c4f70a0dc854.jsonl",
+      "jsonl_fingerprint_method": "transcript_path",
+      "jsonl_sha256": "2fc494c22f54df0dbe5ed2705e4a814524441d9a671772b386c1bdf7e8bdd221",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260614-221612.md",
+      "export_sha256": "8314136f45d3171cfc8b47c8f878da34c7e77c8c88aa0eba1063b208c97bf10b"
     }
   ],
   "mhc_w_path": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W",
@@ -655,11 +710,5 @@
     "completed_in_session": "SID-20260602-134807",
     "mhc_w_version": "v5.0",
     "case": "C"
-  },
-  "current_session": {
-    "id": "SID-20260614-145330",
-    "started": "2026-06-14T14:53:30.878982",
-    "jsonl_fingerprint": "f9a0efd8-9fa3-4954-a6d7-c4f70a0dc854.jsonl",
-    "jsonl_fingerprint_method": "transcript_path"
   }
 }

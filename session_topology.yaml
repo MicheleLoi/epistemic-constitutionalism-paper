@@ -786,7 +786,46 @@ sessions:
     continues_from: SID-20260614-135220
   SID-20260614-145330:
     date: '2026-06-14'
+    goal: 'E1 confirmatory grid: the against-interest +0.10 bonus does NOT replicate (over-determined
+      -- E1 used the wrong topic/argument/sources/arm; argument language matched). Reframed (PI direction):
+      the real DE/CH effect is a source-incongruence PENALTY, not a bonus; the +0.10 was the prestige/ranking
+      confound. Built + ran the prestige x stance MATRIX on the ROBUST case (AI-security) with DE sources
+      adapted to the hawkish argument (CSU/pro-defense vs Green/anti-militarization) = CLEAN H3 COHERENCE
+      PENALTY ~0.20 (stance-driven, prestige-independent via TOST, surviving fresh context). Plus:
+      Petri_studies lab-journal convention overhaul (a reconstruction is an append-only dated entry;
+      retro-migrated the reader guide into the stream), original 7-condition fresh-context side-runs
+      (AI-security + AI-regulation), and the DE/Sonnet-4.6 new-model arm (running at exit). All experimental
+      work + commits live in the Petri_studies repo (matrix result 60c8a92). Anchor SID; hooks rolled to
+      160035/191335/195755/221612.'
+    inputs:
+    - 09_notes/reliability_audit_published_evals_20260609.md
+    - working/E1_prestige_stance_prereg_draft.md
+    - working/research_program_plan.md
+    - 09_notes/decision_empirical_critical_framing_20260611.md
+    - C:/Users/loimi/Petri_studies/ (configs, runner, evals, lab_journal, _archive)
+    artifacts_produced: []
+    continues_from: SID-20260614-141350
+  SID-20260614-160035:
+    date: '2026-06-14'
     goal: ''
     inputs: []
     artifacts_produced: []
-    continues_from: SID-20260614-141350
+    continues_from: SID-20260614-145330
+  SID-20260614-191335:
+    date: '2026-06-14'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260614-160035
+  SID-20260614-195755:
+    date: '2026-06-14'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260614-191335
+  SID-20260614-221612:
+    date: '2026-06-14'
+    goal: ''
+    inputs: []
+    artifacts_produced: []
+    continues_from: SID-20260614-195755
