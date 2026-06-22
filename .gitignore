@@ -36,3 +36,8 @@ venv/
 # conversations/ remains ignored — export hook's project dir; per 2026-06-03 decision
 # (decision_conversations_only_mhcw_20260603.md) all future exports go to MHC-W archive only.
 conversations/
+
+# one-time migration backup (contains a stray file from another project) — not for publication
+.adapt-migration-backup-2026-06-02/
+# stray cwd-marker junk anywhere in the tree
+**/tmpclaude-*

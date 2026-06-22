@@ -723,6 +723,135 @@
       "jsonl_sha256": "47c31887f5a4600f69a136eeec40b261d21e30eccde2217e894835f0b7b353f9",
       "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260615-003655.md",
       "export_sha256": "13fd77b918bb462d1b79705688a3d5eeedae085955ebd50cdd6c7740e18361be"
+    },
+    {
+      "id": "SID-20260615-092827",
+      "started": "2026-06-15T09:28:27.997760",
+      "ended": "2026-06-15T09:28:29.781797",
+      "exported": false,
+      "jsonl_fingerprint": "951fcc79-00ff-472b-805f-dbc959b840d4.jsonl",
+      "jsonl_fingerprint_method": "transcript_path"
+    },
+    {
+      "id": "SID-20260615-092829",
+      "started": "2026-06-15T09:28:29.959007",
+      "ended": "2026-06-15T09:47:16.322802",
+      "exported": true,
+      "jsonl_fingerprint": "8a68e4cc-ede6-488e-829c-a26181c77c99.jsonl",
+      "jsonl_fingerprint_method": "transcript_path",
+      "jsonl_sha256": "2611639cae7d98ce327df0d31d36d385bd86904856f3fa78aee6a8e949cab3ef",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260615-092829.md",
+      "export_sha256": "285efc9382de37dfac77c372059e10a9411db322af3dede234ccf4f25999d9b2"
+    },
+    {
+      "id": "SID-20260615-094928",
+      "started": "2026-06-15T09:49:28.544182",
+      "ended": "2026-06-15T10:17:14.422029",
+      "exported": true,
+      "jsonl_fingerprint": "8a68e4cc-ede6-488e-829c-a26181c77c99.jsonl",
+      "jsonl_fingerprint_method": "transcript_path",
+      "jsonl_sha256": "9c6fd9a271480dfc338bc02441fdd03a1050a82b79ad2b17300053522b54397d",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260615-094928.md",
+      "export_sha256": "22b6dc0c1ca87c557fb095b1a6a119b2736a6513044cad7d0442f363d68a50a9"
+    },
+    {
+      "id": "SID-20260615-102028",
+      "started": "2026-06-15T10:20:28.378018",
+      "ended": "2026-06-15T11:45:33.497389",
+      "exported": true,
+      "jsonl_fingerprint": "8a68e4cc-ede6-488e-829c-a26181c77c99.jsonl",
+      "jsonl_fingerprint_method": "transcript_path",
+      "jsonl_sha256": "f931af5674dea8936ada47897cc2696977d3952d4515eac22db1d059a7398cc0",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260615-102028.md",
+      "export_sha256": "2663514bd7dd2579d514036e208343ba17c9f860734768c552637f2c314aba07"
+    },
+    {
+      "id": "SID-20260615-115449",
+      "started": "2026-06-15T11:54:49.125456",
+      "ended": "2026-06-15T12:39:34.471651",
+      "exported": true,
+      "jsonl_fingerprint": "8a68e4cc-ede6-488e-829c-a26181c77c99.jsonl",
+      "jsonl_fingerprint_method": "transcript_path",
+      "jsonl_sha256": "14a17b31843e05271e8be632e5c40df0d440c1b2541cf571ac5fedc66587c117",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260615-115449.md",
+      "export_sha256": "d7df687868cc66efee9a5f7af9c30e8f7b3b87c8d114d6cb0d471bb66961cf8b"
+    },
+    {
+      "id": "SID-20260615-125956",
+      "started": "2026-06-15T12:59:56.716161",
+      "ended": "2026-06-15T13:43:42.200301",
+      "exported": true,
+      "jsonl_fingerprint": "8a68e4cc-ede6-488e-829c-a26181c77c99.jsonl",
+      "jsonl_fingerprint_method": "transcript_path",
+      "jsonl_sha256": "af4b7eb7535cae50a756493e5e27524f2e5457468679738bb91638bbcd7cecdc",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260615-125956.md",
+      "export_sha256": "0cb491fc934d87ae62904134865d60a6024f04b87697d0dc18cff59c4befebee"
+    },
+    {
+      "id": "SID-20260615-142114",
+      "started": "2026-06-15T14:21:14.498358",
+      "ended": "2026-06-15T15:14:21.290999",
+      "exported": true,
+      "jsonl_fingerprint": "8a68e4cc-ede6-488e-829c-a26181c77c99.jsonl",
+      "jsonl_fingerprint_method": "transcript_path",
+      "jsonl_sha256": "d1fae315d3f8ff027ec05665d4a53cadeb936d7c7fc43091bbb3636dfcae3637",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260615-142114.md",
+      "export_sha256": "70b82ecb3b95e270fc498a05b990df72d52e42a691e411e5c091df69e83249f7"
+    },
+    {
+      "id": "SID-20260615-162742",
+      "started": "2026-06-15T16:27:42.838219",
+      "ended": "2026-06-15T17:26:42.076149",
+      "exported": true,
+      "jsonl_fingerprint": "8a68e4cc-ede6-488e-829c-a26181c77c99.jsonl",
+      "jsonl_fingerprint_method": "transcript_path",
+      "jsonl_sha256": "f060877fbccf68f9392cb191ecb81d5fd293b49004da8613279b2672a6504283",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260615-162742.md",
+      "export_sha256": "e4e1069eec38e0b3af01b4a62e8a70405f4bce17f68614871c9335ee8f933e74"
+    },
+    {
+      "id": "SID-20260615-174130",
+      "started": "2026-06-15T17:41:30.355992",
+      "ended": "2026-06-15T17:56:33.726720",
+      "exported": true,
+      "jsonl_fingerprint": "8a68e4cc-ede6-488e-829c-a26181c77c99.jsonl",
+      "jsonl_fingerprint_method": "transcript_path",
+      "jsonl_sha256": "b5d6190327824cb68c29cd0e0e02ac78f5827f823d00ebe818dbb963e03c39cc",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260615-174130.md",
+      "export_sha256": "6c962914218a05034826e342ccc54a1b59b4d1cb85580a142f462fca7d2b0f3a"
+    },
+    {
+      "id": "SID-20260615-175807",
+      "started": "2026-06-15T17:58:07.722145",
+      "ended": "2026-06-15T18:16:48.703991",
+      "exported": true,
+      "jsonl_fingerprint": "8a68e4cc-ede6-488e-829c-a26181c77c99.jsonl",
+      "jsonl_fingerprint_method": "transcript_path",
+      "jsonl_sha256": "2902fc690a73b8c126b5f19866f4f1b41aa84eaaad16b70f024ec6e2dd87bdcb",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260615-175807.md",
+      "export_sha256": "e99982c1126e657c859416f850c7b0f193c1f3ee6f93dd9597568a647e9e11c5"
+    },
+    {
+      "id": "SID-20260622-164651",
+      "started": "2026-06-22T16:46:51.629006",
+      "ended": "2026-06-22T17:50:29.016787",
+      "exported": true,
+      "jsonl_fingerprint": "8a68e4cc-ede6-488e-829c-a26181c77c99.jsonl",
+      "jsonl_fingerprint_method": "transcript_path",
+      "jsonl_sha256": "cc3bb829d1d15ee1c5829a69c4782e3834a13274eb2f7ba602e9076c9244dc91",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260622-164651.md",
+      "export_sha256": "02b26faae9ea6b43ced71314eca47752ad3c7ada8db60fac0e4bd7c7b9b02e1c"
+    },
+    {
+      "id": "SID-20260622-180907",
+      "started": "2026-06-22T18:09:07.549323",
+      "ended": "2026-06-22T18:32:15.268782",
+      "exported": true,
+      "jsonl_fingerprint": "8a68e4cc-ede6-488e-829c-a26181c77c99.jsonl",
+      "jsonl_fingerprint_method": "transcript_path",
+      "jsonl_sha256": "9436b52fcc4723bb68ed5526042eaa92e4ff0cdb7fb03ac744ab3d48a48aec68",
+      "export_file": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W\\00_full_conversations\\exported\\md\\Epistemic_constitutional_AI_SID-20260622-180907.md",
+      "export_sha256": "cd9ed3474ee83879a75262b11d9d47805a624fcecdb3fa8180087f150b230509"
     }
   ],
   "mhc_w_path": "C:\\Users\\loimi\\switchdrive\\CURRENTLY WORKING ON\\AI - assisted papers\\MHC-W",
@@ -732,5 +861,11 @@
     "completed_in_session": "SID-20260602-134807",
     "mhc_w_version": "v5.0",
     "case": "C"
+  },
+  "current_session": {
+    "id": "SID-20260622-190444",
+    "started": "2026-06-22T19:04:44.803607",
+    "jsonl_fingerprint": "8a68e4cc-ede6-488e-829c-a26181c77c99.jsonl",
+    "jsonl_fingerprint_method": "transcript_path"
   }
 }
