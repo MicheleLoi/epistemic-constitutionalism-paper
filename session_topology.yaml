@@ -923,3 +923,20 @@ sessions:
     inputs: []
     artifacts_produced: []
     continues_from: SID-20260622-180907
+  SID-20260723-103120:
+    date: '2026-07-23'
+    goal: 'Kwok et al. (2026) LLM-as-a-Verifier enters the project: arXiv record verified, captured as a related-work note, cross-referenced into the approved rating-head trace as a dated addendum (emission quantization added as a fourth mechanism candidate). New ModificationLog_EpistemicTraces opened to cover edits to approved traces.'
+    inputs:
+      - 01_epistemic_traces/trace_quantized_rating_head_20260612.md
+      - 09_notes/related_work_kasirzadeh_gabriel_2022.md
+      - 09_notes/placement_log.md
+      - 03_modification_logs/ModificationLog_References.md
+      - adapt.md
+      - https://arxiv.org/abs/2607.05391
+    artifacts_produced:
+      - 09_notes/related_work_kwok_2026_llm_as_a_verifier.md
+      - 03_modification_logs/ModificationLog_EpistemicTraces.md
+      - 01_epistemic_traces/trace_quantized_rating_head_20260612.md
+      - 09_notes/placement_log.md
+    continues_from: SID-20260622-190444
+    notes: 'SID registered retroactively at /mhc-end - the SessionStart hook did not fire (mhc_w_path in .mhc-config.json still points at the Windows install). artifacts_produced filled by hand: the automatic scan had no topology block to write into.'

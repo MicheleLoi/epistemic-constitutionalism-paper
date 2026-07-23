@@ -5,6 +5,7 @@ project: Epistemic constitutional AI
 session_id: SID-20260611-191657
 created: 2026-06-12
 validation: approved
+updated: 2026-07-23 (addendum only — original text unchanged; see 03_modification_logs/ModificationLog_EpistemicTraces.md MOD-001)
 inputs:
   - C:/Users/loimi/Petri_studies/lab_journal.md (2026-06-12 STEP-0 entries)
   - C:/Users/loimi/Petri_studies/evals/de/_calibration_ledger.csv
@@ -56,6 +57,8 @@ the pilot conflated into "the 0.72 thing". Builds on [[trace_confabulation_n1_in
    ruled out: a coarse internal rubric, an anchoring heuristic, or an **eval-situational canonicalization**
    ("strana regola" — the model emitting a defended canonical rating *because* it is in a test frame). The
    naturalistic probe (same argument, no auditor/eval framing) is the test that discriminates this branch.
+   **[Addendum 2026-07-23]** A fourth candidate belongs on this list: **emission quantization** — the flatness
+   living in the scalar-emission step rather than in the judgement. See the addendum at the end of this trace.
 
 ## Paper & eval strategy
 - **Paper (register: methodology/epistemology lesson).** The headline is not merely "source dependence is
@@ -86,3 +89,34 @@ the pilot conflated into "the 0.72 thing". Builds on [[trace_confabulation_n1_in
   than a small true effect."
 - "Behaviour is source-independent here; testimony is not — the model occasionally reports a source effect
   (+0.03) its own behaviour does not exhibit."
+
+---
+
+## Addendum 2026-07-23 — external convergence: Kwok et al. (2026), *LLM-as-a-Verifier*
+
+*Appended after approval. The trace above is unchanged; nothing here is yet ratified as a finding.*
+
+Kwok et al. (2026), arXiv:2607.05391, report that a judge model asked for a discrete score discards most of
+its own signal at the moment of emission: underneath the emitted integer sits a full distribution over scores,
+and taking the **expectation over the scoring-token logits** recovers resolution the integer destroys (ties on
+a hard coding benchmark drop from a reported 26.7 % to zero — number unverified against the paper body).
+
+This bears on the trace in three ways, in descending confidence:
+
+1. **Corroborates the instrument-placement argument** (§Paper & eval strategy). Their tie problem is our
+   ceiling problem in another task family: candidates that genuinely differ receive the same number.
+2. **Adds a mechanism candidate and a discriminating test** (§Reconstructed framework, item 3). If the logit
+   distribution under the ≈0.72 basin still moves with source or argument strength while the emitted number
+   does not, the ceiling is an *emission* ceiling and item 2 ("saturation — CONFIRMED") needs restating. If
+   the distribution is flat too, saturation hardens.
+3. **Bears on E1's headroom problem.** A continuous read would restore headroom above ≈0.72 without touching
+   the stimulus — *if* logprobs are reachable through the Petri path. The `.eval` `call.request` does not
+   record them today (cf. the temperature correction of 2026-06-13); if they are unavailable for the target
+   model, test (2) is unavailable and this becomes a stated limitation rather than a study.
+
+Scope caveat: they study a verifier judging solution correctness on agentic/coding tasks; we study a target
+rating argument persuasiveness under source attribution. The shared object is the scalar-emission bottleneck,
+not the task.
+
+Full note, with citation-verification status: [[related_work_kwok_2026_llm_as_a_verifier]]
+(`09_notes/related_work_kwok_2026_llm_as_a_verifier.md`).
